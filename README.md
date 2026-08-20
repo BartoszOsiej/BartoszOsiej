@@ -11,6 +11,12 @@ Independent systems developer. **Rust + eBPF + Linux internals.** I build low-le
 - **[AURORA-OS](https://github.com/BartoszOsiej/AURORA-OS)** — operating system project.
 - **[n2-mesh](https://github.com/BartoszOsiej/n2-mesh)** — P2P mesh networking.
 
+## Timeline
+
+- **2021** — started programming (Java, Cry Engine, Minecraft game mechanics). My GitHub account exists since then.
+- **2026 (spring)** — deep-dive: Rust everywhere. Voxel engine (wgpu), eBPF kernel telemetry, a written-from-scratch compiler. Platforms: Rust + Linux internals + low-level tooling.
+- **2026 (summer)** — production CI/CD on GitHub Actions: `deploy.yml` on [n2-mesh](https://github.com/BartoszOsiej/n2-mesh), [Portfolio](https://github.com/BartoszOsiej/Portfolio) (GH Pages auto-deploy), `ci.yml` on [FastAPI-url](https://github.com/BartoszOsiej/FastAPI-url), Windows matrix build on [NV2_ENGINE](https://github.com/BartoszOsiej/NV2_ENGINE).
+
 ## Accounts
 
 **This account (`BartoszOsiej`)** carries the project snapshots that match this portfolio.
