@@ -165,14 +165,14 @@ flowchart LR
 ## 📈 GitHub Stats
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=BartoszOsiej&show_icons=true&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=1f6feb&text_color=c9d1d9&count_private=true" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=BartoszOsiej&show_icons=true&hide_border=true&bg_color=f6f8fa&title_color=0969da&icon_color=0969da&text_color=24292f&count_private=true" />
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=BartoszOsiej&show_icons=true&hide_border=true&count_private=true" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api?username=BartoszOsiej&show_icons=true&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=1f6feb&text_color=c9d1d9&count_private=true" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-eight-theta.vercel.app/api?username=BartoszOsiej&show_icons=true&hide_border=true&bg_color=f6f8fa&title_color=0969da&icon_color=0969da&text_color=24292f&count_private=true" />
+  <img width="49%" src="https://github-readme-stats-eight-theta.vercel.app/api?username=BartoszOsiej&show_icons=true&hide_border=true&count_private=true" />
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=BartoszOsiej&layout=compact&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=8" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=BartoszOsiej&layout=compact&hide_border=true&bg_color=f6f8fa&title_color=0969da&text_color=24292f&langs_count=8" />
-  <img width="41%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BartoszOsiej&layout=compact&hide_border=true&langs_count=8" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=BartoszOsiej&layout=compact&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=8" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=BartoszOsiej&layout=compact&hide_border=true&bg_color=f6f8fa&title_color=0969da&text_color=24292f&langs_count=8" />
+  <img width="41%" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=BartoszOsiej&layout=compact&hide_border=true&langs_count=8" />
 </picture>
 <br/>
 <picture>
@@ -181,7 +181,11 @@ flowchart LR
   <img width="70%" src="https://streak-stats.demolab.com/?user=BartoszOsiej&hide_border=true" />
 </picture>
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=BartoszOsiej&theme=discord&no-frame=true&row=1&column=6&margin-w=8)](https://github.com/BartoszOsiej)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=BartoszOsiej&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=c9d1d9&line=58a6ff&point=F0883E" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=BartoszOsiej&theme=minimal&hide_border=true&bg_color=f6f8fa&color=24292f&line=0969da&point=D4A017" />
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=BartoszOsiej&hide_border=true" />
+</picture>
 
 ---
 
