@@ -107,14 +107,15 @@ def ecosystem_views():
             continue
         for v in d.get("views", []):
             day = v["timestamp"][:10]
-            slot = days.setdefault(day, {"count": 0, "uniques": 0})
-            # uniques are per-repo; summing them across repos is the honest
-            # lower bound of distinct visitors to the ecosystem that day
-            slot["count"] += v["count"]
-            slot["uniques"] += v["uniques"]
+            # per-day per-repo slot: overwriting (not adding) keeps every run
+            # idempotent even though the 14-day windows overlap between runs
+            days.setdefault(day, {})[repo] = {"count": v["count"],
+                                              "uniques": v["uniques"]}
     state["days"] = dict(sorted(days.items()))
-    state["total"] = sum(x["count"] for x in state["days"].values())
-    state["uniques"] = sum(x["uniques"] for x in state["days"].values())
+    state["total"] = sum(r["count"] for d in state["days"].values()
+                         for r in d.values())
+    state["uniques"] = sum(r["uniques"] for d in state["days"].values()
+                           for r in d.values())
     with open(VIEWS, "w") as f:
         json.dump(state, f, indent=1)
     return state["total"], state["uniques"]

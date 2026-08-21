@@ -27,7 +27,7 @@ jobs:
 
       - name: Render live metrics (npm / PyPI / crates.io / GitHub)
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
         run: python scripts/generate_stats.py
 
       - name: Publish to stats branch
