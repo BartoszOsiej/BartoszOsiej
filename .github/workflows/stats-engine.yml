@@ -1,0 +1,46 @@
+name: stats-engine
+
+on:
+  schedule:
+    - cron: "23 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Render live metrics (npm / PyPI / crates.io / GitHub)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_stats.py
+
+      - name: Publish to stats branch
+        run: |
+          git config user.name "stats-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git ls-remote --exit-code --heads origin stats >/dev/null 2>&1; then
+            git fetch --depth 1 origin stats
+            git checkout -B stats origin/stats
+            git rm -rf . 2>/dev/null || true
+          else
+            git checkout --orphan stats
+            git rm -rf --cached . 2>/dev/null || true
+            find . -mindepth 1 -maxdepth 1 ! -name out ! -name .git -exec rm -rf {} +
+          fi
+
+          mkdir -p svg
+          cp out/metrics-dark.svg out/metrics-light.svg out/meta.json out/history.json svg/
+
+          git add -A
+          git commit -m "stats: refresh $(date -u '+%Y-%m-%d %H:%M UTC')" || echo "no changes"
+          git push origin stats
