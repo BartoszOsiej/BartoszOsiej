@@ -162,6 +162,19 @@ flowchart LR
 
 ---
 
+## 📊 Live Package Metrics
+
+*Self-hosted stats engine — a scheduled workflow queries npm / PyPI / crates.io /
+GitHub releases and renders these cards from scratch. No badge services, no
+third-party renderers: every pixel comes from my own pipeline.*
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/metrics-dark.svg" />
+  <img src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/metrics-light.svg" />
+</picture>
+
+---
+
 ## 📈 GitHub Stats
 
 <picture>
