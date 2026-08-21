@@ -12,7 +12,7 @@ import time
 import urllib.request
 from datetime import datetime, timezone, timedelta
 
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "out")
+OUT = os.environ.get("STATS_OUT", os.path.join(os.getcwd(), "out"))
 HISTORY = os.path.join(OUT, "history.json")
 
 NPM = ["aurora-os", "bartosz-osiej-docs", "novactorio", "n2-mesh",
