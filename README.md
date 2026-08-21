@@ -70,9 +70,9 @@
 
 <div align="center">
 
-| 📦 Packages | 🦀 Crates | 🐍 PyPI | 📄 Releases | 🐳 Docker |
-|:-----------:|:---------:|:-------:|:-----------:|:---------:|
-| **6** npm | **6** crates.io | **2** | **30+** | **9** GHCR |
+| 📦 Packages | 🦀 Crates | 🐍 PyPI | 📄 Releases | 🐳 Docker | 🎮 VHS Demos |
+|:-----------:|:---------:|:-------:|:-----------:|:---------:|:------------:|
+| **6** npm | **6** crates.io | **2** | **30+** | **9** GHCR | **3** GIFs |
 
 </div>
 
