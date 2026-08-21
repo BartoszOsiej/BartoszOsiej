@@ -1,12 +1,12 @@
 {
- "updated": "2026-08-21 10:13 UTC",
+ "updated": "2026-08-21 14:19 UTC",
  "totals": {
   "npm": 0,
-  "pypi": 90,
-  "crates": 64,
-  "gh": 11
+  "pypi": 99,
+  "crates": 68,
+  "gh": 23
  },
- "crates_all_time": 64,
+ "crates_all_time": 68,
  "packages": {
   "npm": [
    "aurora-os",
