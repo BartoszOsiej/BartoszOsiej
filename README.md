@@ -119,6 +119,68 @@ flowchart LR
 
 </div>
 
+### ⚡ One-command install — like real CLI tools
+
+```bash
+# macOS (Apple Silicon & Intel)
+brew tap bartoszosiej/tap https://github.com/BartoszOsiej/homebrew-tap
+brew install bartoszosiej/tap/netrecon bartoszosiej/tap/hashsleuth
+
+# Windows
+scoop bucket add bartoszosiej https://github.com/BartoszOsiej/scoop-bucket
+scoop install netrecon hashsleuth
+```
+
+*Formulas & manifests are re-synced hourly by a bot with fresh SHA-256 sums — never stale.*
+
+### 🖥️ Build matrix — 5 platforms per release
+
+<div align="center">
+
+| Linux x86_64 | Linux arm64 | macOS arm64 | macOS x86_64 | Windows x64 |
+|:------------:|:-----------:|:-----------:|:------------:|:-----------:|
+| ✅ | ✅ | ✅ | ✅ | ✅ |
+
+</div>
+
+---
+
+## 🔐 Signed supply chain
+
+*The same pipeline discipline big tech uses — cryptographically verifiable, not "trust me".*
+
+<div align="center">
+
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/cybersec-tools/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/cybersec-tools)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/halcyon-process-monitor/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/halcyon-process-monitor)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/NV2_ENGINE/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/NV2_ENGINE)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/externum/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/externum)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/FastAPI-url/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/FastAPI-url)
+
+</div>
+
+| Layer | What it means |
+|---|---|
+| **cosign keyless signing** | Every GHCR image is signed via Sigstore/Fulcio OIDC — no keys to leak, identity bound to the GitHub workflow |
+| **SLSA v1 provenance** | Every release binary carries a build attestation proving *which commit, which runner, which pipeline* produced it |
+| **SPDX SBOM** | Every release ships a machine-readable software bill of materials |
+| **OpenSSF Scorecard** | Automated supply-chain security grading on 5 production repos |
+
+Verify it yourself — no trust required:
+
+```bash
+# verify a container image signature
+cosign verify ghcr.io/bartoszosiej/cybersec-tools \
+  --certificate-identity-regexp "^https://github.com/BartoszOsiej/" \
+  --certificate-oidc-issuer https://token.actions.githubusercontent.com
+
+# verify binary build provenance
+gh attestation verify netrecon-x86_64-unknown-linux-gnu \
+  -R BartoszOsiej/cybersec-tools
+```
+
+---
+
 <details>
 <summary><b>🗂️ Full package index</b></summary>
 
