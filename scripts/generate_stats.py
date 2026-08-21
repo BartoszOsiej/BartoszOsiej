@@ -258,19 +258,19 @@ def main():
         "crates_all_time": crates_all,
         "packages": {"npm": NPM, "pypi": PYPI, "crates": CRATES},
     }
-    with open(os.path.join(OUT, "meta.json"), "w") as f:
-        json.dump(meta, f, indent=1)
+
+    views_total, views_uniq = ecosystem_views()
+    meta["profile_views"] = {"total": views_total, "uniques": views_uniq}
 
     for dark, suffix in ((True, "dark"), (False, "light")):
         svg = card(dark, totals, values[-60:], stamp)
         with open(os.path.join(OUT, f"metrics-{suffix}.svg"), "w") as f:
             f.write(svg)
-
-    views_total, views_uniq = ecosystem_views()
-    for dark, suffix in ((True, "dark"), (False, "light")):
         with open(os.path.join(OUT, f"views-{suffix}.svg"), "w") as f:
             f.write(views_badge(dark, views_total, views_uniq, stamp))
-    meta["profile_views"] = {"total": views_total, "uniques": views_uniq}
+
+    with open(os.path.join(OUT, "meta.json"), "w") as f:
+        json.dump(meta, f, indent=1)
 
     print(json.dumps(meta, indent=1))
 
