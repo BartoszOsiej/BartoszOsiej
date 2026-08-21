@@ -14,6 +14,7 @@ from datetime import datetime, timezone, timedelta
 
 OUT = os.environ.get("STATS_OUT", os.path.join(os.getcwd(), "out"))
 HISTORY = os.path.join(OUT, "history.json")
+VIEWS = os.path.join(OUT, "views.json")
 
 NPM = ["aurora-os", "bartosz-osiej-docs", "novactorio", "n2-mesh",
        "bartosz-osiej-portfolio", "prompt-inbox"]
@@ -76,6 +77,47 @@ def gh_release_downloads(repo):
     except Exception:
         pass
     return total
+
+
+TRAFFIC_REPOS = ["halcyon-process-monitor", "cybersec-tools", "NV2_ENGINE",
+                 "externum", "FastAPI-url", "AURORA-OS", "n2-mesh",
+                 "prompt-inbox", "Portfolio", "Docs", "BartoszOsiej"]
+
+
+def ecosystem_views():
+    """All-time view counter across the whole ecosystem, self-captured.
+
+    GitHub's Traffic API exposes a rolling 14-day window per repo, so every
+    run folds each repo's window into a persistent per-day map - a calendar
+    day is recorded once and the running total never loses a day.
+    """
+    tok = os.environ.get("GH_TOKEN", "")
+    state = {}
+    if os.path.exists(VIEWS):
+        with open(VIEWS) as f:
+            state = json.load(f)
+    days = state.setdefault("days", {})
+    for repo in TRAFFIC_REPOS:
+        try:
+            d = fetch(f"https://api.github.com/repos/BartoszOsiej/{repo}/traffic/views",
+                      {"User-Agent": "stats-engine/1.0",
+                       "Authorization": f"Bearer {tok}",
+                       "Accept": "application/vnd.github+json"})
+        except Exception:
+            continue
+        for v in d.get("views", []):
+            day = v["timestamp"][:10]
+            slot = days.setdefault(day, {"count": 0, "uniques": 0})
+            # uniques are per-repo; summing them across repos is the honest
+            # lower bound of distinct visitors to the ecosystem that day
+            slot["count"] += v["count"]
+            slot["uniques"] += v["uniques"]
+    state["days"] = dict(sorted(days.items()))
+    state["total"] = sum(x["count"] for x in state["days"].values())
+    state["uniques"] = sum(x["uniques"] for x in state["days"].values())
+    with open(VIEWS, "w") as f:
+        json.dump(state, f, indent=1)
+    return state["total"], state["uniques"]
 
 
 def fmt(n):
@@ -160,6 +202,35 @@ def card(dark, totals, hist_values, stamp):
     return "\n".join(parts)
 
 
+def views_badge(dark, total, uniques, stamp):
+    fg = "#e6edf3" if dark else "#1f2328"
+    sub = "#8b949e" if dark else "#656d76"
+    bg = "#0d1117" if dark else "#ffffff"
+    row = "#30363d" if dark else "#d0d7de"
+    accent = "#a371f7" if dark else "#8250df"
+
+    W, H = 340, 64
+    parts = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">',
+        f'<defs><linearGradient id="vg" x1="0" y1="0" x2="1" y2="0">'
+        f'<stop offset="0" stop-color="{accent}"/><stop offset="1" stop-color="#39c5cf"/>'
+        f'</linearGradient></defs>',
+        f'<rect width="{W}" height="{H}" rx="10" fill="{bg}" stroke="{row}" stroke-width="1"/>',
+        f'<rect width="{W}" height="{H}" rx="10" fill="url(#vg)" opacity="0.08"/>',
+        f'<circle cx="22" cy="{H/2}" r="5" fill="url(#vg)"/>',
+        f'<text x="36" y="27" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" '
+        f'font-weight="700" letter-spacing="1.5" fill="{sub}">ECOSYSTEM VIEWS</text>',
+        f'<text x="36" y="48" font-family="JetBrains Mono,monospace" font-size="17" '
+        f'font-weight="700" fill="{fg}">{total:,}</text>',
+        f'<text x="{W-14}" y="27" text-anchor="end" font-family="Segoe UI,Helvetica,Arial,sans-serif" '
+        f'font-size="10" fill="{sub}">{uniques:,} unique</text>',
+        f'<text x="{W-14}" y="48" text-anchor="end" font-family="monospace" font-size="9" '
+        f'fill="{sub}">self-hosted counter</text>',
+        "</svg>",
+    ]
+    return "\n".join(parts)
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
     npm_total = sum(npm_downloads(p) for p in NPM)
@@ -193,6 +264,12 @@ def main():
         svg = card(dark, totals, values[-60:], stamp)
         with open(os.path.join(OUT, f"metrics-{suffix}.svg"), "w") as f:
             f.write(svg)
+
+    views_total, views_uniq = ecosystem_views()
+    for dark, suffix in ((True, "dark"), (False, "light")):
+        with open(os.path.join(OUT, f"views-{suffix}.svg"), "w") as f:
+            f.write(views_badge(dark, views_total, views_uniq, stamp))
+    meta["profile_views"] = {"total": views_total, "uniques": views_uniq}
 
     print(json.dumps(meta, indent=1))
 

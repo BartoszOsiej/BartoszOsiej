@@ -294,7 +294,10 @@ third-party renderers: every pixel comes from my own pipeline.*
 
 <div align="center">
 
-![Profile views](https://komarev.github.io/ghprofile-counter/?user=BartoszOsiej&label=Views&color=1a1a2e&style=for-the-badge)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/views-dark.svg">
+  <img alt="Ecosystem views" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/views-light.svg">
+</picture>
 
 *Open to work — [`mmc29213@gmail.com`](mailto:mmc29213@gmail.com)*
 

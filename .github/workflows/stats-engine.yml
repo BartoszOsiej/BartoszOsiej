@@ -18,6 +18,13 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Restore rolling history from stats branch
+        run: |
+          mkdir -p out
+          for f in history.json views.json; do
+            curl -fsSL "https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/$f" -o "out/$f" || true
+          done
+
       - name: Render live metrics (npm / PyPI / crates.io / GitHub)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -39,7 +46,8 @@ jobs:
           fi
 
           mkdir -p svg
-          cp out/metrics-dark.svg out/metrics-light.svg out/meta.json out/history.json svg/
+          cp out/metrics-dark.svg out/metrics-light.svg out/meta.json out/history.json \
+             out/views-dark.svg out/views-light.svg out/views.json svg/
 
           git add -A
           git commit -m "stats: refresh $(date -u '+%Y-%m-%d %H:%M UTC')" || echo "no changes"
