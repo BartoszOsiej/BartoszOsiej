@@ -63,9 +63,11 @@ Voxel game engine with MLP neural renderer, multiplayer over TCP, Epic Games Sto
 
 Programming language built from scratch — compiles to Python, Bash and native binary. Ownership, traits, macros. 192-test suite, on PyPI since v2.
 
+**▶ [Run it in your browser — and extend the language live](https://bartoszosiej.github.io/externum/)**
+
 `Python` `Compiler design` `PyPI`
 
-[![PyPI](https://img.shields.io/pypi/v/externum?style=flat-square&logo=pypi)](https://pypi.org/project/externum/) [![GHCR](https://img.shields.io/badge/GHCR-image-2496ED?style=flat-square&logo=docker)](https://github.com/BartoszOsiej/externum/pkgs/container/externum)
+[![PyPI](https://img.shields.io/pypi/v/externum?style=flat-square&logo=pypi)](https://pypi.org/project/externum/) [![GHCR](https://img.shields.io/badge/GHCR-image-2496ED?style=flat-square&logo=docker)](https://github.com/BartoszOsiej/externum/pkgs/container/externum) [![Playground](https://img.shields.io/badge/▶_LIVE_PLAYGROUND-extend_it_in_browser-a371f7?style=flat-square)](https://bartoszosiej.github.io/externum/)
 
 </td><td valign="top" width="50%">
 
@@ -118,6 +120,15 @@ flowchart LR
 | **11** | **6** | **2** | **6** | **12 / 12** |
 
 </div>
+
+### 🕹️ Interactive — a recruiter can actually run this
+
+| | |
+|---|---|
+| **▶ [Externum Playground](https://bartoszosiej.github.io/externum/)** | The programming language running 100% in your browser (Pyodide). Write programs, hot-load your own modules into the live runtime, compile to Python/Bash/binary. Sessions shareable by URL. |
+| **🧬 `/define`** | Comment on an issue → the bot validates your module against Externum's type checker → opens a PR into the stdlib → once merged, `import` works for everyone including the web playground. [The language evolves from comments.](https://github.com/BartoszOsiej/externum/issues/7) |
+| **🎮 `/run`** | [Comment on cybersec-tools](https://github.com/BartoszOsiej/cybersec-tools/issues/10) → the bot builds the workspace in CI and executes the real binaries with sandboxed guardrails, posting output back. |
+| **🔏 `./verify.sh v0.4.5`** | One command verifies SLSA provenance + Sigstore signatures + SBOM of any release. No trust required. |
 
 ### ⚡ One-command install — like real CLI tools
 
