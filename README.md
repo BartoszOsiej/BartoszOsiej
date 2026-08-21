@@ -9,6 +9,8 @@
 [![Portfolio](https://img.shields.io/badge/Portfolio-bartoszosiej.github.io-1a1a2e?style=for-the-badge&logo=firefox&logoColor=white)](https://bartoszosiej.github.io/Portfolio/)
 [![Email](https://img.shields.io/badge/mmc29213@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mmc29213@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Bartosz_Osiej-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/bartosz-osiej)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/BartoszOsiej/externum/badge)](https://securityscorecards.dev/viewer/?uri=github.com/BartoszOsiej/externum)
+[![OpenSSF Best Practices](https://img.shields.io/badge/OpenSSF-Best%20Practices-brightgreen?style=flat-square)](https://www.bestpractices.dev/projects/externum)
 
 </div>
 
@@ -165,5 +167,13 @@ ghcr.io/bartoszosiej/docs
 <div align="center">
 
 ![Profile views](https://komarev.github.io/ghprofile-counter/?user=BartoszOsiej&label=Profile%20views&color=1a1a2e&style=flat-square)
+
+</div>
+
+---
+
+<div align="center">
+
+![Stats](out/stats-card.svg)
 
 </div>
