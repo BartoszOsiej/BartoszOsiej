@@ -1,0 +1,32 @@
+{
+ "updated": "2026-08-21 08:53 UTC",
+ "totals": {
+  "npm": 0,
+  "pypi": 189,
+  "crates": 64,
+  "gh": 2
+ },
+ "crates_all_time": 64,
+ "packages": {
+  "npm": [
+   "aurora-os",
+   "bartosz-osiej-docs",
+   "novactorio",
+   "n2-mesh",
+   "bartosz-osiej-portfolio",
+   "prompt-inbox"
+  ],
+  "pypi": [
+   "externum",
+   "fastapi-url"
+  ],
+  "crates": [
+   "process-monitor",
+   "netrecon",
+   "shadowscan",
+   "hashsleuth",
+   "packeteye",
+   "nv2_engine"
+  ]
+ }
+}
