@@ -35,20 +35,22 @@ jobs:
           git config user.name "stats-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          mv out /tmp/stats-out
+
           if git ls-remote --exit-code --heads origin stats >/dev/null 2>&1; then
             git fetch --depth 1 origin stats
             git checkout -B stats origin/stats
-            git rm -rf . 2>/dev/null || true
           else
             git checkout --orphan stats
-            git rm -rf --cached . 2>/dev/null || true
-            find . -mindepth 1 -maxdepth 1 ! -name out ! -name .git -exec rm -rf {} +
           fi
+          git rm -rf --cached . -q 2>/dev/null || true
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
 
+          mv /tmp/stats-out out
           mkdir -p svg
           cp out/metrics-dark.svg out/metrics-light.svg out/meta.json out/history.json \
              out/views-dark.svg out/views-light.svg out/views.json svg/
 
-          git add -A
+          git add svg/
           git commit -m "stats: refresh $(date -u '+%Y-%m-%d %H:%M UTC')" || echo "no changes"
           git push origin stats
