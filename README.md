@@ -100,15 +100,15 @@ Four security tools as one workspace — port scanner, web scanner, hash cracker
 
 ```mermaid
 flowchart LR
-    T["git tag v*"] --> CI["GitHub Actions"]
-    CI --> D["🐳 Docker multi-stage"]
-    D --> G["GHCR — 11 images"]
-    CI --> B["⚙️ cargo build --release"]
-    B --> R["📋 Release + binaries"]
-    CI --> P["📦 Registry publish"]
-    P --> C["crates.io ×6"]
-    P --> Y["PyPI ×2"]
-    P --> N["npm ×6"]
+    T["🐳 git tag"] --> CI["GitHub Actions"]
+    CI --> D["Docker multi-stage"]
+    D --> G["GHCR: 11 images"]
+    CI --> B["cargo release build"]
+    B --> R["Release + binaries"]
+    CI --> P["Registry publish"]
+    P --> C["crates.io: 6 crates"]
+    P --> Y["PyPI: 2 packages"]
+    P --> N["npm: 6 packages"]
 ```
 
 <div align="center">
