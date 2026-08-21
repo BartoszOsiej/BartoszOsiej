@@ -1,8 +1,8 @@
 {
- "updated": "2026-08-21 10:10 UTC",
+ "updated": "2026-08-21 10:13 UTC",
  "totals": {
   "npm": 0,
-  "pypi": 189,
+  "pypi": 90,
   "crates": 64,
   "gh": 11
  },
@@ -28,5 +28,9 @@
    "packeteye",
    "nv2_engine"
   ]
+ },
+ "profile_views": {
+  "total": 149,
+  "uniques": 30
  }
 }
