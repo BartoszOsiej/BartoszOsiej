@@ -689,8 +689,54 @@
     "count": 1,
     "uniques": 1
    }
+  },
+  "2026-08-22": {
+   "halcyon-process-monitor": {
+    "count": 37,
+    "uniques": 2
+   },
+   "cybersec-tools": {
+    "count": 2,
+    "uniques": 1
+   },
+   "NV2_ENGINE": {
+    "count": 3,
+    "uniques": 2
+   },
+   "externum": {
+    "count": 1,
+    "uniques": 1
+   },
+   "FastAPI-url": {
+    "count": 0,
+    "uniques": 0
+   },
+   "AURORA-OS": {
+    "count": 0,
+    "uniques": 0
+   },
+   "n2-mesh": {
+    "count": 1,
+    "uniques": 1
+   },
+   "prompt-inbox": {
+    "count": 0,
+    "uniques": 0
+   },
+   "Portfolio": {
+    "count": 0,
+    "uniques": 0
+   },
+   "Docs": {
+    "count": 1,
+    "uniques": 1
+   },
+   "BartoszOsiej": {
+    "count": 0,
+    "uniques": 0
+   }
   }
  },
- "total": 184,
- "uniques": 49
+ "total": 229,
+ "uniques": 57
 }
