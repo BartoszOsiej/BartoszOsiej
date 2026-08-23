@@ -12,7 +12,7 @@
 
 > [!IMPORTANT]
 > **19 y/o · Poland · open to first paid role** — remote/hybrid, junior systems/backend.
-> Everything below is *deployed infrastructure*, not tutorials: 12 repositories, every one with CI/CD, releases with binaries, Docker images and published packages.
+> Everything below is *deployed infrastructure*, not tutorials: 15 repositories, every one with CI/CD, releases with binaries, Docker images and published packages.
 
 ---
 
@@ -80,6 +80,29 @@ Four security tools as one workspace — port scanner, web scanner, hash cracker
 [![crates.io](https://img.shields.io/crates/v/netrecon?style=flat-square&label=netrecon&logo=rust)](https://crates.io/crates/netrecon) [![crates.io](https://img.shields.io/crates/v/shadowscan?style=flat-square&label=shadowscan&logo=rust)](https://crates.io/crates/shadowscan) [![crates.io](https://img.shields.io/crates/v/hashsleuth?style=flat-square&label=hashsleuth&logo=rust)](https://crates.io/crates/hashsleuth) [![crates.io](https://img.shields.io/crates/v/packeteye?style=flat-square&label=packeteye&logo=rust)](https://crates.io/crates/packeteye)
 
 </td></tr>
+<tr><td valign="top" width="50%">
+
+### 🛡️ [pqguard](https://github.com/BartoszOsiej/pqguard)
+
+Post-quantum file encryption CLI — ML-KEM-768 key exchange + AES-256-GCM + HKDF. NIST FIPS 203 compliant, fuzz-tested.
+
+**▶ [Landing page](https://bartoszosiej.github.io/pqguard/)**
+
+`Rust` `Cryptography` `NIST`
+
+[![crates.io](https://img.shields.io/crates/v/pqguard?style=flat-square&logo=rust)](https://crates.io/crates/pqguard) [![CI](https://img.shields.io/github/actions/workflow/status/BartoszOsiej/pqguard/ci.yml?branch=main&style=flat-square&logo=githubactions&label=ci)](https://github.com/BartoszOsiej/pqguard/actions) [![GHCR](https://img.shields.io/badge/GHCR-image-2496ED?style=flat-square&logo=docker)](https://github.com/BartoszOsiej/pqguard/pkgs/container/pqguard)
+
+</td><td valign="top" width="50%">
+
+### 🧬 [Docs](https://bartoszosiej.github.io/Docs/)
+
+Technical documentation site — architecture guides, API reference, deployment playbooks.
+
+`TypeScript` `Deploy` `GitHub Pages`
+
+[![npm](https://img.shields.io/npm/v/bartosz-osiej-docs?style=flat-square&logo=nodedotjs)](https://www.npmjs.com/package/bartosz-osiej-docs) [![Deploy](https://img.shields.io/badge/Deploy-live-green?style=flat-square)](https://bartoszosiej.github.io/Docs/)
+
+</td></tr>
 </table>
 
 <details>
@@ -115,9 +138,9 @@ flowchart LR
 
 <div align="center">
 
-| 🐳 GHCR images | 🦀 crates.io | 🐍 PyPI | 🟢 npm | 📋 Repos with releases |
+| 🐳 GHCR images | 🦀 crates.io | 🐍 PyPI | 🟢 npm | 📋 Repos with CI/CD |
 |:--------------:|:------------:|:-------:|:------:|:----------------------:|
-| **11** | **6** | **2** | **6** | **12 / 12** |
+| **13** | **8** | **2** | **6** | **15 / 15** |
 
 </div>
 
@@ -205,6 +228,7 @@ gh attestation verify netrecon-x86_64-unknown-linux-gnu \
 
 **crates.io**
 [![process-monitor](https://img.shields.io/crates/v/process-monitor?style=flat-square&logo=rust)](https://crates.io/crates/process-monitor)
+[![pqguard](https://img.shields.io/crates/v/pqguard?style=flat-square&logo=rust)](https://crates.io/crates/pqguard)
 [![nv2_engine](https://img.shields.io/crates/v/nv2_engine?style=flat-square&logo=rust)](https://crates.io/crates/nv2_engine)
 [![netrecon](https://img.shields.io/crates/v/netrecon?style=flat-square&logo=rust)](https://crates.io/crates/netrecon)
 [![shadowscan](https://img.shields.io/crates/v/shadowscan?style=flat-square&logo=rust)](https://crates.io/crates/shadowscan)
@@ -226,12 +250,12 @@ gh attestation verify netrecon-x86_64-unknown-linux-gnu \
 
 | Practice | Coverage |
 |----------|:--------:|
-| CodeQL security scanning | ✅ 12/12 |
-| Dependabot + vulnerability alerts | ✅ 12/12 |
-| Branch protection + squash-merge history | ✅ 12/12 |
+| CodeQL security scanning | ✅ 15/15 |
+| Dependabot + vulnerability alerts | ✅ 15/15 |
+| Branch protection + squash-merge history | ✅ 15/15 |
 | Public sprint boards + milestones | ✅ 6 boards |
-| Discussions, CONTRIBUTING, SECURITY, CoC | ✅ 12/12 |
-| MIT licensing, topics, descriptions | ✅ 12/12 |
+| Discussions, CONTRIBUTING, SECURITY, CoC | ✅ 15/15 |
+| MIT licensing, topics, descriptions | ✅ 15/15 |
 
 ---
 
