@@ -313,7 +313,7 @@ third-party renderers: every pixel comes from my own pipeline.*
 
 ## 🌐 Also here
 
-- **[`ghost0development`](https://github.com/ghost0development)** — archive account since 2021 (31 repos); canonical `halcyon-process-monitor` and the VIVIA engine live there
+- **[`ghost0development`](https://github.com/ghost0development)** — archive account since 2021 (31 repos); canonical `halcyon-process-monitor` lives there
 
 ---
 
