@@ -48,9 +48,11 @@ eBPF ransomware behavior tracker — kernel-level `execve`/`openat` tracing thro
 
 </td><td valign="top" width="50%">
 
-### 🎮 [NV2_ENGINE](https://github.com/BartoszOsiej/NV2_ENGINE)
+### 🎮 [NV2_ENGINE](https://github.com/BartoszOsiej/NV2_ENGINE) — *VIVIA*
 
-Voxel game engine with MLP neural renderer, multiplayer over TCP, Epic Games Store integration. Published as a crate.
+Neural voxel engine with MLP terrain generation, multiplayer over TCP, Epic Games Store integration. Published as a crate.
+
+**▶ [Landing page](https://bartoszosiej.github.io/NV2_ENGINE/)**
 
 `Rust` `wgpu` `MLP` `TCP`
 
