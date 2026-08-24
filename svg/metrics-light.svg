@@ -3,18 +3,18 @@
 <rect width="480" height="196" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
 <rect width="480" height="34" rx="12" fill="url(#g)" opacity="0.18"/>
 <text x="16" y="22" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#1f2328">LIVE PACKAGE METRICS</text>
-<text x="466" y="22" text-anchor="end" font-family="monospace" font-size="10" fill="#656d76">2026-08-23 19:24 UTC</text>
+<text x="466" y="22" text-anchor="end" font-family="monospace" font-size="10" fill="#656d76">2026-08-24 03:38 UTC</text>
 <circle cx="20" cy="60" r="3.5" fill="#8250df"/>
 <text x="32" y="64" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#656d76">npm</text>
 <text x="464" y="64" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#1f2328">842</text>
 <circle cx="20" cy="86" r="3.5" fill="#0969da"/>
 <text x="32" y="90" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#656d76">PyPI</text>
-<text x="464" y="90" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#1f2328">211</text>
+<text x="464" y="90" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#1f2328">219</text>
 <circle cx="20" cy="112" r="3.5" fill="#bf3989"/>
 <text x="32" y="116" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#656d76">crates.io</text>
-<text x="464" y="116" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#1f2328">92</text>
+<text x="464" y="116" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#1f2328">95</text>
 <circle cx="20" cy="138" r="3.5" fill="#656d76"/>
 <text x="32" y="142" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#656d76">GitHub releases</text>
-<text x="464" y="142" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#1f2328">201</text>
-<g transform="translate(330,40)"><polyline points="2.0,33.4 67.0,9.5 132.0,6.0" fill="none" stroke="#8250df" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><polygon points="2,42 2.0,33.4 67.0,9.5 132.0,6.0 132,42" fill="#8250df" opacity="0.12"/></g>
+<text x="464" y="142" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#1f2328">235</text>
+<g transform="translate(330,40)"><polyline points="2.0,33.6 45.3,10.4 88.7,7.0 132.0,6.0" fill="none" stroke="#8250df" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><polygon points="2,42 2.0,33.6 45.3,10.4 88.7,7.0 132.0,6.0 132,42" fill="#8250df" opacity="0.12"/></g>
 </svg>
