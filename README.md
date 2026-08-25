@@ -187,7 +187,7 @@ scoop install netrecon hashsleuth
 
 <div align="center">
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://github.com/BartoszOsiej/cybersec-tools/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://github.com/BartoszOsiej/BartoszOsiej/blob/main/LICENSE)
 
 </div>
 
