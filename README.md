@@ -188,10 +188,6 @@ scoop install netrecon hashsleuth
 <div align="center">
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://github.com/BartoszOsiej/cybersec-tools/blob/main/LICENSE)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://github.com/BartoszOsiej/halcyon-process-monitor/blob/main/LICENSE)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://github.com/BartoszOsiej/NV2_ENGINE/blob/main/LICENSE)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://github.com/BartoszOsiej/externum/blob/main/LICENSE)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://github.com/BartoszOsiej/FastAPI-url/blob/main/LICENSE)
 
 </div>
 
@@ -200,7 +196,6 @@ scoop install netrecon hashsleuth
 | **cosign keyless signing** | Every GHCR image is signed via Sigstore/Fulcio OIDC — no keys to leak, identity bound to the GitHub workflow |
 | **SLSA v1 provenance** | Every release binary carries a build attestation proving *which commit, which runner, which pipeline* produced it |
 | **SPDX SBOM** | Every release ships a machine-readable software bill of materials |
-| **OpenSSF Scorecard** | Automated supply-chain security grading on 5 production repos |
 
 Verify it yourself — no trust required:
 
