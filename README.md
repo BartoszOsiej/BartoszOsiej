@@ -127,7 +127,7 @@ Technical documentation site — architecture guides, API reference, deployment 
 
 ```mermaid
 flowchart LR
-    T["🐳 git tag"] --> CI["GitHub Actions"]
+    T["git tag"] --> CI["GitHub Actions"]
     CI --> D["Docker multi-stage"]
     D --> G["GHCR: 11 images"]
     CI --> B["cargo release build"]
