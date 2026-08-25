@@ -187,11 +187,11 @@ scoop install netrecon hashsleuth
 
 <div align="center">
 
-[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/cybersec-tools/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/cybersec-tools)
-[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/halcyon-process-monitor/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/halcyon-process-monitor)
-[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/NV2_ENGINE/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/NV2_ENGINE)
-[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/externum/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/externum)
-[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/FastAPI-url/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/FastAPI-url)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://github.com/BartoszOsiej/cybersec-tools/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://github.com/BartoszOsiej/halcyon-process-monitor/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://github.com/BartoszOsiej/NV2_ENGINE/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://github.com/BartoszOsiej/externum/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://github.com/BartoszOsiej/FastAPI-url/blob/main/LICENSE)
 
 </div>
 
