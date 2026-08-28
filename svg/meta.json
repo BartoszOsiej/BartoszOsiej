@@ -1,8 +1,8 @@
 {
- "updated": "2026-08-28 01:47 UTC",
+ "updated": "2026-08-28 21:56 UTC",
  "totals": {
-  "npm": 939,
-  "pypi": 121,
+  "npm": 974,
+  "pypi": 237,
   "crates": 122,
   "gh": 413
  },
@@ -30,7 +30,7 @@
   ]
  },
  "profile_views": {
-  "total": 294,
-  "uniques": 77
+  "total": 306,
+  "uniques": 79
  }
 }
