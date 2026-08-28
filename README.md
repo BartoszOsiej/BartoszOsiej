@@ -311,6 +311,7 @@ third-party renderers: every pixel comes from my own pipeline.*
 ## 🌐 Also here
 
 - **[`ghost0development`](https://github.com/ghost0development)** — archive account since 2021 (31 repos); canonical `halcyon-process-monitor` lives there
+- **[`💼 LinkedIn`](https://www.linkedin.com/in/bartoszosiej2007/)** — open to work, junior systems/backend roles
 
 ---
 
