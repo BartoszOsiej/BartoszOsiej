@@ -12,7 +12,7 @@
 
 > [!IMPORTANT]
 > **19 y/o · Poland · open to first paid role** — remote/hybrid, junior systems/backend.
-> Everything below is *deployed infrastructure*, not tutorials: 15 repositories, every one with CI/CD, releases with binaries, Docker images and published packages.
+> Everything below is *deployed infrastructure*, not tutorials: 13 repositories, every one with CI/CD, releases with binaries, Docker images and published packages.
 
 ---
 
@@ -142,7 +142,7 @@ flowchart LR
 
 | 🐳 GHCR images | 🦀 crates.io | 🐍 PyPI | 🟢 npm | 📋 Repos with CI/CD |
 |:--------------:|:------------:|:-------:|:------:|:----------------------:|
-| **13** | **8** | **2** | **6** | **15 / 15** |
+| **13** | **8** | **2** | **6** | **13 / 13** |
 
 </div>
 
@@ -247,12 +247,12 @@ gh attestation verify netrecon-x86_64-unknown-linux-gnu \
 
 | Practice | Coverage |
 |----------|:--------:|
-| CodeQL security scanning | ✅ 15/15 |
-| Dependabot + vulnerability alerts | ✅ 15/15 |
-| Branch protection + squash-merge history | ✅ 15/15 |
+| CodeQL security scanning | ✅ 13/13 |
+| Dependabot + vulnerability alerts | ✅ 13/13 |
+| Branch protection + squash-merge history | ✅ 13/13 |
 | Public sprint boards + milestones | ✅ 6 boards |
-| Discussions, CONTRIBUTING, SECURITY, CoC | ✅ 15/15 |
-| MIT licensing, topics, descriptions | ✅ 15/15 |
+| Discussions, CONTRIBUTING, SECURITY, CoC | ✅ 13/13 |
+| MIT licensing, topics, descriptions | ✅ 13/13 |
 
 ---
 
