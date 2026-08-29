@@ -2,17 +2,17 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&repeat=true&width=700&height=50&lines=Kernel-level+tooling+in+Rust+%F0%9F%A6%80;eBPF+probes+%C2%B7+perf+buffers+%C2%B7+TUI;Compilers+from+scratch+%E2%9A%A1;Voxel+engines+%C2%B7+wgpu+%C2%B7+multiplayer;15+packages+across+3+registries+%F0%9F%93%A6)](https://github.com/BartoszOsiej)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&repeat=true&width=700&height=50&lines=Kernel-level+tooling+in+Rust+%F0%9F%A6%80;eBPF+probes+%C2%B7+perf+buffers+%C2%B7+TUI;Compilers+from+scratch+%E2%9A%A1;Voxel+engines+%C2%B7+wgpu+%C2%B7+multiplayer;14+packages+across+4+registries+%F0%9F%93%A6)](https://github.com/BartoszOsiej)
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-bartoszosiej.github.io-1a1a2e?style=for-the-badge&logo=firefox&logoColor=white)](https://bartoszosiej.github.io/Portfolio/)
 [![Email](https://img.shields.io/badge/mmc29213@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mmc29213@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Bartosz_Osiej-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/bartoszosiej2007)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Bartosz_Osiej-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/bartosz-osiej)
 
 </div>
 
 > [!IMPORTANT]
 > **19 y/o · Poland · open to first paid role** — remote/hybrid, junior systems/backend.
-> Everything below is *deployed infrastructure*, not tutorials: 14 repositories, every one with CI/CD, releases with binaries, Docker images and published packages.
+> Everything below is *deployed infrastructure*, not tutorials: 15 repositories, every one with CI/CD, releases with binaries, Docker images and published packages.
 
 ---
 
@@ -38,13 +38,13 @@
 <table>
 <tr><td valign="top" width="50%">
 
-### 🔬 [halcyon-process-monitor](https://github.com/BartoszOsiej/halcyon-process-monitor)
+### 🔬 [talus-process-monitor](https://github.com/BartoszOsiej/talus-process-monitor)
 
-eBPF ransomware behavior tracker — kernel-level `execve`/`openat` tracing through Aya, per-CPU perf buffers, sliding-window alerting, full frankentui TUI.
+eBPF endpoint security agent — kernel-level `execve`/`openat`/`connect` tracing through Aya, per-CPU perf buffers, sliding-window alerting, automated `SIGKILL` response, full FrankenTUI.
 
-`Rust` `Aya` `frankentui` `eBPF`
+`Rust` `Aya` `FrankenTUI` `eBPF`
 
-[![crates.io](https://img.shields.io/crates/v/process-monitor?style=flat-square&logo=rust)](https://crates.io/crates/process-monitor) [![GHCR](https://img.shields.io/badge/GHCR-image-2496ED?style=flat-square&logo=docker)](https://github.com/BartoszOsiej/halcyon-process-monitor/pkgs/container/halcyon-process-monitor) [![binary](https://img.shields.io/badge/release-binary-8A2BE2?style=flat-square)](https://github.com/BartoszOsiej/halcyon-process-monitor/releases)
+[![crates.io](https://img.shields.io/crates/v/process-monitor?style=flat-square&logo=rust)](https://crates.io/crates/process-monitor) [![GHCR](https://img.shields.io/badge/GHCR-image-2496ED?style=flat-square&logo=docker)](https://github.com/BartoszOsiej/talus-process-monitor/pkgs/container/talus-process-monitor) [![binary](https://img.shields.io/badge/release-binary-8A2BE2?style=flat-square)](https://github.com/BartoszOsiej/talus-process-monitor/releases)
 
 </td><td valign="top" width="50%">
 
@@ -129,11 +129,11 @@ Technical documentation site — architecture guides, API reference, deployment 
 flowchart LR
     T["git tag"] --> CI["GitHub Actions"]
     CI --> D["Docker multi-stage"]
-    D --> G["GHCR: 12 images"]
+    D --> G["GHCR: 11 images"]
     CI --> B["cargo release build"]
     B --> R["Release + binaries"]
     CI --> P["Registry publish"]
-    P --> C["crates.io: 7 crates"]
+    P --> C["crates.io: 6 crates"]
     P --> Y["PyPI: 2 packages"]
     P --> N["npm: 6 packages"]
 ```
@@ -142,7 +142,7 @@ flowchart LR
 
 | 🐳 GHCR images | 🦀 crates.io | 🐍 PyPI | 🟢 npm | 📋 Repos with CI/CD |
 |:--------------:|:------------:|:-------:|:------:|:----------------------:|
-| **12** | **7** | **2** | **6** | **14 / 14** |
+| **13** | **8** | **2** | **6** | **15 / 15** |
 
 </div>
 
@@ -247,12 +247,12 @@ gh attestation verify netrecon-x86_64-unknown-linux-gnu \
 
 | Practice | Coverage |
 |----------|:--------:|
-| CodeQL security scanning | ✅ 14/14 |
-| Dependabot + vulnerability alerts | ✅ 14/14 |
-| Branch protection + squash-merge history | ✅ 14/14 |
+| CodeQL security scanning | ✅ 15/15 |
+| Dependabot + vulnerability alerts | ✅ 15/15 |
+| Branch protection + squash-merge history | ✅ 15/15 |
 | Public sprint boards + milestones | ✅ 6 boards |
-| Discussions, CONTRIBUTING, SECURITY, CoC | ✅ 14/14 |
-| MIT licensing, topics, descriptions | ✅ 14/14 |
+| Discussions, CONTRIBUTING, SECURITY, CoC | ✅ 15/15 |
+| MIT licensing, topics, descriptions | ✅ 15/15 |
 
 ---
 
@@ -302,7 +302,7 @@ third-party renderers: every pixel comes from my own pipeline.*
 2021 ──► first lines of code — Java, CryEngine, Minecraft mechanics
 2025 ──► networking & security track (teleinformatyka)
 2026 Q1 ──► Rust deep dive: voxel engine, eBPF kernel probes, compiler from scratch
-2026 Q3 ──► production CI/CD: Actions → GHCR → crates.io / PyPI / npm, 27 artifacts live
+2026 Q3 ──► production CI/CD: Actions → GHCR → crates.io / PyPI / npm, 14 packages live
 2026 Q4 ──► shipping: teleinformatyka-wikipedia, NV2 multiplayer, first paid role 🎯
 ```
 
@@ -310,8 +310,7 @@ third-party renderers: every pixel comes from my own pipeline.*
 
 ## 🌐 Also here
 
-- **[`ghost0development`](https://github.com/ghost0development)** — archive account since 2021 (31 repos); canonical `halcyon-process-monitor` lives there
-- **[`💼 LinkedIn`](https://www.linkedin.com/in/bartoszosiej2007/)** — open to work, junior systems/backend roles
+- **[`ghost0development`](https://github.com/ghost0development)** — archive account since 2021 (31 repos)
 
 ---
 
