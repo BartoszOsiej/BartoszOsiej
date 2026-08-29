@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&repeat=true&width=700&height=50&lines=Kernel-level+tooling+in+Rust+%F0%9F%A6%80;eBPF+probes+%C2%B7+perf+buffers+%C2%B7+TUI;Compilers+from+scratch+%E2%9A%A1;Voxel+engines+%C2%B7+wgpu+%C2%B7+multiplayer;14+packages+across+4+registries+%F0%9F%93%A6)](https://github.com/BartoszOsiej)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&repeat=true&width=700&height=50&lines=Kernel-level+tooling+in+Rust+%F0%9F%A6%80;eBPF+%C2%B7+RISC-V+bare-metal+%C2%B7+no_std;Compilers+%C2%B7+post-quantum+crypto;Upstream+aya-rs+contributor+%F0%9F%A4%AC;14+packages+across+4+registries+%F0%9F%93%A6)](https://github.com/BartoszOsiej)
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-bartoszosiej.github.io-1a1a2e?style=for-the-badge&logo=firefox&logoColor=white)](https://bartoszosiej.github.io/Portfolio/)
 [![Email](https://img.shields.io/badge/mmc29213@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mmc29213@gmail.com)
@@ -12,7 +12,7 @@
 
 > [!IMPORTANT]
 > **19 y/o · Poland · open to first paid role** — remote/hybrid, junior systems/backend.
-> Everything below is *deployed infrastructure*, not tutorials: 15 repositories, every one with CI/CD, releases with binaries, Docker images and published packages.
+> Everything below is *deployed infrastructure*, not tutorials: 15 repositories, every one with CI/CD, releases with binaries, Docker images and published packages. Upstream aya-rs contributor.
 
 ---
 
@@ -21,7 +21,7 @@
 <div align="center">
 
 [![Rust](https://img.shields.io/badge/Rust-systems-000000?style=flat-square&logo=rust&logoColor=white)](https://www.rust-lang.org/)
-[![eBPF](https://img.shields.io/badge/eBPF-Aya_0.13-F00613?style=flat-square&logo=linux&logoColor=white)](https://aya-rs.dev/)
+[![eBPF](https://img.shields.io/badge/eBPF-Aya_0.14-F00613?style=flat-square&logo=linux&logoColor=white)](https://aya-rs.dev/)
 [![Python](https://img.shields.io/badge/Python-compilers-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-engines-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-backend-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
@@ -38,7 +38,7 @@
 <table>
 <tr><td valign="top" width="50%">
 
-### 🔬 [talus-process-monitor](https://github.com/BartoszOsiej/talus-process-monitor)
+### 🔬 [Talus](https://github.com/BartoszOsiej/talus-process-monitor)
 
 eBPF endpoint security agent — kernel-level `execve`/`openat`/`connect` tracing through Aya, per-CPU perf buffers, sliding-window alerting, automated `SIGKILL` response, full FrankenTUI.
 
@@ -73,7 +73,7 @@ Programming language built from scratch — compiles to Python, Bash and native 
 
 </td><td valign="top" width="50%">
 
-### 🔒 [cybersec-tools](https://github.com/BartoszOsiej/cybersec-tools)
+### 🔒 [CyberForge](https://github.com/BartoszOsiej/cybersec-tools)
 
 Four security tools as one workspace — port scanner, web scanner, hash cracker, packet analyzer. Each shipped separately on crates.io.
 
@@ -84,7 +84,7 @@ Four security tools as one workspace — port scanner, web scanner, hash cracker
 </td></tr>
 <tr><td valign="top" width="50%">
 
-### 🛡️ [pqguard](https://github.com/BartoszOsiej/pqguard)
+### 🛡️ [QuantumShield](https://github.com/BartoszOsiej/pqguard)
 
 Post-quantum file encryption CLI — ML-KEM-768 key exchange + AES-256-GCM + HKDF. NIST FIPS 203 compliant, fuzz-tested.
 
@@ -112,12 +112,13 @@ Technical documentation site — architecture guides, API reference, deployment 
 
 | | Project | What it is | Try it |
 |---|---------|-----------|--------|
-| ◈ | [**AURORA-OS**](https://github.com/BartoszOsiej/AURORA-OS) | Complete OS in the browser — kernel, window manager, filesystem, 8 apps, procedural audio | [npm](https://www.npmjs.com/package/aurora-os) |
-| 🌐 | [**n2-mesh**](https://github.com/BartoszOsiej/n2-mesh) | Serverless P2P chat — WebRTC + MQTT signaling, zero dependencies | [npm](https://www.npmjs.com/package/n2-mesh) |
-| 🔗 | [**FastAPI-url**](https://github.com/BartoszOsiej/FastAPI-url) | URL shortener — JWT auth, click tracking, React dashboard | [PyPI](https://pypi.org/project/fastapi-url/) |
-| 🎯 | [**prompt-inbox**](https://github.com/BartoszOsiej/prompt-inbox) | Remote prompt inbox for AI agents — mobile-first, zero backend | [npm](https://www.npmjs.com/package/prompt-inbox) |
-| 🎮 | [**novactorio**](https://github.com/BartoszOsiej/Factorio-web-game) | Factorio-style factory builder fully playable in browser | [npm](https://www.npmjs.com/package/novactorio) |
-| 📚 | [**teleinformatyka-wikipedia**](https://github.com/BartoszOsiej/teleinformatyka-wikipedia) | PL/EN telecom encyclopedia — networking, 5G, fiber, security | [docs](https://bartoszosiej.github.io/Docs/) |
+| 🔐 | [**Fortis**](https://github.com/BartoszOsiej/riscv-trust) | Bare-metal RISC-V measured boot — SHA-256 + ML-KEM-768 chain of trust | QEMU |
+| ◈ | [**Aurora**](https://github.com/BartoszOsiej/AURORA-OS) | Complete OS in the browser — kernel, window manager, filesystem, 8 apps, procedural audio | [npm](https://www.npmjs.com/package/aurora-os) |
+| 🌐 | [**Meshcore**](https://github.com/BartoszOsiej/n2-mesh) | Serverless P2P chat — WebRTC + MQTT signaling, zero dependencies | [npm](https://www.npmjs.com/package/n2-mesh) |
+| 🔗 | [**Shortlink**](https://github.com/BartoszOsiej/FastAPI-url) | URL shortener — JWT auth, click tracking, React dashboard | [PyPI](https://pypi.org/project/fastapi-url/) |
+| 🎯 | [**Promptbox**](https://github.com/BartoszOsiej/prompt-inbox) | Remote prompt inbox for AI agents — mobile-first, zero backend | [npm](https://www.npmjs.com/package/prompt-inbox) |
+| 🎮 | [**Forge**](https://github.com/BartoszOsiej/Factorio-web-game) | Factorio-style factory builder fully playable in browser | [npm](https://www.npmjs.com/package/novactorio) |
+| 📚 | [**TeleWiedza**](https://github.com/BartoszOsiej/teleinformatyka-wikipedia) | PL/EN telecom encyclopedia — networking, 5G, fiber, security | [docs](https://bartoszosiej.github.io/Docs/) |
 
 </details>
 
@@ -188,6 +189,11 @@ scoop install netrecon hashsleuth
 <div align="center">
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://github.com/BartoszOsiej/BartoszOsiej/blob/main/LICENSE)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/cybersec-tools/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/cybersec-tools)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/talus-process-monitor/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/talus-process-monitor)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/NV2_ENGINE/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/NV2_ENGINE)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/externum/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/externum)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/FastAPI-url/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/FastAPI-url)
 
 </div>
 
@@ -302,15 +308,28 @@ third-party renderers: every pixel comes from my own pipeline.*
 2021 ──► first lines of code — Java, CryEngine, Minecraft mechanics
 2025 ──► networking & security track (teleinformatyka)
 2026 Q1 ──► Rust deep dive: voxel engine, eBPF kernel probes, compiler from scratch
-2026 Q3 ──► production CI/CD: Actions → GHCR → crates.io / PyPI / npm, 14 packages live
-2026 Q4 ──► shipping: teleinformatyka-wikipedia, NV2 multiplayer, first paid role 🎯
+2026 Q2 ──► production CI/CD: Actions → GHCR → crates.io / PyPI / npm, 14 packages live
+2026 Q3 ──► ecosystem upgrade: aya 0.14, ureq 3, ml-kem 0.3, dashmap 6, RISC-V bare-metal (Fortis)
+2026 Q4 ──► upstream PRs to aya-rs shipped, first paid role 🎯
 ```
+
+---
+
+## 🤝 Upstream Contributions
+
+| Target | PR type | Status |
+|--------|---------|--------|
+| [aya-rs/book](https://github.com/aya-rs/book) | Fix outdated `offset_of!` tip in Parsing Packets page (issue #202) | Prepared |
+| [aya-rs/book](https://github.com/aya-rs/book) | Add typos spellcheck CI (issue #91) | Prepared |
+| [aya-rs/book](https://github.com/aya-rs/book) | Update deprecated `aya::Bpf` references + MAP API note (issue #73) | Prepared |
+
+> All PRs based on real-world experience upgrading talus-process-monitor to aya 0.14.
 
 ---
 
 ## 🌐 Also here
 
-- **[`ghost0development`](https://github.com/ghost0development)** — archive account since 2021 (31 repos)
+- **[`ghost0development`](https://github.com/ghost0development)** — archived account (2021-2025); 31 repos, now superseded by this account
 
 ---
 
