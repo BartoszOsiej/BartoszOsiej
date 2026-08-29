@@ -73,7 +73,7 @@ Programming language built from scratch — compiles to Python, Bash and native 
 
 </td><td valign="top" width="50%">
 
-### 🔒 [CyberForge](https://github.com/BartoszOsiej/cybersec-tools)
+### 🔒 [CyberForge](https://github.com/BartoszOsiej/CyberForge)
 
 Four security tools as one workspace — port scanner, web scanner, hash cracker, packet analyzer. Each shipped separately on crates.io.
 
@@ -113,12 +113,12 @@ Technical documentation site — architecture guides, API reference, deployment 
 | | Project | What it is | Try it |
 |---|---------|-----------|--------|
 | 🔐 | [**Fortis**](https://github.com/BartoszOsiej/riscv-trust) | Bare-metal RISC-V measured boot — SHA-256 + ML-KEM-768 chain of trust | QEMU |
-| ◈ | [**Aurora**](https://github.com/BartoszOsiej/AURORA-OS) | Complete OS in the browser — kernel, window manager, filesystem, 8 apps, procedural audio | [npm](https://www.npmjs.com/package/aurora-os) |
-| 🌐 | [**Meshcore**](https://github.com/BartoszOsiej/n2-mesh) | Serverless P2P chat — WebRTC + MQTT signaling, zero dependencies | [npm](https://www.npmjs.com/package/n2-mesh) |
-| 🔗 | [**Shortlink**](https://github.com/BartoszOsiej/FastAPI-url) | URL shortener — JWT auth, click tracking, React dashboard | [PyPI](https://pypi.org/project/fastapi-url/) |
-| 🎯 | [**Promptbox**](https://github.com/BartoszOsiej/prompt-inbox) | Remote prompt inbox for AI agents — mobile-first, zero backend | [npm](https://www.npmjs.com/package/prompt-inbox) |
+| ◈ | [**Aurora**](https://github.com/BartoszOsiej/Aurora) | Complete OS in the browser — kernel, window manager, filesystem, 8 apps, procedural audio | [npm](https://www.npmjs.com/package/aurora-os) |
+| 🌐 | [**Meshcore**](https://github.com/BartoszOsiej/Meshcore) | Serverless P2P chat — WebRTC + MQTT signaling, zero dependencies | [npm](https://www.npmjs.com/package/n2-mesh) |
+| 🔗 | [**Shortlink**](https://github.com/BartoszOsiej/Shortlink) | URL shortener — JWT auth, click tracking, React dashboard | [PyPI](https://pypi.org/project/fastapi-url/) |
+| 🎯 | [**Promptbox**](https://github.com/BartoszOsiej/Promptbox) | Remote prompt inbox for AI agents — mobile-first, zero backend | [npm](https://www.npmjs.com/package/prompt-inbox) |
 | 🎮 | [**Forge**](https://github.com/BartoszOsiej/Factorio-web-game) | Factorio-style factory builder fully playable in browser | [npm](https://www.npmjs.com/package/novactorio) |
-| 📚 | [**TeleWiedza**](https://github.com/BartoszOsiej/teleinformatyka-wikipedia) | PL/EN telecom encyclopedia — networking, 5G, fiber, security | [docs](https://bartoszosiej.github.io/Docs/) |
+| 📚 | [**TeleWiedza**](https://github.com/BartoszOsiej/TeleWiedza) | PL/EN telecom encyclopedia — networking, 5G, fiber, security | [docs](https://bartoszosiej.github.io/Docs/) |
 
 </details>
 
@@ -153,7 +153,7 @@ flowchart LR
 |---|---|
 | **▶ [Externum Playground](https://bartoszosiej.github.io/externum/)** | The programming language running 100% in your browser (Pyodide). Write programs, hot-load your own modules into the live runtime, compile to Python/Bash/binary. Sessions shareable by URL. |
 | **🧬 `/define`** | Comment on an issue → the bot validates your module against Externum's type checker → opens a PR into the stdlib → once merged, `import` works for everyone including the web playground. [The language evolves from comments.](https://github.com/BartoszOsiej/externum/issues/7) |
-| **🎮 `/run`** | [Comment on cybersec-tools](https://github.com/BartoszOsiej/cybersec-tools/issues/10) → the bot builds the workspace in CI and executes the real binaries with sandboxed guardrails, posting output back. |
+| **🎮 `/run`** | [Comment on cybersec-tools](https://github.com/BartoszOsiej/CyberForge/issues/10) → the bot builds the workspace in CI and executes the real binaries with sandboxed guardrails, posting output back. |
 | **🔏 `./verify.sh v0.4.5`** | One command verifies SLSA provenance + Sigstore signatures + SBOM of any release. No trust required. |
 
 ### ⚡ One-command install — like real CLI tools
@@ -189,11 +189,11 @@ scoop install netrecon hashsleuth
 <div align="center">
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://github.com/BartoszOsiej/BartoszOsiej/blob/main/LICENSE)
-[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/cybersec-tools/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/cybersec-tools)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/CyberForge/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/CyberForge)
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/talus-process-monitor/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/talus-process-monitor)
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/NV2_ENGINE/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/NV2_ENGINE)
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/externum/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/externum)
-[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/FastAPI-url/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/FastAPI-url)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/Shortlink/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/Shortlink)
 
 </div>
 
@@ -213,7 +213,7 @@ cosign verify ghcr.io/bartoszosiej/cybersec-tools \
 
 # verify binary build provenance
 gh attestation verify netrecon-x86_64-unknown-linux-gnu \
-  -R BartoszOsiej/cybersec-tools
+  -R BartoszOsiej/CyberForge
 ```
 
 ---
