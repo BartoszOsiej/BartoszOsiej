@@ -3,18 +3,18 @@
 <rect width="480" height="196" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
 <rect width="480" height="34" rx="12" fill="url(#g)" opacity="0.18"/>
 <text x="16" y="22" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#e6edf3">LIVE PACKAGE METRICS</text>
-<text x="466" y="22" text-anchor="end" font-family="monospace" font-size="10" fill="#8b949e">2026-08-30 00:24 UTC</text>
+<text x="466" y="22" text-anchor="end" font-family="monospace" font-size="10" fill="#8b949e">2026-08-30 06:24 UTC</text>
 <circle cx="20" cy="60" r="3.5" fill="#a371f7"/>
 <text x="32" y="64" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e">npm</text>
 <text x="464" y="64" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#e6edf3">1.0k</text>
 <circle cx="20" cy="86" r="3.5" fill="#39c5cf"/>
 <text x="32" y="90" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e">PyPI</text>
-<text x="464" y="90" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#e6edf3">0</text>
+<text x="464" y="90" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#e6edf3">261</text>
 <circle cx="20" cy="112" r="3.5" fill="#f778ba"/>
 <text x="32" y="116" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e">crates.io</text>
 <text x="464" y="116" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#e6edf3">122</text>
 <circle cx="20" cy="138" r="3.5" fill="#8b949e"/>
 <text x="32" y="142" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e">GitHub releases</text>
-<text x="464" y="142" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#e6edf3">575</text>
-<g transform="translate(330,40)"><polyline points="2.0,34.8 18.2,18.0 34.5,15.5 50.8,13.7 67.0,11.5 83.2,14.3 99.5,8.9 115.8,6.0 132.0,9.6" fill="none" stroke="#a371f7" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><polygon points="2,42 2.0,34.8 18.2,18.0 34.5,15.5 50.8,13.7 67.0,11.5 83.2,14.3 99.5,8.9 115.8,6.0 132.0,9.6 132,42" fill="#a371f7" opacity="0.12"/></g>
+<text x="464" y="142" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#e6edf3">613</text>
+<g transform="translate(330,40)"><polyline points="2.0,35.0 18.2,19.0 34.5,16.7 50.8,15.0 67.0,12.9 83.2,15.5 99.5,10.4 115.8,7.7 132.0,6.0" fill="none" stroke="#a371f7" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><polygon points="2,42 2.0,35.0 18.2,19.0 34.5,16.7 50.8,15.0 67.0,12.9 83.2,15.5 99.5,10.4 115.8,7.7 132.0,6.0 132,42" fill="#a371f7" opacity="0.12"/></g>
 </svg>
