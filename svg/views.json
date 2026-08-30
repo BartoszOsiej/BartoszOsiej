@@ -965,8 +965,100 @@
     "count": 0,
     "uniques": 0
    }
+  },
+  "2026-08-28": {
+   "halcyon-process-monitor": {
+    "count": 3,
+    "uniques": 3
+   },
+   "cybersec-tools": {
+    "count": 0,
+    "uniques": 0
+   },
+   "NV2_ENGINE": {
+    "count": 0,
+    "uniques": 0
+   },
+   "externum": {
+    "count": 0,
+    "uniques": 0
+   },
+   "FastAPI-url": {
+    "count": 0,
+    "uniques": 0
+   },
+   "AURORA-OS": {
+    "count": 0,
+    "uniques": 0
+   },
+   "n2-mesh": {
+    "count": 0,
+    "uniques": 0
+   },
+   "prompt-inbox": {
+    "count": 0,
+    "uniques": 0
+   },
+   "Portfolio": {
+    "count": 0,
+    "uniques": 0
+   },
+   "Docs": {
+    "count": 0,
+    "uniques": 0
+   },
+   "BartoszOsiej": {
+    "count": 0,
+    "uniques": 0
+   }
+  },
+  "2026-08-29": {
+   "halcyon-process-monitor": {
+    "count": 4,
+    "uniques": 2
+   },
+   "cybersec-tools": {
+    "count": 0,
+    "uniques": 0
+   },
+   "NV2_ENGINE": {
+    "count": 0,
+    "uniques": 0
+   },
+   "externum": {
+    "count": 0,
+    "uniques": 0
+   },
+   "FastAPI-url": {
+    "count": 0,
+    "uniques": 0
+   },
+   "AURORA-OS": {
+    "count": 0,
+    "uniques": 0
+   },
+   "n2-mesh": {
+    "count": 1,
+    "uniques": 1
+   },
+   "prompt-inbox": {
+    "count": 1,
+    "uniques": 1
+   },
+   "Portfolio": {
+    "count": 11,
+    "uniques": 1
+   },
+   "Docs": {
+    "count": 0,
+    "uniques": 0
+   },
+   "BartoszOsiej": {
+    "count": 1,
+    "uniques": 1
+   }
   }
  },
- "total": 306,
- "uniques": 79
+ "total": 327,
+ "uniques": 88
 }
