@@ -191,11 +191,6 @@ scoop install netrecon hashsleuth
 <div align="center">
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://github.com/BartoszOsiej/BartoszOsiej/blob/main/LICENSE)
-[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/CyberForge/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/CyberForge)
-[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/talus-process-monitor/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/talus-process-monitor)
-[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/NV2_ENGINE/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/NV2_ENGINE)
-[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/externum/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/externum)
-[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BartoszOsiej/Shortlink/badge)](https://scorecard.dev/viewer/?uri=github.com/BartoszOsiej/Shortlink)
 
 </div>
 
