@@ -296,12 +296,6 @@ third-party renderers: every pixel comes from my own pipeline.*
   <img width="70%" src="https://streak-stats.demolab.com/?user=BartoszOsiej&hide_border=true" />
 </picture>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=BartoszOsiej&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=c9d1d9&line=58a6ff&point=F0883E" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=BartoszOsiej&theme=minimal&hide_border=true&bg_color=f6f8fa&color=24292f&line=0969da&point=D4A017" />
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=BartoszOsiej&hide_border=true" />
-</picture>
-
 ---
 
 ## 🗺️ Timeline
