@@ -5,13 +5,15 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&repeat=true&width=700&height=50&lines=Kernel-level+tooling+in+Rust+%F0%9F%A6%80;eBPF+%C2%B7+RISC-V+bare-metal+%C2%B7+no_std;Compilers+%C2%B7+post-quantum+crypto;Upstream+aya-rs+contributor+%F0%9F%A4%AC;14+packages+across+4+registries+%F0%9F%93%A6)](https://github.com/BartoszOsiej)
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-bartoszosiej.github.io-1a1a2e?style=for-the-badge&logo=firefox&logoColor=white)](https://bartoszosiej.github.io/Portfolio/)
+[![Books](https://img.shields.io/badge/The_Thread_Calls-Crime_Horror-9c1e1a?style=for-the-badge&logo=amazondotcom&logoColor=white)](https://bartoszosiej.github.io/thethreadcalls/)
+[![DEV](https://img.shields.io/badge/dev.to-bartoszosiej-000?style=for-the-badge&logo=devdotto&logoColor=white)](https://dev.to/bartoszosiej)
 [![Email](https://img.shields.io/badge/mmc29213@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mmc29213@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Bartosz_Osiej-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bartoszosiej2007/)
 
 </div>
 
 > [!IMPORTANT]
-> **19 y/o · Poland · open to first paid role** — remote/hybrid, junior systems/backend.
+> **19 y/o · Poland · open to first paid role** — remote/hybrid, junior systems/backend. Author of [*The Stitcher Trilogy*](https://bartoszosiej.github.io/thethreadcalls/) (crime horror).
 > Everything below is *deployed infrastructure*, not tutorials: 15 repositories, every one with CI/CD, releases with binaries, Docker images and published packages. Upstream aya-rs contributor.
 
 ---
