@@ -52,11 +52,11 @@ eBPF endpoint security agent — kernel-level `execve`/`openat`/`connect` tracin
 
 ### 🎮 [NV2_ENGINE](https://github.com/BartoszOsiej/NV2_ENGINE) — *VIVIA*
 
-Neural voxel engine with MLP terrain generation, multiplayer over TCP, Epic Games Store integration. Published as a crate.
+Voxel survival engine with NASA POWER real-climate worlds and an embedded MeMLP neural network. EGS submission kit ready — published as `nv2_engine` on crates.io.
 
 **▶ [Landing page](https://bartoszosiej.github.io/NV2_ENGINE/)**
 
-`Rust` `wgpu` `MLP` `TCP`
+`Rust` `wgpu` `MeMLP` `NASA-climate`
 
 [![crates.io](https://img.shields.io/crates/v/nv2_engine?style=flat-square&logo=rust)](https://crates.io/crates/nv2_engine) [![GHCR](https://img.shields.io/badge/GHCR-image-2496ED?style=flat-square&logo=docker)](https://github.com/BartoszOsiej/NV2_ENGINE/pkgs/container/nv2_engine) [![binary](https://img.shields.io/badge/release-binary-8A2BE2?style=flat-square)](https://github.com/BartoszOsiej/NV2_ENGINE/releases)
 
