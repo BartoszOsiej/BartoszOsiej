@@ -3,18 +3,18 @@
 <rect width="480" height="196" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
 <rect width="480" height="34" rx="12" fill="url(#g)" opacity="0.18"/>
 <text x="16" y="22" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#e6edf3">LIVE PACKAGE METRICS</text>
-<text x="466" y="22" text-anchor="end" font-family="monospace" font-size="10" fill="#8b949e">2026-09-14 05:02 UTC</text>
+<text x="466" y="22" text-anchor="end" font-family="monospace" font-size="10" fill="#8b949e">2026-09-14 12:56 UTC</text>
 <circle cx="20" cy="60" r="3.5" fill="#a371f7"/>
 <text x="32" y="64" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e">npm</text>
 <text x="464" y="64" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#e6edf3">1.1k</text>
 <circle cx="20" cy="86" r="3.5" fill="#39c5cf"/>
 <text x="32" y="90" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e">PyPI</text>
-<text x="464" y="90" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#e6edf3">279</text>
+<text x="464" y="90" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#e6edf3">143</text>
 <circle cx="20" cy="112" r="3.5" fill="#f778ba"/>
 <text x="32" y="116" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e">crates.io</text>
 <text x="464" y="116" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#e6edf3">123</text>
 <circle cx="20" cy="138" r="3.5" fill="#8b949e"/>
 <text x="32" y="142" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e">GitHub releases</text>
 <text x="464" y="142" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#e6edf3">2.5k</text>
-<g transform="translate(330,40)"><polyline points="2.0,36.4 7.7,28.3 13.3,27.2 19.0,26.3 24.6,25.2 30.3,26.6 35.9,23.9 41.6,22.6 47.2,22.2 52.9,22.1 58.5,19.9 64.2,17.7 69.8,17.7 75.5,15.5 81.1,15.4 86.8,14.2 92.4,13.6 98.1,11.4 103.7,9.1 109.4,10.1 115.0,8.0 120.7,7.6 126.3,6.1 132.0,6.0" fill="none" stroke="#a371f7" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><polygon points="2,42 2.0,36.4 7.7,28.3 13.3,27.2 19.0,26.3 24.6,25.2 30.3,26.6 35.9,23.9 41.6,22.6 47.2,22.2 52.9,22.1 58.5,19.9 64.2,17.7 69.8,17.7 75.5,15.5 81.1,15.4 86.8,14.2 92.4,13.6 98.1,11.4 103.7,9.1 109.4,10.1 115.0,8.0 120.7,7.6 126.3,6.1 132.0,6.0 132,42" fill="#a371f7" opacity="0.12"/></g>
+<g transform="translate(330,40)"><polyline points="2.0,36.4 7.7,28.3 13.3,27.1 19.0,26.2 24.6,25.2 30.3,26.5 35.9,23.9 41.6,22.5 47.2,22.1 52.9,22.0 58.5,19.9 64.2,17.6 69.8,17.6 75.5,15.4 81.1,15.3 86.8,14.1 92.4,13.5 98.1,11.3 103.7,9.0 109.4,10.0 115.0,7.9 120.7,7.5 126.3,6.0 132.0,6.9" fill="none" stroke="#a371f7" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><polygon points="2,42 2.0,36.4 7.7,28.3 13.3,27.1 19.0,26.2 24.6,25.2 30.3,26.5 35.9,23.9 41.6,22.5 47.2,22.1 52.9,22.0 58.5,19.9 64.2,17.6 69.8,17.6 75.5,15.4 81.1,15.3 86.8,14.1 92.4,13.5 98.1,11.3 103.7,9.0 109.4,10.0 115.0,7.9 120.7,7.5 126.3,6.0 132.0,6.9 132,42" fill="#a371f7" opacity="0.12"/></g>
 </svg>
