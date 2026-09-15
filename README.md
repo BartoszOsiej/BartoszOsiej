@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&repeat=true&width=700&height=50&lines=Kernel-level+tooling+in+Rust+%F0%9F%A6%80;eBPF+%C2%B7+RISC-V+bare-metal+%C2%B7+no_std;Compilers+%C2%B7+post-quantum+crypto;Upstream+aya-rs+contributor+%F0%9F%A4%AC;14+packages+across+4+registries+%F0%9F%93%A6)](https://github.com/BartoszOsiej)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&repeat=true&width=700&height=50&lines=Kernel-level+tooling+in+Rust+%F0%9F%A6%80;eBPF+%C2%B7+RISC-V+bare-metal+%C2%B7+no_std;Compilers+%C2%B7+post-quantum+crypto;3+PRs+open+in+aya-rs%2Fbook+%F0%9F%A4%AC;14+packages+across+4+registries+%F0%9F%93%A6)](https://github.com/BartoszOsiej)
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-bartoszosiej.github.io-1a1a2e?style=for-the-badge&logo=firefox&logoColor=white)](https://bartoszosiej.github.io/Portfolio/)
 [![Books](https://img.shields.io/badge/The_Thread_Calls-Crime_Horror-9c1e1a?style=for-the-badge&logo=amazondotcom&logoColor=white)](https://bartoszosiej.github.io/thethreadcalls/)
@@ -14,7 +14,7 @@
 
 > [!IMPORTANT]
 > **19 y/o · Poland · open to first paid role** — remote/hybrid, junior systems/backend. Author of [*The Stitcher Trilogy*](https://bartoszosiej.github.io/thethreadcalls/) (crime horror).
-> Everything below is *deployed infrastructure*, not tutorials: 15 repositories, every one with CI/CD, releases with binaries, Docker images and published packages. Upstream aya-rs contributor.
+> Everything below is *deployed infrastructure*, not tutorials: 24 public repositories, every active one with CI/CD, releases with binaries, Docker images and published packages. 3 PRs open upstream in aya-rs/book.
 
 ---
 
@@ -119,7 +119,7 @@ Technical documentation site — architecture guides, API reference, deployment 
 | 🌐 | [**Meshcore**](https://github.com/BartoszOsiej/Meshcore) | Serverless P2P chat — WebRTC + MQTT signaling, zero dependencies | [npm](https://www.npmjs.com/package/n2-mesh) |
 | 🔗 | [**Shortlink**](https://github.com/BartoszOsiej/Shortlink) | URL shortener — JWT auth, click tracking, React dashboard | [PyPI](https://pypi.org/project/fastapi-url/) |
 | 🎯 | [**Promptbox**](https://github.com/BartoszOsiej/Promptbox) | Remote prompt inbox for AI agents — mobile-first, zero backend | [npm](https://www.npmjs.com/package/prompt-inbox) |
-| 🎮 | [**Forge**](https://github.com/BartoszOsiej/Factorio-web-game) | Factorio-style factory builder fully playable in browser | [npm](https://www.npmjs.com/package/novactorio) |
+| 🎮 | [**Forge**](https://github.com/BartoszOsiej/Factorio-web-game) | Factory builder playable in browser — own codebase inspired by Factorio, 50+ commits of original systems | [npm](https://www.npmjs.com/package/novactorio) |
 | 📚 | [**TeleWiedza**](https://github.com/BartoszOsiej/TeleWiedza) | PL/EN telecom encyclopedia — networking, 5G, fiber, security | [docs](https://bartoszosiej.github.io/Docs/) |
 
 </details>
@@ -132,20 +132,20 @@ Technical documentation site — architecture guides, API reference, deployment 
 flowchart LR
     T["git tag"] --> CI["GitHub Actions"]
     CI --> D["Docker multi-stage"]
-    D --> G["GHCR: 11 images"]
+    D --> G["GHCR: signed images"]
     CI --> B["cargo release build"]
     B --> R["Release + binaries"]
     CI --> P["Registry publish"]
-    P --> C["crates.io: 6 crates"]
+    P --> C["crates.io: 7 crates"]
     P --> Y["PyPI: 2 packages"]
     P --> N["npm: 6 packages"]
 ```
 
 <div align="center">
 
-| 🐳 GHCR images | 🦀 crates.io | 🐍 PyPI | 🟢 npm | 📋 Repos with CI/CD |
+| 🐳 GHCR images | 🦀 crates.io | 🐍 PyPI | 🟢 npm | 📦 Public repos |
 |:--------------:|:------------:|:-------:|:------:|:----------------------:|
-| **13** | **8** | **2** | **6** | **15 / 15** |
+| **signed & live** | **7** | **2** | **6** | **24 (21 own)** |
 
 </div>
 
@@ -250,12 +250,12 @@ gh attestation verify netrecon-x86_64-unknown-linux-gnu \
 
 | Practice | Coverage |
 |----------|:--------:|
-| CodeQL security scanning | ✅ 15/15 |
-| Dependabot + vulnerability alerts | ✅ 15/15 |
-| Branch protection + squash-merge history | ✅ 15/15 |
+| CodeQL security scanning | ✅ every active repo |
+| Dependabot + vulnerability alerts | ✅ every active repo |
+| Branch protection + squash-merge history | ✅ every active repo |
 | Public sprint boards + milestones | ✅ 6 boards |
-| Discussions, CONTRIBUTING, SECURITY, CoC | ✅ 15/15 |
-| MIT licensing, topics, descriptions | ✅ 15/15 |
+| Discussions, CONTRIBUTING, SECURITY, CoC | ✅ every active repo |
+| MIT licensing, topics, descriptions | ✅ every active repo |
 
 ---
 
@@ -296,12 +296,12 @@ third-party renderers: every pixel comes from my own pipeline.*
 ## 🗺️ Timeline
 
 ```
-2021 ──► first lines of code — Java, CryEngine, Minecraft mechanics
+2021 ──► first lines of code — Java, CryEngine, Minecraft mechanics (@ghost0development)
 2025 ──► networking & security track (teleinformatyka)
 2026 Q1 ──► Rust deep dive: voxel engine, eBPF kernel probes, compiler from scratch
 2026 Q2 ──► production CI/CD: Actions → GHCR → crates.io / PyPI / npm, 14 packages live
 2026 Q3 ──► ecosystem upgrade: aya 0.14, ureq 3, ml-kem 0.3, dashmap 6, RISC-V bare-metal (Fortis)
-2026 Q4 ──► upstream PRs to aya-rs shipped, first paid role 🎯
+2026 Q4 ──► upstream PRs to aya-rs merged, first paid role 🎯
 ```
 
 ---
@@ -310,9 +310,9 @@ third-party renderers: every pixel comes from my own pipeline.*
 
 | Target | PR type | Status |
 |--------|---------|--------|
-| [aya-rs/book](https://github.com/aya-rs/book) | Fix outdated `offset_of!` tip in Parsing Packets page (issue #202) | Prepared |
-| [aya-rs/book](https://github.com/aya-rs/book) | Add typos spellcheck CI (issue #91) | Prepared |
-| [aya-rs/book](https://github.com/aya-rs/book) | Update deprecated `aya::Bpf` references + MAP API note (issue #73) | Prepared |
+| [aya-rs/book](https://github.com/aya-rs/book) | Fix outdated `offset_of!` tip in Parsing Packets page (issue #202) | [PR open](https://github.com/aya-rs/book/pulls?q=is%3Apr+author%3ABartoszOsiej) |
+| [aya-rs/book](https://github.com/aya-rs/book) | Add typos spellcheck CI (issue #91) | [PR open](https://github.com/aya-rs/book/pulls?q=is%3Apr+author%3ABartoszOsiej) |
+| [aya-rs/book](https://github.com/aya-rs/book) | Update deprecated `aya::Bpf` references + MAP API note (issue #73) | [PR open](https://github.com/aya-rs/book/pulls?q=is%3Apr+author%3ABartoszOsiej) |
 
 > All PRs based on real-world experience upgrading talus-process-monitor to aya 0.14.
 
@@ -320,7 +320,19 @@ third-party renderers: every pixel comes from my own pipeline.*
 
 ## 🌐 Also here
 
-- **[`ghost0development`](https://github.com/ghost0development)** — archived account (2021-2025); 31 repos, now superseded by this account
+- **[`ghost0development`](https://github.com/ghost0development)** — my original account, building since **Feb 2021**: 32 repos of early experiments, game prototypes and the original `halcyon-process-monitor` (ancestor of Talus). Everything archived there is preserved as history — active development happens on this account.
+
+<details>
+<summary><b>🗂️ Where the ideas came from (archive → production)</b></summary>
+
+| Archive — @ghost0development (2021–2025) | Production — @BartoszOsiej (2026–) |
+|---|---|
+| `halcyon-process-monitor` — first eBPF probe | [Talus](https://github.com/BartoszOsiej/talus-process-monitor) — eBPF endpoint security, on crates.io |
+| `NV-2.0` / `NV2_ENGINE` — voxel prototypes | [NV2_ENGINE](https://github.com/BartoszOsiej/NV2_ENGINE) — VIVIA engine, on crates.io |
+| `Factorio-web-game` / `Factorio-pt` — game experiments | [Forge](https://github.com/BartoszOsiej/Factorio-web-game) — factory builder on npm |
+| `FastAPI-url` — first FastAPI service | [Shortlink](https://github.com/BartoszOsiej/Shortlink) — on PyPI as `fastapi-url` |
+
+</details>
 
 ---
 
