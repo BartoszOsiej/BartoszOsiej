@@ -90,7 +90,7 @@ Four security tools as one workspace — port scanner, web scanner, hash cracker
 
 Post-quantum file encryption CLI — ML-KEM-768 key exchange + AES-256-GCM + HKDF. NIST FIPS 203 compliant, fuzz-tested.
 
-**▶ [Landing page](https://bartoszosiej.github.io/pqguard/)**
+**▶ [Landing page](https://bartoszosiej.github.io/quantum-shield/)**
 
 `Rust` `Cryptography` `NIST`
 
