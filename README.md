@@ -7,6 +7,7 @@
 [![Portfolio](https://img.shields.io/badge/Portfolio-bartoszosiej.github.io-1a1a2e?style=for-the-badge&logo=firefox&logoColor=white)](https://bartoszosiej.github.io/Portfolio/)
 [![Books](https://img.shields.io/badge/The_Thread_Calls-Crime_Horror-9c1e1a?style=for-the-badge&logo=amazondotcom&logoColor=white)](https://bartoszosiej.github.io/thethreadcalls/)
 [![DEV](https://img.shields.io/badge/dev.to-bartoszosiej-000?style=for-the-badge&logo=devdotto&logoColor=white)](https://dev.to/bartoszosiej)
+[![Writing](https://img.shields.io/badge/Writing-technical_articles-1a1a2e?style=for-the-badge&logo=writeforus&logoColor=white)](https://bartoszosiej.github.io/writing/)
 [![Email](https://img.shields.io/badge/mmc29213@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mmc29213@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Bartosz_Osiej-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bartoszosiej2007/)
 
@@ -123,6 +124,17 @@ Technical documentation site — architecture guides, API reference, deployment 
 | 📚 | [**TeleWiedza**](https://github.com/BartoszOsiej/TeleWiedza) | PL/EN telecom encyclopedia — networking, 5G, fiber, security | [docs](https://bartoszosiej.github.io/Docs/) |
 
 </details>
+
+---
+
+## 📝 Technical Writing
+
+Publiczne artykuły o tym, jak działają rzeczy na niskim poziomie — z kodem, nie z marketingiem.
+
+- **[Detecting ransomware with eBPF in Rust](https://bartoszosiej.github.io/content/ebpf-ransomware-everything)** *(2026-09-16)* — tutorial: tracepointy `execve`/`openat`, per-CPU perf buffers, sliding-window detection, automated SIGKILL. Kod źródłowy: talus-process-monitor.
+- **[Catching ransomware with eBPF: what execve/openat tracing taught me about false positives](https://bartoszosiej.github.io/content/ebpf-ransomware-monitor-lessons)** *(2026-09-13)* — deep-dive: behavioral tracing, scoring without false positives, lessons from production-grade builds.
+
+*Writing for: Draft.dev · Corellium · Honeybadger · Mattermost · Vultr · Semaphore · SigNoz · Edge Network.* → [wszystkie writing samples](https://bartoszosiej.github.io/writing/)
 
 ---
 
