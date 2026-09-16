@@ -110,6 +110,19 @@ Technical documentation site — architecture guides, API reference, deployment 
 </td></tr>
 </table>
 
+---
+
+## 📝 Technical Writing
+
+Publiczne artykuły o tym, jak działają rzeczy na niskim poziomie — z kodem, nie z marketingiem.
+
+- **[Detecting ransomware with eBPF in Rust](https://bartoszosiej.github.io/content/ebpf-ransomware-everything)** *(2026-09-16)* — tutorial: tracepointy `execve`/`openat`, per-CPU perf buffers, sliding-window detection, automated SIGKILL. Kod źródłowy: talus-process-monitor.
+- **[Catching ransomware with eBPF: what execve/openat tracing taught me about false positives](https://bartoszosiej.github.io/content/ebpf-ransomware-monitor-lessons)** *(2026-09-13)* — deep-dive: behavioral tracing, scoring without false positives, lessons from production-grade builds.
+
+*Writing for: Draft.dev · Corellium · Honeybadger · Mattermost · Vultr · Semaphore · SigNoz · Edge Network.* → [wszystkie writing samples](https://bartoszosiej.github.io/writing/)
+
+---
+
 <details>
 <summary><b>📦 More projects (click to expand)</b></summary>
 
@@ -124,17 +137,6 @@ Technical documentation site — architecture guides, API reference, deployment 
 | 📚 | [**TeleWiedza**](https://github.com/BartoszOsiej/TeleWiedza) | PL/EN telecom encyclopedia — networking, 5G, fiber, security | [docs](https://bartoszosiej.github.io/Docs/) |
 
 </details>
-
----
-
-## 📝 Technical Writing
-
-Publiczne artykuły o tym, jak działają rzeczy na niskim poziomie — z kodem, nie z marketingiem.
-
-- **[Detecting ransomware with eBPF in Rust](https://bartoszosiej.github.io/content/ebpf-ransomware-everything)** *(2026-09-16)* — tutorial: tracepointy `execve`/`openat`, per-CPU perf buffers, sliding-window detection, automated SIGKILL. Kod źródłowy: talus-process-monitor.
-- **[Catching ransomware with eBPF: what execve/openat tracing taught me about false positives](https://bartoszosiej.github.io/content/ebpf-ransomware-monitor-lessons)** *(2026-09-13)* — deep-dive: behavioral tracing, scoring without false positives, lessons from production-grade builds.
-
-*Writing for: Draft.dev · Corellium · Honeybadger · Mattermost · Vultr · Semaphore · SigNoz · Edge Network.* → [wszystkie writing samples](https://bartoszosiej.github.io/writing/)
 
 ---
 
