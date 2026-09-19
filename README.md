@@ -10,6 +10,7 @@
 [![Writing](https://img.shields.io/badge/Writing-technical_articles-1a1a2e?style=for-the-badge&logo=writeforus&logoColor=white)](https://bartoszosiej.github.io/writing/)
 [![Email](https://img.shields.io/badge/mmc29213@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mmc29213@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Bartosz_Osiej-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bartoszosiej2007/)
+[![Telegram](https://img.shields.io/badge/Telegram-hartwell__info-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/hartwell_info)
 
 </div>
 
