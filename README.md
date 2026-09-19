@@ -14,7 +14,7 @@
 </div>
 
 > [!IMPORTANT]
-> **19 y/o · Poland · open to first paid role** — remote/hybrid, junior systems/backend. Author of [*The Stitcher Trilogy*](https://bartoszosiej.github.io/thethreadcalls/) (crime horror).
+> **19 y/o · Poland · open to first paid role** — remote/hybrid, junior systems/backend. My article on eBPF ransomware detection is **accepted on LinuxSecurity** (publication Sep 22–26) — technical writing samples on request. Author of [*The Stitcher Trilogy*](https://bartoszosiej.github.io/thethreadcalls/) (crime horror).
 > Everything below is *deployed infrastructure*, not tutorials: 24 public repositories, every active one with CI/CD, releases with binaries, Docker images and published packages. 3 PRs open upstream in aya-rs/book.
 
 ---
