@@ -66,7 +66,7 @@ Voxel survival engine with NASA POWER real-climate worlds and an embedded MeMLP 
 
 ### ⚡ [externum](https://github.com/BartoszOsiej/externum)
 
-Programming language built from scratch — compiles to Python, Bash and native binary. Ownership, traits, macros. 192-test suite, on PyPI since v2.
+Programming language built from scratch — compiles to Python, Bash and native binary. Ownership, traits, macros. 307-test suite, on PyPI since v2.
 
 **▶ [Run it in your browser — and extend the language live](https://bartoszosiej.github.io/externum/)**
 
