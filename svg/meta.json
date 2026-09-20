@@ -1,10 +1,10 @@
 {
- "updated": "2026-09-20 04:58 UTC",
+ "updated": "2026-09-20 11:31 UTC",
  "totals": {
-  "npm": 1138,
+  "npm": 410,
   "pypi": 469,
   "crates": 124,
-  "gh": 2670
+  "gh": 2677
  },
  "crates_all_time": 124,
  "packages": {
@@ -30,7 +30,7 @@
   ]
  },
  "profile_views": {
-  "total": 528,
-  "uniques": 195
+  "total": 562,
+  "uniques": 218
  }
 }
