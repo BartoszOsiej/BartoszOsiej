@@ -108,6 +108,18 @@ Technical documentation site — architecture guides, API reference, deployment 
 
 [![npm](https://img.shields.io/npm/v/bartosz-osiej-docs?style=flat-square&logo=nodedotjs)](https://www.npmjs.com/package/bartosz-osiej-docs) [![Deploy](https://img.shields.io/badge/Deploy-live-green?style=flat-square)](https://bartoszosiej.github.io/Docs/)
 
+</td><td valign="top" width="50%">
+
+### 🪙 [pqbit](https://github.com/BartoszOsiej/pqbit)
+
+**Post-quantum Bitcoin from genesis** — fair-launch UTXO chain with *only* NIST PQ signatures (ML-DSA-44 / SLH-DSA, FIPS 204/205), no ECDSA ever. Gossiping p2p network, PQ-validated mempool, continuous mining. Genesis parameters in public review; grant application filed (NGI Zero / NLnet, decision Nov 2026).
+
+**▶ [Landing](https://bartoszosiej.github.io/pqbit/)** · **▶ [GENESIS.md — open review](https://github.com/BartoszOsiej/pqbit/blob/master/GENESIS.md)**
+
+`Rust` `Post-quantum` `Bitcoin research` `p2p`
+
+[![CI](https://img.shields.io/github/actions/workflow/status/BartoszOsiej/pqbit/ci.yml?branch=master&style=flat-square&logo=githubactions&label=ci)](https://github.com/BartoszOsiej/pqbit/actions) [![tests](https://img.shields.io/badge/tests-23%2F23-brightgreen?style=flat-square)](https://github.com/BartoszOsiej/pqbit) [![landing](https://img.shields.io/badge/▶_LANDING-live-8A2BE2?style=flat-square)](https://bartoszosiej.github.io/pqbit/)
+
 </td></tr>
 </table>
 
