@@ -370,6 +370,6 @@ third-party renderers: every pixel comes from my own pipeline.*
 
 *Open to work — [`mmc29213@gmail.com`](mailto:mmc29213@gmail.com)*
 
-**PRODUCTS** — [Talus Enterprise Pack · $50](https://buy.polar.sh/polar_cl_E577BTilme4dnUFsfbG0aE4qo7QILaugmEjsA0oajKK) (eBPF ransomware EDR: deployment guide + support) · [Externum Pro Pack · $29](https://buy.polar.sh/polar_cl_qR2GOfEhXRqlTlPICwyo8XVqKkXjv4mj15cq926Dh1F) (production guide for the language) — code always MIT & free
+**PRODUCTS** — [Talus Enterprise Pack · $50](https://buy.polar.sh/polar_cl_E577BTilme4dnUFsfbG0aE4qo7QILaugmEjsA0oajKK) (eBPF ransomware EDR: deployment guide + support) · [Externum Pro Pack · $29](https://buy.polar.sh/polar_cl_qR2GOfEhXRqlTlPICwyo8XVqKkXjv4mj15cq926Dh1F) (production guide for the language) · [Support Session · $150](https://polar.sh/checkout/polar_c_rGI15C7IzCs54qElT4NJ5aLj7o3p7Uxdj4P4T1OtUsU) (60-min deploy call + written config) — code always MIT & free
 
 </div>
