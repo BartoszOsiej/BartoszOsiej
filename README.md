@@ -4,6 +4,7 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&repeat=true&width=700&height=50&lines=Kernel-level+tooling+in+Rust+%F0%9F%A6%80;eBPF+%C2%B7+RISC-V+bare-metal+%C2%B7+no_std;Compilers+%C2%B7+post-quantum+crypto;3+PRs+open+in+aya-rs%2Fbook+%F0%9F%A4%AC;14+packages+across+4+registries+%F0%9F%93%A6)](https://github.com/BartoszOsiej)
 
+[![Hartwell Labs](https://img.shields.io/badge/Founder_%26_CEO-Hartwell_Labs-F15A24?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hartwell-Labs)
 [![Portfolio](https://img.shields.io/badge/Portfolio-bartoszosiej.github.io-1a1a2e?style=for-the-badge&logo=firefox&logoColor=white)](https://bartoszosiej.github.io/Portfolio/)
 [![Books](https://img.shields.io/badge/The_Thread_Calls-Crime_Horror-9c1e1a?style=for-the-badge&logo=amazondotcom&logoColor=white)](https://bartoszosiej.github.io/thethreadcalls/)
 [![DEV](https://img.shields.io/badge/dev.to-bartoszosiej-000?style=for-the-badge&logo=devdotto&logoColor=white)](https://dev.to/bartoszosiej)
@@ -15,6 +16,7 @@
 </div>
 
 > [!IMPORTANT]
+> **Founder & CEO of [Hartwell Labs](https://github.com/Hartwell-Labs)** — independent engineering lab: eBPF security systems, programming languages and tools, all open source (MIT).
 > **19 y/o · Poland · open to first paid role** — remote/hybrid, junior systems/backend. My article on eBPF ransomware detection is **accepted on LinuxSecurity** (publication Sep 22–26) — technical writing samples on request. Author of [*The Stitcher Trilogy*](https://bartoszosiej.github.io/thethreadcalls/) (crime horror).
 > **Launch week (Sep 22-29):** [Externum on DevHunt](https://devhunt.org/tool/externum) | new: [Talus Field Guide](https://bartoszosiej.github.io/talus-process-monitor/field-guide.html) - deployment & tuning playbook.
 > Everything below is *deployed infrastructure*, not tutorials: 24 public repositories, every active one with CI/CD, releases with binaries, Docker images and published packages. 3 PRs open upstream in aya-rs/book.
