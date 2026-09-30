@@ -18,7 +18,7 @@
 > [!IMPORTANT]
 > **Founder & CEO of [Hartwell Labs](https://github.com/Hartwell-Labs)** — independent engineering lab: eBPF security systems, programming languages and tools, all open source (MIT).
 > **19 y/o · Poland · open to first paid role** — remote/hybrid, junior systems/backend. My article on eBPF ransomware detection is **accepted on LinuxSecurity** (publication Sep 22–26) — technical writing samples on request. Author of [*The Stitcher Trilogy*](https://bartoszosiej.github.io/thethreadcalls/) (crime horror).
-> **Launch week (Sep 22-29):** [Externum on DevHunt](https://devhunt.org/tool/externum) | new: [Talus Field Guide](https://bartoszosiej.github.io/talus-process-monitor/field-guide.html) - deployment & tuning playbook.
+> **Launch week (Sep 22-29):** [Externum on DevHunt](https://devhunt.org/tool/externum) | new: [Talus Field Guide](https://hartwell-labs.pl/talus-process-monitor/field-guide.html) - deployment & tuning playbook.
 > Everything below is *deployed infrastructure*, not tutorials: 24 public repositories, every active one with CI/CD, releases with binaries, Docker images and published packages. 3 PRs open upstream in aya-rs/book.
 
 ---
@@ -72,11 +72,11 @@ Voxel survival engine with NASA POWER real-climate worlds and an embedded MeMLP 
 
 Programming language built from scratch — compiles to Python, Bash and native binary. Ownership, traits, macros. 307-test suite, on PyPI since v2.
 
-**▶ [Run it in your browser — and extend the language live](https://bartoszosiej.github.io/externum/)**
+**▶ [Run it in your browser — and extend the language live](https://hartwell-labs.pl/externum/)**
 
 `Python` `Compiler design` `PyPI`
 
-[![PyPI](https://img.shields.io/pypi/v/externum?style=flat-square&logo=pypi)](https://pypi.org/project/externum/) [![GHCR](https://img.shields.io/badge/GHCR-image-2496ED?style=flat-square&logo=docker)](https://github.com/BartoszOsiej/externum/pkgs/container/externum) [![Playground](https://img.shields.io/badge/▶_LIVE_PLAYGROUND-extend_it_in_browser-a371f7?style=flat-square)](https://bartoszosiej.github.io/externum/)
+[![PyPI](https://img.shields.io/pypi/v/externum?style=flat-square&logo=pypi)](https://pypi.org/project/externum/) [![GHCR](https://img.shields.io/badge/GHCR-image-2496ED?style=flat-square&logo=docker)](https://github.com/BartoszOsiej/externum/pkgs/container/externum) [![Playground](https://img.shields.io/badge/▶_LIVE_PLAYGROUND-extend_it_in_browser-a371f7?style=flat-square)](https://hartwell-labs.pl/externum/)
 
 </td><td valign="top" width="50%">
 
@@ -95,7 +95,7 @@ Four security tools as one workspace — port scanner, web scanner, hash cracker
 
 Post-quantum file encryption CLI — ML-KEM-768 key exchange + AES-256-GCM + HKDF. NIST FIPS 203 compliant, fuzz-tested.
 
-**▶ [Landing page](https://bartoszosiej.github.io/quantum-shield/)**
+**▶ [Landing page](https://hartwell-labs.pl/quantum-shield/)**
 
 `Rust` `Cryptography` `NIST`
 
@@ -183,7 +183,7 @@ flowchart LR
 
 | | |
 |---|---|
-| **▶ [Externum Playground](https://bartoszosiej.github.io/externum/)** | The programming language running 100% in your browser (Pyodide). Write programs, hot-load your own modules into the live runtime, compile to Python/Bash/binary. Sessions shareable by URL. |
+| **▶ [Externum Playground](https://hartwell-labs.pl/externum/)** | The programming language running 100% in your browser (Pyodide). Write programs, hot-load your own modules into the live runtime, compile to Python/Bash/binary. Sessions shareable by URL. |
 | **🧬 `/define`** | Comment on an issue → the bot validates your module against Externum's type checker → opens a PR into the stdlib → once merged, `import` works for everyone including the web playground. [The language evolves from comments.](https://github.com/BartoszOsiej/externum/issues/7) |
 | **🎮 `/run`** | [Comment on cybersec-tools](https://github.com/BartoszOsiej/CyberForge/issues/10) → the bot builds the workspace in CI and executes the real binaries with sandboxed guardrails, posting output back. |
 | **🔏 `./verify.sh v0.4.5`** | One command verifies SLSA provenance + Sigstore signatures + SBOM of any release. No trust required. |
