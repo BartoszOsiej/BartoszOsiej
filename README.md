@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&repeat=true&width=700&height=50&lines=Kernel-level+tooling+in+Rust+%F0%9F%A6%80;eBPF+%C2%B7+RISC-V+bare-metal+%C2%B7+no_std;Compilers+%C2%B7+post-quantum+crypto;3+PRs+open+in+aya-rs%2Fbook+%F0%9F%A4%AC;14+packages+across+4+registries+%F0%9F%93%A6)](https://github.com/BartoszOsiej)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&repeat=true&width=700&height=50&lines=Kernel-level+tooling+in+Rust+%F0%9F%A6%80;eBPF+%C2%B7+RISC-V+bare-metal+%C2%B7+no_std;Compilers+%C2%B7+post-quantum+crypto;3+PRs+open+in+aya-rs%2Fbook+%F0%9F%9A%80;14+packages+across+4+registries+%F0%9F%93%A6)](https://github.com/BartoszOsiej)
 
 [![Hartwell Labs](https://img.shields.io/badge/Founder_%26_CEO-Hartwell_Labs-F15A24?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hartwell-Labs)
 [![Portfolio](https://img.shields.io/badge/Portfolio-bartoszosiej.github.io-1a1a2e?style=for-the-badge&logo=firefox&logoColor=white)](https://bartoszosiej.github.io/Portfolio/)
