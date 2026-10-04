@@ -3,18 +3,18 @@
 <rect width="480" height="196" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
 <rect width="480" height="34" rx="12" fill="url(#g)" opacity="0.18"/>
 <text x="16" y="22" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#e6edf3">LIVE PACKAGE METRICS</text>
-<text x="466" y="22" text-anchor="end" font-family="monospace" font-size="10" fill="#8b949e">2026-10-03 21:23 UTC</text>
+<text x="466" y="22" text-anchor="end" font-family="monospace" font-size="10" fill="#8b949e">2026-10-04 06:00 UTC</text>
 <circle cx="20" cy="60" r="3.5" fill="#a371f7"/>
 <text x="32" y="64" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e">npm</text>
 <text x="464" y="64" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#e6edf3">319</text>
 <circle cx="20" cy="86" r="3.5" fill="#39c5cf"/>
 <text x="32" y="90" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e">PyPI</text>
-<text x="464" y="90" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#e6edf3">780</text>
+<text x="464" y="90" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#e6edf3">799</text>
 <circle cx="20" cy="112" r="3.5" fill="#f778ba"/>
 <text x="32" y="116" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e">crates.io</text>
 <text x="464" y="116" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#e6edf3">153</text>
 <circle cx="20" cy="138" r="3.5" fill="#8b949e"/>
 <text x="32" y="142" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e">GitHub releases</text>
 <text x="464" y="142" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#e6edf3">3.2k</text>
-<g transform="translate(330,40)"><polyline points="2.0,36.6 5.1,29.4 8.2,28.3 11.3,27.5 14.4,26.6 17.5,27.8 20.6,25.4 23.7,24.2 26.8,23.9 29.9,23.8 33.0,21.8 36.0,19.8 39.1,19.8 42.2,17.9 45.3,17.8 48.4,16.7 51.5,16.1 54.6,14.2 57.7,12.1 60.8,13.0 63.9,11.1 67.0,10.8 70.1,9.5 73.2,10.2 76.3,10.0 79.4,8.7 82.5,10.5 85.6,9.1 88.7,7.8 91.8,11.4 94.9,11.5 98.0,11.5 101.0,9.9 104.1,9.0 107.2,9.1 110.3,7.2 113.4,7.0 116.5,12.3 119.6,6.7 122.7,11.9 125.8,6.4 128.9,6.3 132.0,6.0" fill="none" stroke="#a371f7" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><polygon points="2,42 2.0,36.6 5.1,29.4 8.2,28.3 11.3,27.5 14.4,26.6 17.5,27.8 20.6,25.4 23.7,24.2 26.8,23.9 29.9,23.8 33.0,21.8 36.0,19.8 39.1,19.8 42.2,17.9 45.3,17.8 48.4,16.7 51.5,16.1 54.6,14.2 57.7,12.1 60.8,13.0 63.9,11.1 67.0,10.8 70.1,9.5 73.2,10.2 76.3,10.0 79.4,8.7 82.5,10.5 85.6,9.1 88.7,7.8 91.8,11.4 94.9,11.5 98.0,11.5 101.0,9.9 104.1,9.0 107.2,9.1 110.3,7.2 113.4,7.0 116.5,12.3 119.6,6.7 122.7,11.9 125.8,6.4 128.9,6.3 132.0,6.0 132,42" fill="#a371f7" opacity="0.12"/></g>
+<g transform="translate(330,40)"><polyline points="2.0,36.6 5.0,29.4 8.0,28.4 11.1,27.6 14.1,26.6 17.1,27.8 20.1,25.5 23.2,24.3 26.2,24.0 29.2,23.9 32.2,21.9 35.3,20.0 38.3,20.0 41.3,18.0 44.3,17.9 47.3,16.8 50.4,16.3 53.4,14.3 56.4,12.3 59.4,13.2 62.5,11.3 65.5,11.0 68.5,9.7 71.5,10.4 74.6,10.2 77.6,9.0 80.6,10.7 83.6,9.3 86.7,8.0 89.7,11.6 92.7,11.7 95.7,11.7 98.7,10.1 101.8,9.2 104.8,9.3 107.8,7.4 110.8,7.3 113.9,12.5 116.9,6.9 119.9,12.1 122.9,6.6 126.0,6.5 129.0,6.2 132.0,6.0" fill="none" stroke="#a371f7" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><polygon points="2,42 2.0,36.6 5.0,29.4 8.0,28.4 11.1,27.6 14.1,26.6 17.1,27.8 20.1,25.5 23.2,24.3 26.2,24.0 29.2,23.9 32.2,21.9 35.3,20.0 38.3,20.0 41.3,18.0 44.3,17.9 47.3,16.8 50.4,16.3 53.4,14.3 56.4,12.3 59.4,13.2 62.5,11.3 65.5,11.0 68.5,9.7 71.5,10.4 74.6,10.2 77.6,9.0 80.6,10.7 83.6,9.3 86.7,8.0 89.7,11.6 92.7,11.7 95.7,11.7 98.7,10.1 101.8,9.2 104.8,9.3 107.8,7.4 110.8,7.3 113.9,12.5 116.9,6.9 119.9,12.1 122.9,6.6 126.0,6.5 129.0,6.2 132.0,6.0 132,42" fill="#a371f7" opacity="0.12"/></g>
 </svg>
