@@ -3,18 +3,18 @@
 <rect width="480" height="196" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
 <rect width="480" height="34" rx="12" fill="url(#g)" opacity="0.18"/>
 <text x="16" y="22" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#1f2328">LIVE PACKAGE METRICS</text>
-<text x="466" y="22" text-anchor="end" font-family="monospace" font-size="10" fill="#656d76">2026-10-04 06:00 UTC</text>
+<text x="466" y="22" text-anchor="end" font-family="monospace" font-size="10" fill="#656d76">2026-10-04 12:28 UTC</text>
 <circle cx="20" cy="60" r="3.5" fill="#8250df"/>
 <text x="32" y="64" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#656d76">npm</text>
-<text x="464" y="64" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#1f2328">319</text>
+<text x="464" y="64" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#1f2328">318</text>
 <circle cx="20" cy="86" r="3.5" fill="#0969da"/>
 <text x="32" y="90" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#656d76">PyPI</text>
-<text x="464" y="90" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#1f2328">799</text>
+<text x="464" y="90" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#1f2328">775</text>
 <circle cx="20" cy="112" r="3.5" fill="#bf3989"/>
 <text x="32" y="116" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#656d76">crates.io</text>
 <text x="464" y="116" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#1f2328">153</text>
 <circle cx="20" cy="138" r="3.5" fill="#656d76"/>
 <text x="32" y="142" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#656d76">GitHub releases</text>
 <text x="464" y="142" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="15" font-weight="700" fill="#1f2328">3.2k</text>
-<g transform="translate(330,40)"><polyline points="2.0,36.6 5.0,29.4 8.0,28.4 11.1,27.6 14.1,26.6 17.1,27.8 20.1,25.5 23.2,24.3 26.2,24.0 29.2,23.9 32.2,21.9 35.3,20.0 38.3,20.0 41.3,18.0 44.3,17.9 47.3,16.8 50.4,16.3 53.4,14.3 56.4,12.3 59.4,13.2 62.5,11.3 65.5,11.0 68.5,9.7 71.5,10.4 74.6,10.2 77.6,9.0 80.6,10.7 83.6,9.3 86.7,8.0 89.7,11.6 92.7,11.7 95.7,11.7 98.7,10.1 101.8,9.2 104.8,9.3 107.8,7.4 110.8,7.3 113.9,12.5 116.9,6.9 119.9,12.1 122.9,6.6 126.0,6.5 129.0,6.2 132.0,6.0" fill="none" stroke="#8250df" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><polygon points="2,42 2.0,36.6 5.0,29.4 8.0,28.4 11.1,27.6 14.1,26.6 17.1,27.8 20.1,25.5 23.2,24.3 26.2,24.0 29.2,23.9 32.2,21.9 35.3,20.0 38.3,20.0 41.3,18.0 44.3,17.9 47.3,16.8 50.4,16.3 53.4,14.3 56.4,12.3 59.4,13.2 62.5,11.3 65.5,11.0 68.5,9.7 71.5,10.4 74.6,10.2 77.6,9.0 80.6,10.7 83.6,9.3 86.7,8.0 89.7,11.6 92.7,11.7 95.7,11.7 98.7,10.1 101.8,9.2 104.8,9.3 107.8,7.4 110.8,7.3 113.9,12.5 116.9,6.9 119.9,12.1 122.9,6.6 126.0,6.5 129.0,6.2 132.0,6.0 132,42" fill="#8250df" opacity="0.12"/></g>
+<g transform="translate(330,40)"><polyline points="2.0,36.6 5.0,29.4 8.0,28.3 11.1,27.5 14.1,26.6 17.1,27.8 20.1,25.5 23.2,24.2 26.2,23.9 29.2,23.8 32.2,21.9 35.3,19.9 38.3,19.9 41.3,17.9 44.3,17.8 47.3,16.8 50.4,16.2 53.4,14.2 56.4,12.2 59.4,13.1 62.5,11.2 65.5,10.9 68.5,9.6 71.5,10.3 74.6,10.1 77.6,8.8 80.6,10.6 83.6,9.2 86.7,7.9 89.7,11.4 92.7,11.6 95.7,11.6 98.7,10.0 101.8,9.1 104.8,9.1 107.8,7.2 110.8,7.1 113.9,12.4 116.9,6.8 119.9,12.0 122.9,6.5 126.0,6.4 129.0,6.1 132.0,6.0" fill="none" stroke="#8250df" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><polygon points="2,42 2.0,36.6 5.0,29.4 8.0,28.3 11.1,27.5 14.1,26.6 17.1,27.8 20.1,25.5 23.2,24.2 26.2,23.9 29.2,23.8 32.2,21.9 35.3,19.9 38.3,19.9 41.3,17.9 44.3,17.8 47.3,16.8 50.4,16.2 53.4,14.2 56.4,12.2 59.4,13.1 62.5,11.2 65.5,10.9 68.5,9.6 71.5,10.3 74.6,10.1 77.6,8.8 80.6,10.6 83.6,9.2 86.7,7.9 89.7,11.4 92.7,11.6 95.7,11.6 98.7,10.0 101.8,9.1 104.8,9.1 107.8,7.2 110.8,7.1 113.9,12.4 116.9,6.8 119.9,12.0 122.9,6.5 126.0,6.4 129.0,6.1 132.0,6.0 132,42" fill="#8250df" opacity="0.12"/></g>
 </svg>
