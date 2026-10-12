@@ -501,6 +501,29 @@ GitHub strips `<script>`, blocks `<iframe>`, and renders none of this natively. 
   <img alt="Digital rain" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/matrix-light.svg" width="100%" />
 </picture>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/equalizer-dark.svg" />
+  <img alt="Audio spectrum analyzer" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/equalizer-light.svg" width="100%" />
+</picture>
+
+<table><tr><td width="248" valign="middle">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/radar-dark.svg" />
+  <img alt="Radar sweep" width="220" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/radar-light.svg" />
+</picture>
+
+</td><td valign="middle">
+
+*Even the arcade keeps shipping: a radar sweep, a spectrum analyzer, and Conway's Game of Life. Every frame is computed in Python, frozen into SMIL, and animated by your browser — no JS, no GIF, no video.*
+
+</td></tr></table>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/life-dark.svg" />
+  <img alt="Conway's Game of Life" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/life-light.svg" width="100%" />
+</picture>
+
 ---
 
 ## 🌐 Also here

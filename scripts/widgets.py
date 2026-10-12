@@ -809,6 +809,113 @@ def matrix(dark):
     return svg(W, H, defs, b)
 
 
+def life(dark):
+    c = P["dark" if dark else "light"]
+    W, H = 880, 200
+    cols, rows = 50, 11
+    gx = gy = 17.0
+    dot = 11.0
+    x0 = (W - cols * gx) / 2
+    y0 = 46
+    import random
+    r = random.Random(42)
+    grid = [[1 if r.random() < 0.30 else 0 for _ in range(cols)] for _ in range(rows)]
+
+    def step(g):
+        ng = [[0] * cols for _ in range(rows)]
+        for y in range(rows):
+            for x in range(cols):
+                s = sum(g[(y + dy) % rows][(x + dx) % cols]
+                        for dy in (-1, 0, 1) for dx in (-1, 0, 1)
+                        if dy or dx)
+                ng[y][x] = 1 if (s == 3 or (s == 2 and g[y][x])) else 0
+        return ng
+
+    frames = [grid]
+    for _ in range(44):
+        frames.append(step(frames[-1]))
+    n = len(frames)
+    defs, b = [], []
+    b.append(f'<rect width="{W}" height="{H}" rx="14" fill="{c["bg"]}" stroke="{c["border"]}"/>')
+    b.append(f'<text x="24" y="28" font-family="{MONO}" font-size="11" letter-spacing="2" '
+             f'fill="{c["sub"]}">CONWAY - GAME OF LIFE (toroidal, {cols}x{rows})</text>')
+    b.append(f'<rect x="24" y="33" width="0" height="0" fill="none"/>')
+    for y in range(rows):
+        for x in range(cols):
+            vals = "".join("1" if f[y][x] else "0" for f in frames)
+            if "1" not in vals:
+                continue
+            b.append(f'<rect x="{x0 + x*gx:.1f}" y="{y0 + y*gy:.1f}" width="{dot}" height="{dot}" '
+                     f'rx="2" fill="{c["green"]}" opacity="0">'
+                     f'<animate attributeName="opacity" values="{vals}" dur="{n*0.12:.2f}s" '
+                     f'calcMode="discrete" repeatCount="indefinite"/></rect>')
+    return svg(W, H, defs, b)
+
+
+def radar(dark):
+    c = P["dark" if dark else "light"]
+    import math
+    S = 220
+    cx = cy = S / 2
+    R = 98
+    defs = [f'<radialGradient id="rv" cx="0.5" cy="0.5" r="0.5">'
+            f'<stop offset="0" stop-color="{c["green"]}" stop-opacity="0"/>'
+            f'<stop offset="1" stop-color="{c["green"]}" stop-opacity="0.55"/></radialGradient>']
+    b = [f'<circle cx="{cx}" cy="{cy}" r="{R}" fill="{c["bg"]}" stroke="{c["border"]}" stroke-width="1.5"/>']
+    for r in (R * 0.33, R * 0.66):
+        b.append(f'<circle cx="{cx}" cy="{cy}" r="{r:.0f}" fill="none" stroke="{c["border"]}"/>')
+    b.append(f'<line x1="{cx-R}" y1="{cy}" x2="{cx+R}" y2="{cy}" stroke="{c["border"]}"/>')
+    b.append(f'<line x1="{cx}" y1="{cy-R}" x2="{cx}" y2="{cy+R}" stroke="{c["border"]}"/>')
+    a = math.radians(45)
+    ex, ey = cx + R * math.sin(a), cy - R * math.cos(a)
+    wedge = f'M {cx} {cy} L {cx} {cy-R} A {R} {R} 0 0 1 {ex:.1f} {ey:.1f} Z'
+    b.append(f'<g><path d="{wedge}" fill="url(#rv)"/>'
+             f'<animateTransform attributeName="transform" type="rotate" from="0 {cx} {cy}" '
+             f'to="360 {cx} {cy}" dur="3.4s" repeatCount="indefinite"/></g>')
+    import random
+    r = random.Random(9)
+    for _ in range(5):
+        ang = r.random() * 2 * math.pi
+        rad = r.random() * R * 0.82
+        px, py = cx + rad * math.sin(ang), cy - rad * math.cos(ang)
+        ph = r.random()
+        b.append(f'<circle cx="{px:.1f}" cy="{py:.1f}" r="3.5" fill="{c["green"]}">'
+                 f'<animate attributeName="opacity" values="0;0;1;0;0" '
+                 f'keyTimes="0;{ph:.2f};{min(ph+0.03,0.97):.2f};{min(ph+0.14,0.99):.2f};1" '
+                 f'dur="3.4s" repeatCount="indefinite"/></circle>')
+    b.append(f'<circle cx="{cx}" cy="{cy}" r="3" fill="{c["green"]}"/>')
+    return svg(S, S, defs, b)
+
+
+def equalizer(dark):
+    c = P["dark" if dark else "light"]
+    W, H = 880, 150
+    import random
+    r = random.Random(3)
+    n = 56
+    bw = (W - 48) / n
+    ytop, ybot = 34, H - 18
+    pal = [c["blue"], c["cyan"], c["green"], c["amber"], c["pink"], c["purple"]]
+    defs, b = [], []
+    b.append(f'<rect width="{W}" height="{H}" rx="14" fill="{c["bg"]}" stroke="{c["border"]}"/>')
+    b.append(f'<text x="24" y="26" font-family="{MONO}" font-size="11" letter-spacing="2" '
+             f'fill="{c["sub"]}">SPECTRUM ANALYZER - still just SVG</text>')
+    for i in range(n):
+        col = pal[i % len(pal)]
+        mx = (ybot - ytop)
+        peaks = [r.randint(8, mx) for _ in range(8)]
+        vals = ";".join(str(p) for p in peaks)
+        yvals = ";".join(str(ybot - p) for p in peaks)
+        dur = 0.8 + r.random() * 1.2
+        x = 24 + i * bw
+        b.append(f'<rect x="{x:.1f}" y="{ybot}" width="{bw-2:.1f}" height="2" rx="1" fill="{col}">'
+                 f'<animate attributeName="height" values="{vals}" dur="{dur:.2f}s" '
+                 f'repeatCount="indefinite"/>'
+                 f'<animate attributeName="y" values="{yvals}" '
+                 f'dur="{dur:.2f}s" repeatCount="indefinite"/></rect>')
+    return svg(W, H, defs, b)
+
+
 # --------------------------------------------------------------------------- #
 #  banner + divider (self-hosted animated hero)
 # --------------------------------------------------------------------------- #
@@ -925,6 +1032,9 @@ def main():
             f"clock-{suffix}.svg": clock(dark),
             f"bounce-{suffix}.svg": bounce(dark),
             f"matrix-{suffix}.svg": matrix(dark),
+            f"life-{suffix}.svg": life(dark),
+            f"radar-{suffix}.svg": radar(dark),
+            f"equalizer-{suffix}.svg": equalizer(dark),
             f"stars-{suffix}.svg": star_history(d, dark),
             f"guestbook-{suffix}.svg": guestbook(dark, d),
             f"terminal-{suffix}.svg": terminal(dark),

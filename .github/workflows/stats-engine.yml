@@ -74,6 +74,9 @@ jobs:
              out/clock-dark.svg out/clock-light.svg \
              out/bounce-dark.svg out/bounce-light.svg \
              out/matrix-dark.svg out/matrix-light.svg \
+             out/life-dark.svg out/life-light.svg \
+             out/radar-dark.svg out/radar-light.svg \
+             out/equalizer-dark.svg out/equalizer-light.svg \
              out/stars-dark.svg out/stars-light.svg \
              out/guestbook-dark.svg out/guestbook-light.svg svg/
           cp out/stars.json svg/ 2>/dev/null || true

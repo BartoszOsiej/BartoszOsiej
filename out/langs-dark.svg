@@ -5,21 +5,21 @@
 <rect width="420" height="196" rx="14" fill="#0d1117" stroke="#30363d"/>
 <text x="20" y="30" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" letter-spacing="2" font-weight="700" fill="#e6edf3">MOST USED LANGUAGES</text>
 <g clip-path="url(#lb)">
-<rect x="20.0" y="44" width="349.4" height="16" fill="#dea584"/>
-<rect x="368.4" y="44" width="13.3" height="16" fill="#3572A5"/>
-<rect x="380.7" y="44" width="7.1" height="16" fill="#e34c26"/>
+<rect x="20.0" y="44" width="349.2" height="16" fill="#dea584"/>
+<rect x="368.2" y="44" width="13.5" height="16" fill="#3572A5"/>
+<rect x="380.7" y="44" width="7.0" height="16" fill="#e34c26"/>
 <rect x="386.8" y="44" width="5.3" height="16" fill="#f1e05a"/>
-<rect x="391.0" y="44" width="4.7" height="16" fill="#3178c6"/>
+<rect x="391.1" y="44" width="4.7" height="16" fill="#3178c6"/>
 <rect x="394.7" y="44" width="2.6" height="16" fill="#555555"/>
 <rect x="396.3" y="44" width="2.5" height="16" fill="#663399"/>
 <rect x="-20" y="40" width="40" height="24" fill="#ffffff" opacity="0.16"><animate attributeName="x" values="-20;400" dur="4s" repeatCount="indefinite"/></rect>
 </g>
 <circle cx="25" cy="80" r="5" fill="#dea584"/>
 <text x="38" y="84" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#e6edf3">Rust</text>
-<text x="400" y="84" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#8b949e">91.7%</text>
+<text x="400" y="84" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#8b949e">91.6%</text>
 <circle cx="25" cy="98" r="5" fill="#3572A5"/>
 <text x="38" y="102" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#e6edf3">Python</text>
-<text x="400" y="102" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#8b949e">3.2%</text>
+<text x="400" y="102" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#8b949e">3.3%</text>
 <circle cx="25" cy="116" r="5" fill="#e34c26"/>
 <text x="38" y="120" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#e6edf3">HTML</text>
 <text x="400" y="120" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#8b949e">1.6%</text>
