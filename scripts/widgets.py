@@ -103,10 +103,10 @@ def live_data():
     with open(hp, "w") as f:
         json.dump({"series": series}, f, indent=1)
     d["star_hist"] = [x["v"] for x in series]
+    gb = []
     try:
         issues = fetch(f"https://api.github.com/repos/{GB_REPO}/issues"
                        f"?labels=guestbook&state=all&per_page=50")
-        gb = []
         for i in issues:
             if "pull_request" in i:
                 continue
@@ -114,9 +114,22 @@ def live_data():
                        "body": (i.get("body") or "").strip().replace("\r", ""),
                        "created": i["created_at"][:10],
                        "reactions": (i.get("reactions") or {}).get("total_count", 0)})
-        d["guestbook"] = gb
     except Exception:
-        d["guestbook"] = []
+        pass
+    try:
+        dq = (gql(GDISC, {"o": USER, "n": USER}) or {}).get("repository") or {}
+        for x in (dq.get("discussions") or {}).get("nodes", []):
+            if ((x.get("category") or {}).get("name") == "Announcements"):
+                continue
+            gb.append({"user": ((x.get("author") or {}).get("login") or "someone"),
+                       "title": x.get("title", ""),
+                       "body": (x.get("body") or "").strip().replace("\r", ""),
+                       "created": (x.get("createdAt") or "")[:10],
+                       "reactions": (x.get("reactions") or {}).get("totalCount", 0)})
+    except Exception:
+        pass
+    gb.sort(key=lambda z: z.get("created", ""), reverse=True)
+    d["guestbook"] = gb
     for repo in CI_REPOS:
         try:
             runs = fetch(f"https://api.github.com/repos/{USER}/{repo}/actions/runs?per_page=1")
@@ -399,7 +412,7 @@ def guestbook(dark, d):
     b.append(f'<text x="22" y="36" font-family="{SANS}" font-size="13" font-weight="700" '
              f'letter-spacing="2" fill="{c["fg"]}">GUESTBOOK</text>')
     b.append(f'<text x="{W-22}" y="36" text-anchor="end" font-family="{MONO}" font-size="10" '
-             f'fill="{c["sub"]}">{len(d.get("guestbook", []))} signature(s) · rendered from issues</text>')
+             f'fill="{c["sub"]}">{len(d.get("guestbook", []))} signature(s) · live from issues + discussions</text>')
     if not entries:
         b.append(f'<text x="{W/2}" y="{top+40}" text-anchor="middle" font-family="{MONO}" '
                  f'font-size="13" fill="{c["sub"]}">be the first to sign ✍</text>')
@@ -499,6 +512,17 @@ query($login:String!){
                  orderBy:{field:STARGAZERS,direction:DESC}){
       nodes{ languages(first:20, orderBy:{field:SIZE,direction:DESC}){
         edges{ size node{ name color } } } }
+    }
+  }
+}
+"""
+
+
+GDISC = """
+query($o:String!, $n:String!){
+  repository(owner:$o, name:$n){
+    discussions(first:50, orderBy:{field:CREATED_AT, direction:DESC}){
+      nodes{ title body createdAt author{login} reactions{totalCount} category{name} }
     }
   }
 }
