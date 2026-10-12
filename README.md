@@ -1,4 +1,7 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Bartosz%20Osiej&fontSize=42&fontColor=fff&animation=fadeIn&desc=Systems%20Developer%20%C2%B7%20Rust%20%C2%B7%20eBPF%20%C2%B7%20Compilers&descSize=18&descAlignY=68" width="100%" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/banner-dark.svg" />
+  <img alt="Bartosz Osiej — systems developer, Rust, eBPF, compilers, founder of Hartwell Labs" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/banner-light.svg" width="100%" />
+</picture>
 
 <div align="center">
 
@@ -411,7 +414,10 @@ third-party renderers: every pixel comes from my own pipeline.*
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/divider-dark.svg" />
+  <img alt="" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/divider-light.svg" width="100%" />
+</picture>
 
 <div align="center">
 

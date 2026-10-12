@@ -337,6 +337,99 @@ def pipeline(dark, d):
     return svg(W, H, defs, b)
 
 
+# --------------------------------------------------------------------------- #
+#  banner + divider (self-hosted animated hero)
+# --------------------------------------------------------------------------- #
+
+def banner(dark):
+    c = P["dark" if dark else "light"]
+    W, H = 1280, 320
+    lo = 0.18 if dark else 0.10
+    defs, b = [], []
+    defs.append(f'<filter id="soft" x="-40%" y="-40%" width="180%" height="180%">'
+                f'<feGaussianBlur stdDeviation="90"/></filter>')
+    defs.append(f'<filter id="glow" x="-30%" y="-30%" width="160%" height="160%">'
+                f'<feGaussianBlur stdDeviation="10"/></filter>')
+    defs.append('<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">'
+                f'<path d="M40 0H0V40" fill="none" stroke="{c["fg"]}" stroke-width="1"/></pattern>')
+    defs.append('<linearGradient id="tg" x1="0" y1="0" x2="1" y2="0">'
+                f'<stop offset="0" stop-color="{c["purple"]}"/>'
+                f'<stop offset="0.5" stop-color="{c["cyan"]}"/>'
+                f'<stop offset="1" stop-color="{c["pink"]}"/></linearGradient>')
+    defs.append('<linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">'
+                f'<stop offset="0" stop-color="{c["cyan"]}" stop-opacity="0"/>'
+                f'<stop offset="0.5" stop-color="{c["cyan"]}" stop-opacity="0.5"/>'
+                f'<stop offset="1" stop-color="{c["cyan"]}" stop-opacity="0"/></linearGradient>')
+    defs.append(f'<clipPath id="tclip"><text x="{W/2}" y="164" text-anchor="middle" '
+                f'font-family="{SANS}" font-size="64" font-weight="800" '
+                f'letter-spacing="8">BARTOSZ OSIEJ</text></clipPath>')
+
+    b.append(f'<rect width="{W}" height="{H}" rx="18" fill="{c["bg"]}"/>')
+    b.append(f'<rect width="{W}" height="{H}" rx="18" fill="url(#grid)" opacity="0.05"/>')
+
+    blobs = [(c["purple"], 300, 90, 300, 200, "0,0;110,40;-70,-30;0,0", 19),
+             (c["cyan"], 950, 240, 340, 200, "0,0;-120,-50;80,30;0,0", 23),
+             (c["pink"], 640, 40, 260, 170, "0,0;60,70;-90,-20;0,0", 27)]
+    for col, cx, cy, rx, ry, vals, dur in blobs:
+        b.append(f'<g filter="url(#soft)" opacity="{lo}"><ellipse cx="{cx}" cy="{cy}" '
+                 f'rx="{rx}" ry="{ry}" fill="{col}">'
+                 f'<animateTransform attributeName="transform" type="translate" '
+                 f'values="{vals}" dur="{dur}s" repeatCount="indefinite"/></ellipse></g>')
+
+    for i in range(30):
+        x = 30 + (i * 47) % (W - 60)
+        y = 40 + (i * 83) % (H - 70)
+        r = 1 + (i % 3) * 0.7
+        col = [c["cyan"], c["purple"], c["pink"]][i % 3]
+        b.append(f'<circle cx="{x}" cy="{y}" r="{r}" fill="{col}">'
+                 f'<animateTransform attributeName="transform" type="translate" '
+                 f'values="0,0;0,{-(18 + i % 26)};0,0" dur="{5 + i % 5}s" '
+                 f'begin="{i * 0.2:.1f}s" repeatCount="indefinite"/>'
+                 f'<animate attributeName="opacity" values="0.12;0.7;0.12" '
+                 f'dur="{3 + i % 4}s" begin="{i * 0.13:.2f}s" repeatCount="indefinite"/></circle>')
+
+    b.append(f'<rect x="-200" y="0" width="200" height="{H}" fill="url(#scan)" opacity="0.16">'
+             f'<animateTransform attributeName="transform" type="translate" '
+             f'values="0,0;{W+200},0" dur="7s" repeatCount="indefinite"/></rect>')
+
+    b.append(f'<text x="{W/2}" y="164" text-anchor="middle" font-family="{SANS}" '
+             f'font-size="64" font-weight="800" letter-spacing="8" fill="url(#tg)" '
+             f'filter="url(#glow)" opacity="0.55">BARTOSZ OSIEJ</text>')
+    b.append(f'<text x="{W/2}" y="164" text-anchor="middle" font-family="{SANS}" '
+             f'font-size="64" font-weight="800" letter-spacing="8" fill="url(#tg)">BARTOSZ OSIEJ</text>')
+    b.append(f'<g clip-path="url(#tclip)"><rect x="-160" y="90" width="120" height="120" '
+             f'fill="#ffffff" opacity="0.35" transform="skewX(-18)">'
+             f'<animateTransform attributeName="transform" type="translate" '
+             f'values="0,0;{W+320},0" dur="5.5s" repeatCount="indefinite"/></rect></g>')
+
+    b.append(f'<text x="{W/2}" y="205" text-anchor="middle" font-family="{MONO}" '
+             f'font-size="25" fill="{c["sub"]}">systems developer · rust · ebpf · compilers</text>')
+    b.append(f'<text x="{W/2}" y="237" text-anchor="middle" font-family="{MONO}" '
+             f'font-size="20" fill="{c["fg"]}" opacity="0.85">founder @ hartwell labs · open source, MIT</text>')
+    b.append(f'<circle cx="{W/2 - 210}" cy="262" r="5" fill="{c["green"]}">'
+             f'<animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/></circle>')
+    b.append(f'<text x="{W/2 - 195}" y="267" font-family="{MONO}" font-size="18" '
+             f'fill="{c["sub"]}">shipping tested software</text>')
+    b.append(f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="18" fill="none" '
+             f'stroke="url(#tg)" stroke-opacity="0.4"/>')
+    return svg(W, H, defs, b)
+
+
+def divider(dark):
+    c = P["dark" if dark else "light"]
+    W, H = 1280, 26
+    defs = ['<linearGradient id="dg" x1="0" y1="0" x2="1" y2="0">'
+            f'<stop offset="0" stop-color="{c["purple"]}" stop-opacity="0"/>'
+            f'<stop offset="0.5" stop-color="{c["cyan"]}" stop-opacity="0.9"/>'
+            f'<stop offset="1" stop-color="{c["pink"]}" stop-opacity="0"/></linearGradient>']
+    b = [f'<line x1="0" y1="13" x2="{W}" y2="13" stroke="{c["border"]}" stroke-width="1"/>',
+         f'<line x1="0" y1="13" x2="{W}" y2="13" stroke="url(#dg)" stroke-width="2" '
+         f'stroke-dasharray="160 1120">'
+         f'<animate attributeName="stroke-dashoffset" values="0;-1280" dur="5s" '
+         f'repeatCount="indefinite"/></line>']
+    return svg(W, H, defs, b)
+
+
 def svg(W, H, defs, body):
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
             f'viewBox="0 0 {W} {H}">\n<defs>\n' + "\n".join(defs) +
@@ -348,6 +441,8 @@ def main():
     d = live_data()
     for dark, suffix in ((True, "dark"), (False, "light")):
         outs = {
+            f"banner-{suffix}.svg": banner(dark),
+            f"divider-{suffix}.svg": divider(dark),
             f"terminal-{suffix}.svg": terminal(dark),
             f"dashboard-{suffix}.svg": dashboard(dark, d),
             f"achievements-{suffix}.svg": achievements(dark),

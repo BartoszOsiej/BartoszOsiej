@@ -58,7 +58,9 @@ jobs:
           cp out/terminal-dark.svg out/terminal-light.svg \
              out/dashboard-dark.svg out/dashboard-light.svg \
              out/achievements-dark.svg out/achievements-light.svg \
-             out/pipeline-dark.svg out/pipeline-light.svg svg/
+             out/pipeline-dark.svg out/pipeline-light.svg \
+             out/banner-dark.svg out/banner-light.svg \
+             out/divider-dark.svg out/divider-light.svg svg/
 
           git add svg/
           git commit -m "stats: refresh $(date -u '+%Y-%m-%d %H:%M UTC')" || echo "no changes"
