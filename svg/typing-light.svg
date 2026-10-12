@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="56" viewBox="0 0 780 56">
+<defs>
+<clipPath id="ty0"><rect x="56" y="16" height="30" width="0"><animate attributeName="width" values="0;0;336.0;336.0;0;0" keyTimes="0;0.0000;0.1375;0.2375;0.2500;1" dur="16.0s" repeatCount="indefinite"/></rect></clipPath>
+<clipPath id="ty1"><rect x="56" y="16" height="30" width="0"><animate attributeName="width" values="0;0;576.0;576.0;0;0" keyTimes="0;0.2500;0.3875;0.4875;0.5000;1" dur="16.0s" repeatCount="indefinite"/></rect></clipPath>
+<clipPath id="ty2"><rect x="56" y="16" height="30" width="0"><animate attributeName="width" values="0;0;660.0;660.0;0;0" keyTimes="0;0.5000;0.6375;0.7375;0.7500;1" dur="16.0s" repeatCount="indefinite"/></rect></clipPath>
+<clipPath id="ty3"><rect x="56" y="16" height="30" width="0"><animate attributeName="width" values="0;0;624.0;624.0;0;0" keyTimes="0;0.7500;0.8875;0.9875;1.0000;1" dur="16.0s" repeatCount="indefinite"/></rect></clipPath>
+</defs>
+<rect width="780" height="56" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="16" y="35" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="20" fill="#1a7f37">&gt;_</text>
+<g clip-path="url(#ty0)"><text x="56" y="36" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="20" fill="#1f2328">kernel-level tooling in Rust</text><rect x="383.0" y="17" width="9" height="23" fill="#0969da" opacity="0.9"><animate attributeName="opacity" values="0.9;0.9;0;0;0.9" dur="1s" repeatCount="indefinite"/></rect></g>
+<g clip-path="url(#ty1)"><text x="56" y="36" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="20" fill="#1f2328">2433 contributions / year - eBPF - RISC-V no_std</text><rect x="623.0" y="17" width="9" height="23" fill="#0969da" opacity="0.9"><animate attributeName="opacity" values="0.9;0.9;0;0;0.9" dur="1s" repeatCount="indefinite"/></rect></g>
+<g clip-path="url(#ty2)"><text x="56" y="36" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="20" fill="#1f2328">compilers - post-quantum crypto - shipped, not promised</text><rect x="707.0" y="17" width="9" height="23" fill="#0969da" opacity="0.9"><animate attributeName="opacity" values="0.9;0.9;0;0;0.9" dur="1s" repeatCount="indefinite"/></rect></g>
+<g clip-path="url(#ty3)"><text x="56" y="36" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="20" fill="#1f2328">39 repos - 40 PRs - 14 packages live on 4 registries</text><rect x="671.0" y="17" width="9" height="23" fill="#0969da" opacity="0.9"><animate attributeName="opacity" values="0.9;0.9;0;0;0.9" dur="1s" repeatCount="indefinite"/></rect></g>
+</svg>
