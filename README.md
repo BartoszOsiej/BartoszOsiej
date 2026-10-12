@@ -400,6 +400,11 @@ third-party renderers: every pixel comes from my own pipeline.*
 </picture>
 
 <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/stars-dark.svg" />
+  <img alt="Star history — self-tracked" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/stars-light.svg" width="100%" />
+</picture>
+
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/profile-3d/profile-night-rainbow.svg" />
   <img alt="3D contribution graph" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/profile-3d/profile-season-animate.svg" width="100%" />
 </picture>
@@ -438,6 +443,24 @@ third-party renderers: every pixel comes from my own pipeline.*
 | [aya-rs/book](https://github.com/aya-rs/book) | Update deprecated `aya::Bpf` references + MAP API note (issue #73) | [PR open](https://github.com/aya-rs/book/pulls?q=is%3Apr+author%3ABartoszOsiej) |
 
 > All PRs based on real-world experience upgrading talus-process-monitor to aya 0.14.
+
+---
+
+## ✍️ Guestbook
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-dark.svg" />
+  <img alt="" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-light.svg" width="100%" />
+</picture>
+
+*No giscus, no Disqus, no third-party embed — GitHub strips `<script>` from READMEs anyway. A signature is just a GitHub **issue** labelled `guestbook`, rendered into the wall below by my own pipeline. Say hi.*
+
+[![Sign the guestbook](https://img.shields.io/badge/✍_Sign_the_guestbook-open_an_issue-a371f7?style=for-the-badge)](https://github.com/BartoszOsiej/BartoszOsiej/issues/new?labels=guestbook&title=Guestbook+entry)
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/guestbook-dark.svg" />
+  <img alt="Guestbook wall — rendered from GitHub issues" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/guestbook-light.svg" width="100%" />
+</picture>
 
 ---
 

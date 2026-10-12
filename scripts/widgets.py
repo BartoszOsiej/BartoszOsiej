@@ -103,6 +103,20 @@ def live_data():
     with open(hp, "w") as f:
         json.dump({"series": series}, f, indent=1)
     d["star_hist"] = [x["v"] for x in series]
+    try:
+        issues = fetch(f"https://api.github.com/repos/{GB_REPO}/issues"
+                       f"?labels=guestbook&state=all&per_page=50")
+        gb = []
+        for i in issues:
+            if "pull_request" in i:
+                continue
+            gb.append({"user": i["user"]["login"], "title": i.get("title", ""),
+                       "body": (i.get("body") or "").strip().replace("\r", ""),
+                       "created": i["created_at"][:10],
+                       "reactions": (i.get("reactions") or {}).get("total_count", 0)})
+        d["guestbook"] = gb
+    except Exception:
+        d["guestbook"] = []
     for repo in CI_REPOS:
         try:
             runs = fetch(f"https://api.github.com/repos/{USER}/{repo}/actions/runs?per_page=1")
@@ -355,6 +369,64 @@ def pipeline(dark, d):
 
 
 # --------------------------------------------------------------------------- #
+#  guestbook wall (rendered from issues - GitHub strips <script>, so no giscus)
+# --------------------------------------------------------------------------- #
+
+GB_REPO = "BartoszOsiej/BartoszOsiej"
+
+
+def _wrap(text, width):
+    words, lines, cur = text.split(), [], ""
+    for w in words:
+        if len(cur) + len(w) + 1 > width:
+            lines.append(cur)
+            cur = w
+        else:
+            cur = f"{cur} {w}".strip()
+    if cur:
+        lines.append(cur)
+    return lines
+
+
+def guestbook(dark, d):
+    c = P["dark" if dark else "light"]
+    entries = d.get("guestbook", [])[:6]
+    W = 880
+    top, rowh = 62, 92
+    H = top + max(len(entries), 1) * rowh + 14
+    defs, b = [], []
+    b.append(f'<rect width="{W}" height="{H}" rx="14" fill="{c["bg"]}" stroke="{c["border"]}"/>')
+    b.append(f'<text x="22" y="36" font-family="{SANS}" font-size="13" font-weight="700" '
+             f'letter-spacing="2" fill="{c["fg"]}">GUESTBOOK</text>')
+    b.append(f'<text x="{W-22}" y="36" text-anchor="end" font-family="{MONO}" font-size="10" '
+             f'fill="{c["sub"]}">{len(d.get("guestbook", []))} signature(s) · rendered from issues</text>')
+    if not entries:
+        b.append(f'<text x="{W/2}" y="{top+40}" text-anchor="middle" font-family="{MONO}" '
+                 f'font-size="13" fill="{c["sub"]}">be the first to sign ✍</text>')
+        return svg(W, H, defs, b)
+    palette = [c["purple"], c["cyan"], c["pink"], c["amber"], c["green"], c["blue"]]
+    for i, e in enumerate(entries):
+        y = top + i * rowh
+        col = palette[i % len(palette)]
+        b.append(f'<rect x="22" y="{y}" width="{W-44}" height="{rowh-12}" rx="10" '
+                 f'fill="{c["panel"]}" stroke="{c["border"]}"/>')
+        b.append(f'<rect x="22" y="{y}" width="4" height="{rowh-12}" rx="2" fill="{col}"/>')
+        b.append(f'<circle cx="52" cy="{y+28}" r="15" fill="{col}" opacity="0.20"/>')
+        b.append(f'<text x="52" y="{y+33}" text-anchor="middle" font-family="{MONO}" '
+                 f'font-size="14" font-weight="700" fill="{col}">{esc(e["user"][0].upper())}</text>')
+        b.append(f'<text x="78" y="{y+24}" font-family="{SANS}" font-size="13" font-weight="700" '
+                 f'fill="{c["fg"]}">@{esc(e["user"])}</text>')
+        b.append(f'<text x="{W-34}" y="{y+24}" text-anchor="end" font-family="{MONO}" '
+                 f'font-size="10" fill="{c["sub"]}">{esc(e["created"])}'
+                 + (f'  ♥ {e["reactions"]}' if e.get("reactions") else "") + '</text>')
+        body = e.get("body") or e.get("title") or ""
+        for k, line in enumerate(_wrap(body, 92)[:2]):
+            b.append(f'<text x="78" y="{y+44+k*17}" font-family="{MONO}" font-size="11.5" '
+                     f'fill="{c["sub"]}">{esc(line)}</text>')
+    return svg(W, H, defs, b)
+
+
+# --------------------------------------------------------------------------- #
 #  section rule + self-hosted star history
 # --------------------------------------------------------------------------- #
 
@@ -517,6 +589,7 @@ def main():
             f"divider-{suffix}.svg": divider(dark),
             f"rule-{suffix}.svg": rule(dark),
             f"stars-{suffix}.svg": star_history(d, dark),
+            f"guestbook-{suffix}.svg": guestbook(dark, d),
             f"terminal-{suffix}.svg": terminal(dark),
             f"dashboard-{suffix}.svg": dashboard(dark, d),
             f"achievements-{suffix}.svg": achievements(dark),

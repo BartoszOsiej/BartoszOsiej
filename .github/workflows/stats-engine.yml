@@ -62,7 +62,8 @@ jobs:
              out/banner-dark.svg out/banner-light.svg \
              out/divider-dark.svg out/divider-light.svg \
              out/rule-dark.svg out/rule-light.svg \
-             out/stars-dark.svg out/stars-light.svg svg/
+             out/stars-dark.svg out/stars-light.svg \
+             out/guestbook-dark.svg out/guestbook-light.svg svg/
           cp out/stars.json svg/ 2>/dev/null || true
 
           git add svg/
