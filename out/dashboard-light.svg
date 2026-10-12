@@ -13,7 +13,7 @@
 <text x="22" y="34" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#1f2328">LIVE ECOSYSTEM</text>
 <circle cx="200" cy="29" r="4" fill="#1a7f37"><animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite"/></circle>
 <text x="212" y="33" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#656d76">SELF-HOSTED PIPELINE - NO BADGE SERVICES</text>
-<text x="858" y="33" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#656d76">2026-10-12 12:24 UTC</text>
+<text x="858" y="33" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#656d76">2026-10-12 12:35 UTC</text>
 <rect x="22" y="58" width="198" height="76" rx="10" fill="url(#t0)" stroke="#cf222e" stroke-opacity="0.35"/>
 <text x="36" y="82" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#656d76">npm</text>
 <text x="36" y="114" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#1f2328">0<animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.0s" fill="freeze"/></text>

@@ -60,7 +60,10 @@ jobs:
              out/achievements-dark.svg out/achievements-light.svg \
              out/pipeline-dark.svg out/pipeline-light.svg \
              out/banner-dark.svg out/banner-light.svg \
-             out/divider-dark.svg out/divider-light.svg svg/
+             out/divider-dark.svg out/divider-light.svg \
+             out/rule-dark.svg out/rule-light.svg \
+             out/stars-dark.svg out/stars-light.svg svg/
+          cp out/stars.json svg/ 2>/dev/null || true
 
           git add svg/
           git commit -m "stats: refresh $(date -u '+%Y-%m-%d %H:%M UTC')" || echo "no changes"

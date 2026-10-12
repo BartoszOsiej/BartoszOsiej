@@ -86,6 +86,23 @@ def live_data():
         d["stars"] = sum(r.get("stargazers_count", 0) for r in repos)
     except Exception:
         pass
+    # persist a daily star history - self-tracked, same pattern as views
+    hp = os.path.join(OUT, "stars.json")
+    series = []
+    if os.path.exists(hp):
+        try:
+            with open(hp) as f:
+                series = json.load(f).get("series", [])
+        except Exception:
+            series = []
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    series = [x for x in series if x.get("d") != today][-89:]
+    if d["stars"] or not series:
+        series.append({"d": today, "v": d["stars"]})
+    series.sort(key=lambda x: x["d"])
+    with open(hp, "w") as f:
+        json.dump({"series": series}, f, indent=1)
+    d["star_hist"] = [x["v"] for x in series]
     for repo in CI_REPOS:
         try:
             runs = fetch(f"https://api.github.com/repos/{USER}/{repo}/actions/runs?per_page=1")
@@ -338,6 +355,61 @@ def pipeline(dark, d):
 
 
 # --------------------------------------------------------------------------- #
+#  section rule + self-hosted star history
+# --------------------------------------------------------------------------- #
+
+def rule(dark):
+    c = P["dark" if dark else "light"]
+    W, H = 1280, 8
+    defs = ['<linearGradient id="rr" x1="0" y1="0" x2="1" y2="0">'
+            f'<stop offset="0" stop-color="{c["purple"]}"/>'
+            f'<stop offset="0.5" stop-color="{c["cyan"]}"/>'
+            f'<stop offset="1" stop-color="{c["pink"]}"/></linearGradient>']
+    b = [f'<line x1="0" y1="4" x2="{W}" y2="4" stroke="{c["border"]}" stroke-width="1"/>',
+         f'<line x1="0" y1="4" x2="{W}" y2="4" stroke="url(#rr)" stroke-width="2" '
+         f'stroke-dasharray="90 1190">'
+         f'<animate attributeName="stroke-dashoffset" values="0;-1280" dur="4.5s" '
+         f'repeatCount="indefinite"/></line>']
+    return svg(W, H, defs, b)
+
+
+def star_history(d, dark):
+    c = P["dark" if dark else "light"]
+    W, H = 880, 190
+    hist = d.get("star_hist") or [d["stars"]]
+    defs = ['<linearGradient id="sa" x1="0" y1="0" x2="0" y2="1">'
+            f'<stop offset="0" stop-color="{c["amber"]}" stop-opacity="0.45"/>'
+            f'<stop offset="1" stop-color="{c["amber"]}" stop-opacity="0"/>'
+            '</linearGradient>']
+    b = [f'<rect width="{W}" height="{H}" rx="14" fill="{c["bg"]}" stroke="{c["border"]}"/>',
+         f'<text x="22" y="34" font-family="{SANS}" font-size="13" font-weight="700" '
+         f'letter-spacing="2" fill="{c["fg"]}">STAR HISTORY</text>',
+         f'<text x="{W-22}" y="34" text-anchor="end" font-family="{MONO}" font-size="10" '
+         f'fill="{c["sub"]}">self-tracked · {len(hist)} day(s)</text>']
+    x0, x1, y0, y1 = 40, W - 40, H - 40, 58
+    vals = hist[-60:]
+    mx = max(vals) or 1
+    n = len(vals)
+    pts = []
+    for i, v in enumerate(vals):
+        x = x0 + (i / (n - 1) * (x1 - x0) if n > 1 else (x1 - x0) / 2)
+        y = y1 - (v / mx) * (y1 - y0)
+        pts.append((x, y))
+    poly = " ".join(f"{x:.1f},{y:.1f}" for x, y in pts)
+    if n > 1:
+        area = f"{pts[0][0]:.1f},{y1} {poly} {pts[-1][0]:.1f},{y1}"
+        b.append(f'<polygon points="{area}" fill="url(#sa)"/>')
+        b.append(f'<polyline points="{poly}" fill="none" stroke="{c["amber"]}" '
+                 f'stroke-width="2.5" stroke-linejoin="round"/>')
+    lx, ly = pts[-1]
+    b.append(f'<circle cx="{lx:.1f}" cy="{ly:.1f}" r="5" fill="{c["amber"]}">'
+             f'<animate attributeName="r" values="5;7;5" dur="2s" repeatCount="indefinite"/></circle>')
+    b.append(f'<text x="{lx-10:.1f}" y="{ly-12:.1f}" text-anchor="end" font-family="{MONO}" '
+             f'font-size="16" font-weight="700" fill="{c["fg"]}">{d["stars"]} ★</text>')
+    return svg(W, H, defs, b)
+
+
+# --------------------------------------------------------------------------- #
 #  banner + divider (self-hosted animated hero)
 # --------------------------------------------------------------------------- #
 
@@ -443,6 +515,8 @@ def main():
         outs = {
             f"banner-{suffix}.svg": banner(dark),
             f"divider-{suffix}.svg": divider(dark),
+            f"rule-{suffix}.svg": rule(dark),
+            f"stars-{suffix}.svg": star_history(d, dark),
             f"terminal-{suffix}.svg": terminal(dark),
             f"dashboard-{suffix}.svg": dashboard(dark, d),
             f"achievements-{suffix}.svg": achievements(dark),

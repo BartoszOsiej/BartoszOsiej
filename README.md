@@ -33,6 +33,11 @@
 
 ## ⚙️ Stack
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-dark.svg" />
+  <img alt="" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-light.svg" width="100%" />
+</picture>
+
 <div align="center">
 
 [![Rust](https://img.shields.io/badge/Rust-systems-000000?style=flat-square&logo=rust&logoColor=white)](https://www.rust-lang.org/)
@@ -50,13 +55,10 @@
 
 ## 🚀 Flagship Projects
 
-### 🧬 [TrustNode](https://github.com/BartoszOsiej/trustnode) — a validator, from scratch
-
-Solana-like validator built in Rust: proof-of-history clock with **real sequential PoH verification**, Tower BFT fork choice, Sealevel-style parallel execution, Turbine erasure coding, CRDS gossip and JSON-RPC. **228-test suite**, MIT.
-
-`Rust` `Consensus` `PoH` `Sealevel` `Turbine`
-
-[![CI](https://img.shields.io/github/actions/workflow/status/BartoszOsiej/trustnode/ci.yml?branch=master&style=flat-square&logo=githubactions&label=ci)](https://github.com/BartoszOsiej/trustnode/actions) [![tests](https://img.shields.io/badge/tests-228-brightgreen?style=flat-square)](https://github.com/BartoszOsiej/trustnode) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/BartoszOsiej/trustnode/blob/master/LICENSE)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-dark.svg" />
+  <img alt="" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-light.svg" width="100%" />
+</picture>
 
 <table>
 <tr><td valign="top" width="50%">
@@ -71,6 +73,17 @@ eBPF endpoint security agent — kernel-level `execve`/`openat`/`connect` tracin
 
 </td><td valign="top" width="50%">
 
+### 🧬 [TrustNode](https://github.com/BartoszOsiej/trustnode) — *a validator, from scratch*
+
+Solana-like validator built in Rust: proof-of-history clock with **real sequential PoH verification**, Tower BFT fork choice, Sealevel-style parallel execution, Turbine erasure coding, CRDS gossip and JSON-RPC. **228-test suite**, MIT.
+
+`Rust` `Consensus` `PoH` `Sealevel` `Turbine`
+
+[![CI](https://img.shields.io/github/actions/workflow/status/BartoszOsiej/trustnode/ci.yml?branch=master&style=flat-square&logo=githubactions&label=ci)](https://github.com/BartoszOsiej/trustnode/actions) [![tests](https://img.shields.io/badge/tests-228-brightgreen?style=flat-square)](https://github.com/BartoszOsiej/trustnode) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/BartoszOsiej/trustnode/blob/master/LICENSE)
+
+</td></tr>
+<tr><td valign="top" width="50%">
+
 ### 🎮 [NV2_ENGINE](https://github.com/BartoszOsiej/NV2_ENGINE) — *VIVIA*
 
 Voxel survival engine with NASA POWER real-climate worlds and an embedded MeMLP neural network. EGS submission kit ready — published as `nv2_engine` on crates.io.
@@ -81,8 +94,7 @@ Voxel survival engine with NASA POWER real-climate worlds and an embedded MeMLP 
 
 [![crates.io](https://img.shields.io/crates/v/nv2_engine?style=flat-square&logo=rust)](https://crates.io/crates/nv2_engine) [![GHCR](https://img.shields.io/badge/GHCR-image-2496ED?style=flat-square&logo=docker)](https://github.com/BartoszOsiej/NV2_ENGINE/pkgs/container/nv2_engine) [![binary](https://img.shields.io/badge/release-binary-8A2BE2?style=flat-square)](https://github.com/BartoszOsiej/NV2_ENGINE/releases)
 
-</td></tr>
-<tr><td valign="top" width="50%">
+</td><td valign="top" width="50%">
 
 ### ⚡ [externum](https://github.com/BartoszOsiej/externum)
 
@@ -94,7 +106,8 @@ Programming language built from scratch — compiles to Python, Bash and native 
 
 [![PyPI](https://img.shields.io/pypi/v/externum?style=flat-square&logo=pypi)](https://pypi.org/project/externum/) [![GHCR](https://img.shields.io/badge/GHCR-image-2496ED?style=flat-square&logo=docker)](https://github.com/BartoszOsiej/externum/pkgs/container/externum) [![Playground](https://img.shields.io/badge/▶_LIVE_PLAYGROUND-extend_it_in_browser-a371f7?style=flat-square)](https://hartwell-labs.pl/externum/)
 
-</td><td valign="top" width="50%">
+</td></tr>
+<tr><td valign="top" width="50%">
 
 ### 🔒 [CyberForge](https://github.com/BartoszOsiej/CyberForge)
 
@@ -104,8 +117,7 @@ Four security tools as one workspace — port scanner, web scanner, hash cracker
 
 [![crates.io](https://img.shields.io/crates/v/netrecon?style=flat-square&label=netrecon&logo=rust)](https://crates.io/crates/netrecon) [![crates.io](https://img.shields.io/crates/v/shadowscan?style=flat-square&label=shadowscan&logo=rust)](https://crates.io/crates/shadowscan) [![crates.io](https://img.shields.io/crates/v/hashsleuth?style=flat-square&label=hashsleuth&logo=rust)](https://crates.io/crates/hashsleuth) [![crates.io](https://img.shields.io/crates/v/packeteye?style=flat-square&label=packeteye&logo=rust)](https://crates.io/crates/packeteye)
 
-</td></tr>
-<tr><td valign="top" width="50%">
+</td><td valign="top" width="50%">
 
 ### 🛡️ [QuantumShield](https://github.com/BartoszOsiej/pqguard)
 
@@ -117,17 +129,8 @@ Post-quantum file encryption CLI — ML-KEM-768 key exchange + AES-256-GCM + HKD
 
 [![crates.io](https://img.shields.io/crates/v/pqguard?style=flat-square&logo=rust)](https://crates.io/crates/pqguard) [![CI](https://img.shields.io/github/actions/workflow/status/BartoszOsiej/pqguard/ci.yml?branch=main&style=flat-square&logo=githubactions&label=ci)](https://github.com/BartoszOsiej/pqguard/actions) [![GHCR](https://img.shields.io/badge/GHCR-image-2496ED?style=flat-square&logo=docker)](https://github.com/BartoszOsiej/pqguard/pkgs/container/pqguard)
 
-</td><td valign="top" width="50%">
-
-### 🧬 [Docs](https://bartoszosiej.github.io/Docs/)
-
-Technical documentation site — architecture guides, API reference, deployment playbooks.
-
-`TypeScript` `Deploy` `GitHub Pages`
-
-[![npm](https://img.shields.io/npm/v/bartosz-osiej-docs?style=flat-square&logo=nodedotjs)](https://www.npmjs.com/package/bartosz-osiej-docs) [![Deploy](https://img.shields.io/badge/Deploy-live-green?style=flat-square)](https://bartoszosiej.github.io/Docs/)
-
-</td><td valign="top" width="50%">
+</td></tr>
+<tr><td valign="top" width="50%">
 
 ### 🪙 [pqbit](https://github.com/BartoszOsiej/pqbit)
 
@@ -139,12 +142,27 @@ Technical documentation site — architecture guides, API reference, deployment 
 
 [![CI](https://img.shields.io/github/actions/workflow/status/BartoszOsiej/pqbit/ci.yml?branch=master&style=flat-square&logo=githubactions&label=ci)](https://github.com/BartoszOsiej/pqbit/actions) [![tests](https://img.shields.io/badge/tests-23%2F23-brightgreen?style=flat-square)](https://github.com/BartoszOsiej/pqbit) [![landing](https://img.shields.io/badge/▶_LANDING-live-8A2BE2?style=flat-square)](https://bartoszosiej.github.io/pqbit/)
 
+</td><td valign="top" width="50%">
+
+### 📚 [Docs](https://bartoszosiej.github.io/Docs/)
+
+Technical documentation site — architecture guides, API reference, deployment playbooks, and the product field guides.
+
+`TypeScript` `Deploy` `GitHub Pages`
+
+[![npm](https://img.shields.io/npm/v/bartosz-osiej-docs?style=flat-square&logo=nodedotjs)](https://www.npmjs.com/package/bartosz-osiej-docs) [![Deploy](https://img.shields.io/badge/Deploy-live-green?style=flat-square)](https://bartoszosiej.github.io/Docs/)
+
 </td></tr>
 </table>
 
 ---
 
 ## 📝 Technical Writing
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-dark.svg" />
+  <img alt="" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-light.svg" width="100%" />
+</picture>
 
 Publiczne artykuły o tym, jak działają rzeczy na niskim poziomie — z kodem, nie z marketingiem.
 
@@ -173,6 +191,11 @@ Publiczne artykuły o tym, jak działają rzeczy na niskim poziomie — z kodem,
 ---
 
 ## 📦 Distribution — everything ships, nothing rots
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-dark.svg" />
+  <img alt="" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-light.svg" width="100%" />
+</picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/pipeline-dark.svg" />
@@ -237,6 +260,11 @@ scoop install netrecon hashsleuth
 
 ## 🔐 Signed supply chain
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-dark.svg" />
+  <img alt="" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-light.svg" width="100%" />
+</picture>
+
 *The same pipeline discipline big tech uses — cryptographically verifiable, not "trust me".*
 
 <div align="center">
@@ -296,6 +324,11 @@ gh attestation verify netrecon-x86_64-unknown-linux-gnu \
 
 ## 🛡️ Engineering discipline
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-dark.svg" />
+  <img alt="" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-light.svg" width="100%" />
+</picture>
+
 > [!NOTE]
 > Every repository runs the same production-grade pipeline — this is how I work, not how I pretend to work.
 
@@ -311,6 +344,11 @@ gh attestation verify netrecon-x86_64-unknown-linux-gnu \
 ---
 
 ## 📊 Live Package Metrics
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-dark.svg" />
+  <img alt="" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-light.svg" width="100%" />
+</picture>
 
 *Self-hosted stats engine — a scheduled workflow queries npm / PyPI / crates.io /
 GitHub releases and renders these cards from scratch. No badge services, no
@@ -340,6 +378,11 @@ third-party renderers: every pixel comes from my own pipeline.*
 ## 📈 GitHub Stats
 
 <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-dark.svg" />
+  <img alt="" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-light.svg" width="100%" />
+</picture>
+
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api?username=BartoszOsiej&show_icons=true&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=1f6feb&text_color=c9d1d9&count_private=true" />
   <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-eight-theta.vercel.app/api?username=BartoszOsiej&show_icons=true&hide_border=true&bg_color=f6f8fa&title_color=0969da&icon_color=0969da&text_color=24292f&count_private=true" />
   <img width="49%" src="https://github-readme-stats-eight-theta.vercel.app/api?username=BartoszOsiej&show_icons=true&hide_border=true&count_private=true" />
@@ -365,6 +408,11 @@ third-party renderers: every pixel comes from my own pipeline.*
 
 ## 🗺️ Timeline
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-dark.svg" />
+  <img alt="" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-light.svg" width="100%" />
+</picture>
+
 ```
 2021 ──► first lines of code — Java, CryEngine, Minecraft mechanics (@ghost0development)
 2025 ──► networking & security track (teleinformatyka)
@@ -378,6 +426,11 @@ third-party renderers: every pixel comes from my own pipeline.*
 
 ## 🤝 Upstream Contributions
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-dark.svg" />
+  <img alt="" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-light.svg" width="100%" />
+</picture>
+
 | Target | PR type | Status |
 |--------|---------|--------|
 | [aya-rs/book](https://github.com/aya-rs/book) | Fix outdated `offset_of!` tip in Parsing Packets page (issue #202) | [PR open](https://github.com/aya-rs/book/pulls?q=is%3Apr+author%3ABartoszOsiej) |
@@ -389,6 +442,11 @@ third-party renderers: every pixel comes from my own pipeline.*
 ---
 
 ## 🌐 Also here
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-dark.svg" />
+  <img alt="" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-light.svg" width="100%" />
+</picture>
 
 - **[`ghost0development`](https://github.com/ghost0development)** — my original account, building since **Feb 2021**: 32 repos of early experiments, game prototypes and the original `halcyon-process-monitor` (ancestor of Talus). Everything archived there is preserved as history — active development happens on this account.
 
