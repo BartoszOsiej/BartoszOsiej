@@ -70,6 +70,7 @@ jobs:
              out/stats-dark.svg out/stats-light.svg \
              out/langs-dark.svg out/langs-light.svg \
              out/streak-dark.svg out/streak-light.svg \
+             out/org-dark.svg out/org-light.svg \
              out/heatmap-dark.svg out/heatmap-light.svg \
              out/clock-dark.svg out/clock-light.svg \
              out/bounce-dark.svg out/bounce-light.svg \

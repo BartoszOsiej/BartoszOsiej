@@ -726,6 +726,43 @@ def heatmap(d, dark):
 
 
 # --------------------------------------------------------------------------- #
+#  org stats card (Hartwell-Labs) - same self-hosted pipeline
+# --------------------------------------------------------------------------- #
+
+ORG = "Hartwell-Labs"
+
+
+def org_card(dark):
+    c = P["dark" if dark else "light"]
+    W, H = 880, 132
+    try:
+        repos = fetch(f"https://api.github.com/orgs/{ORG}/repos?per_page=100")
+    except Exception:
+        repos = []
+    stars = sum(r.get("stargazers_count", 0) for r in repos)
+    forks = sum(r.get("forks_count", 0) for r in repos)
+    langs = {r.get("language") for r in repos if r.get("language")}
+    defs = ['<linearGradient id="og" x1="0" y1="0" x2="1" y2="0">'
+            '<stop offset="0" stop-color="#F15A24"/>'
+            f'<stop offset="1" stop-color="{c["amber"]}"/></linearGradient>']
+    b = [f'<rect width="{W}" height="{H}" rx="14" fill="{c["bg"]}" stroke="{c["border"]}"/>',
+         f'<rect x="0" y="0" width="{W}" height="3" rx="1.5" fill="url(#og)"/>',
+         f'<circle cx="30" cy="66" r="7" fill="url(#og)">'
+         f'<animate attributeName="r" values="7;9;7" dur="1.8s" repeatCount="indefinite"/></circle>']
+    cols = [(len(repos), "PUBLIC REPOS", c["blue"]), (stars, "STARS", c["amber"]),
+            (forks, "FORKS", c["cyan"]), (len(langs), "LANGUAGES", c["green"])]
+    for i, (val, label, col) in enumerate(cols):
+        cx = 110 + i * 220
+        b.append(f'<text x="{cx}" y="66" text-anchor="middle" font-family="{MONO}" '
+                 f'font-size="44" font-weight="800" fill="{col}">{esc(val)}</text>')
+        b.append(f'<text x="{cx}" y="94" text-anchor="middle" font-family="{MONO}" '
+                 f'font-size="11" letter-spacing="1.5" fill="{c["sub"]}">{label}</text>')
+    b.append(f'<text x="{W/2}" y="120" text-anchor="middle" font-family="{MONO}" '
+             f'font-size="10" fill="{c["sub"]}">hartwell-labs · self-hosted · MIT</text>')
+    return svg(W, H, defs, b)
+
+
+# --------------------------------------------------------------------------- #
 #  flex zone - live clock, bouncing logo, matrix rain (pure SMIL, no JS)
 # --------------------------------------------------------------------------- #
 
@@ -1028,6 +1065,7 @@ def main():
             f"stats-{suffix}.svg": stats_card(d, dark),
             f"langs-{suffix}.svg": lang_bar(d, dark),
             f"streak-{suffix}.svg": streak_card(d, dark),
+            f"org-{suffix}.svg": org_card(dark),
             f"heatmap-{suffix}.svg": heatmap(d, dark),
             f"clock-{suffix}.svg": clock(dark),
             f"bounce-{suffix}.svg": bounce(dark),
