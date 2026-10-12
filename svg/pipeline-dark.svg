@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="150" viewBox="0 0 880 150">
+<defs>
+<linearGradient id="flow" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a371f7"/><stop offset="0.5" stop-color="#39c5cf"/><stop offset="1" stop-color="#f778ba"/></linearGradient>
+<radialGradient id="dot"><stop offset="0" stop-color="#fff"/><stop offset="0.4" stop-color="#39c5cf"/><stop offset="1" stop-color="#39c5cf" stop-opacity="0"/></radialGradient>
+<path id="flowpath" d="M70,96 H810"/>
+</defs>
+<rect width="880" height="150" rx="14" fill="#0d1117" stroke="#30363d"/>
+<text x="22" y="32" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#e6edf3">EVERY RELEASE, VERIFIED</text>
+<text x="858" y="32" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#8b949e">git tag -&gt; CI -&gt; signed images -&gt; registries</text>
+<line x1="70" y1="96" x2="810" y2="96" stroke="#30363d" stroke-width="2" stroke-dasharray="4 6"/>
+<line x1="70" y1="96" x2="810" y2="96" stroke="url(#flow)" stroke-width="2" stroke-dasharray="40 1000"><animate attributeName="stroke-dashoffset" values="0;-1040" dur="3.2s" repeatCount="indefinite"/></line>
+<circle cx="70.0" cy="96" r="9" fill="#0d1117" stroke="url(#flow)" stroke-width="2"><animate attributeName="r" values="9;10.5;9" dur="3.2s" begin="0.0s" repeatCount="indefinite"/></circle>
+<text x="70.0" y="126" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#8b949e">git tag</text>
+<circle cx="193.33333333333331" cy="96" r="9" fill="#0d1117" stroke="url(#flow)" stroke-width="2"><animate attributeName="r" values="9;10.5;9" dur="3.2s" begin="0.32s" repeatCount="indefinite"/></circle>
+<text x="193.33333333333331" y="126" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#8b949e">Actions</text>
+<circle cx="316.66666666666663" cy="96" r="9" fill="#0d1117" stroke="url(#flow)" stroke-width="2"><animate attributeName="r" values="9;10.5;9" dur="3.2s" begin="0.64s" repeatCount="indefinite"/></circle>
+<text x="316.66666666666663" y="126" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#8b949e">cosign</text>
+<circle cx="440.0" cy="96" r="9" fill="#0d1117" stroke="url(#flow)" stroke-width="2"><animate attributeName="r" values="9;10.5;9" dur="3.2s" begin="0.96s" repeatCount="indefinite"/></circle>
+<text x="440.0" y="126" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#8b949e">GHCR</text>
+<circle cx="563.3333333333333" cy="96" r="9" fill="#0d1117" stroke="url(#flow)" stroke-width="2"><animate attributeName="r" values="9;10.5;9" dur="3.2s" begin="1.28s" repeatCount="indefinite"/></circle>
+<text x="563.3333333333333" y="126" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#8b949e">crates.io</text>
+<circle cx="686.6666666666666" cy="96" r="9" fill="#0d1117" stroke="url(#flow)" stroke-width="2"><animate attributeName="r" values="9;10.5;9" dur="3.2s" begin="1.6s" repeatCount="indefinite"/></circle>
+<text x="686.6666666666666" y="126" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#8b949e">PyPI</text>
+<circle cx="810.0" cy="96" r="9" fill="#0d1117" stroke="url(#flow)" stroke-width="2"><animate attributeName="r" values="9;10.5;9" dur="3.2s" begin="1.92s" repeatCount="indefinite"/></circle>
+<text x="810.0" y="126" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#8b949e">npm</text>
+<circle r="6" fill="url(#dot)"><animateMotion dur="3.2s" repeatCount="indefinite"><mpath href="#flowpath"/></animateMotion></circle>
+</svg>

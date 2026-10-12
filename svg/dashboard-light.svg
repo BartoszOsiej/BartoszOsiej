@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="340" viewBox="0 0 880 340">
+<defs>
+<linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8250df"/><stop offset="0.5" stop-color="#0969da"/><stop offset="1" stop-color="#bf3989"/></linearGradient>
+<clipPath id="clip"><rect width="880" height="340" rx="14"/></clipPath>
+<linearGradient id="t0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cf222e" stop-opacity="0.28"/><stop offset="1" stop-color="#cf222e" stop-opacity="0.04"/></linearGradient>
+<linearGradient id="t1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0969da" stop-opacity="0.28"/><stop offset="1" stop-color="#0969da" stop-opacity="0.04"/></linearGradient>
+<linearGradient id="t2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9a6700" stop-opacity="0.28"/><stop offset="1" stop-color="#9a6700" stop-opacity="0.04"/></linearGradient>
+<linearGradient id="t3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8250df" stop-opacity="0.28"/><stop offset="1" stop-color="#8250df" stop-opacity="0.04"/></linearGradient>
+</defs>
+<rect width="880" height="340" rx="14" fill="#ffffff" stroke="#d0d7de"/>
+<rect width="880" height="340" rx="14" fill="url(#sweep)" opacity="0.05"/>
+<rect x="0" y="0" width="120" height="3" fill="url(#sweep)"><animate attributeName="x" values="-120;880" dur="3.4s" repeatCount="indefinite"/></rect>
+<text x="22" y="34" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#1f2328">LIVE ECOSYSTEM</text>
+<circle cx="200" cy="29" r="4" fill="#1a7f37"><animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite"/></circle>
+<text x="212" y="33" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#656d76">SELF-HOSTED PIPELINE - NO BADGE SERVICES</text>
+<text x="858" y="33" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#656d76">2026-10-12 12:06 UTC</text>
+<rect x="22" y="58" width="198" height="76" rx="10" fill="url(#t0)" stroke="#cf222e" stroke-opacity="0.35"/>
+<text x="36" y="82" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#656d76">npm</text>
+<text x="36" y="114" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#1f2328">285<animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.0s" fill="freeze"/></text>
+<text x="206" y="82" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#656d76">last 30d</text>
+<rect x="234" y="58" width="198" height="76" rx="10" fill="url(#t1)" stroke="#0969da" stroke-opacity="0.35"/>
+<text x="248" y="82" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#656d76">PyPI</text>
+<text x="248" y="114" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#1f2328">814<animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.15s" fill="freeze"/></text>
+<text x="418" y="82" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#656d76">last 30d</text>
+<rect x="446" y="58" width="198" height="76" rx="10" fill="url(#t2)" stroke="#9a6700" stroke-opacity="0.35"/>
+<text x="460" y="82" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#656d76">crates.io</text>
+<text x="460" y="114" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#1f2328">153<animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.3s" fill="freeze"/></text>
+<text x="630" y="82" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#656d76">last 30d</text>
+<rect x="658" y="58" width="198" height="76" rx="10" fill="url(#t3)" stroke="#8250df" stroke-opacity="0.35"/>
+<text x="672" y="82" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#656d76">GH releases</text>
+<text x="672" y="114" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#1f2328">3.4k<animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.44999999999999996s" fill="freeze"/></text>
+<text x="842" y="82" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#656d76">last 30d</text>
+<circle cx="29.0" cy="168" r="4" fill="#0969da"/>
+<text x="44.0" y="173" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#656d76">Ecosystem views</text>
+<text x="416.0" y="173" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="15" font-weight="700" fill="#1f2328">2,009</text>
+<circle cx="447.0" cy="168" r="4" fill="#0969da"/>
+<text x="462.0" y="173" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#656d76">Unique visitors</text>
+<text x="834.0" y="173" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="15" font-weight="700" fill="#1f2328">1,065</text>
+<circle cx="29.0" cy="202" r="4" fill="#9a6700"/>
+<text x="44.0" y="207" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#656d76">Stars across repos</text>
+<text x="416.0" y="207" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="15" font-weight="700" fill="#1f2328">23</text>
+<circle cx="447.0" cy="202" r="4" fill="#8250df"/>
+<text x="462.0" y="207" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#656d76">Public repositories</text>
+<text x="834.0" y="207" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="15" font-weight="700" fill="#1f2328">39</text>
+<circle cx="29.0" cy="236" r="4" fill="#bf3989"/>
+<text x="44.0" y="241" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#656d76">Followers</text>
+<text x="416.0" y="241" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="15" font-weight="700" fill="#1f2328">4</text>
+<line x1="22" y1="260" x2="858" y2="260" stroke="#d0d7de"/>
+<text x="22" y="282" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#656d76">CI STATUS</text>
+<circle cx="130" cy="278" r="4" fill="#1a7f37"><animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="0.0s" repeatCount="indefinite"/></circle>
+<text x="139" y="282" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#1f2328">talus-process-monitor</text>
+<circle cx="295" cy="278" r="4" fill="#1a7f37"><animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="0.2s" repeatCount="indefinite"/></circle>
+<text x="304" y="282" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#1f2328">externum</text>
+<circle cx="369" cy="278" r="4" fill="#1a7f37"><animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="0.4s" repeatCount="indefinite"/></circle>
+<text x="378" y="282" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#1f2328">NV2_ENGINE</text>
+<circle cx="457" cy="278" r="4" fill="#1a7f37"><animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="0.6000000000000001s" repeatCount="indefinite"/></circle>
+<text x="466" y="282" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#1f2328">pqbit</text>
+<circle cx="510" cy="278" r="4" fill="#1a7f37"><animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="0.8s" repeatCount="indefinite"/></circle>
+<text x="519" y="282" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#1f2328">pqguard</text>
+<circle cx="577" cy="278" r="4" fill="#1a7f37"><animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="1.0s" repeatCount="indefinite"/></circle>
+<text x="586" y="282" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#1f2328">CyberForge</text>
+<circle cx="665" cy="278" r="4" fill="#1a7f37"><animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="1.2000000000000002s" repeatCount="indefinite"/></circle>
+<text x="674" y="282" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#1f2328">Docs</text>
+</svg>

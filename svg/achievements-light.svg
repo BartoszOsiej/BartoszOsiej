@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="168" viewBox="0 0 880 168">
+<defs>
+<linearGradient id="m0" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a371f7"/><stop offset="1" stop-color="#f778ba"/></linearGradient>
+<linearGradient id="m1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#39c5cf"/><stop offset="1" stop-color="#58a6ff"/></linearGradient>
+<linearGradient id="m2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3fb950"/><stop offset="1" stop-color="#39c5cf"/></linearGradient>
+<linearGradient id="m3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d29922"/><stop offset="1" stop-color="#f778ba"/></linearGradient>
+<linearGradient id="m4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#58a6ff"/><stop offset="1" stop-color="#a371f7"/></linearGradient>
+<linearGradient id="m5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f778ba"/><stop offset="1" stop-color="#d29922"/></linearGradient>
+</defs>
+<rect width="880" height="168" rx="14" fill="#ffffff" stroke="#d0d7de"/>
+<text x="22" y="32" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#1f2328">TROPHY CASE</text>
+<text x="858" y="32" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#656d76">hand-forged, not server-issued</text>
+<rect x="22.0" y="50" width="129.33333333333334" height="100" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+<circle cx="86.66666666666667" cy="82" r="18" fill="url(#m0)"><animate attributeName="r" values="18;19.5;18" dur="2.6s" begin="0.0s" repeatCount="indefinite"/></circle>
+<text x="86.66666666666667" y="87" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" font-weight="700" fill="#0d1117">FL</text>
+<text x="86.66666666666667" y="118" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10.5" font-weight="700" fill="#1f2328">Compiler author</text>
+<text x="86.66666666666667" y="134" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="8.5" fill="#656d76">language from scratch</text>
+<rect x="163.33333333333334" y="50" width="129.33333333333334" height="100" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+<circle cx="228.0" cy="82" r="18" fill="url(#m1)"><animate attributeName="r" values="18;19.5;18" dur="2.6s" begin="0.2s" repeatCount="indefinite"/></circle>
+<text x="228.0" y="87" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" font-weight="700" fill="#0d1117">BP</text>
+<text x="228.0" y="118" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10.5" font-weight="700" fill="#1f2328">Kernel whisperer</text>
+<text x="228.0" y="134" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="8.5" fill="#656d76">eBPF probes in prod</text>
+<rect x="304.6666666666667" y="50" width="129.33333333333334" height="100" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+<circle cx="369.33333333333337" cy="82" r="18" fill="url(#m2)"><animate attributeName="r" values="18;19.5;18" dur="2.6s" begin="0.4s" repeatCount="indefinite"/></circle>
+<text x="369.33333333333337" y="87" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" font-weight="700" fill="#0d1117">PQ</text>
+<text x="369.33333333333337" y="118" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10.5" font-weight="700" fill="#1f2328">Post-quantum</text>
+<text x="369.33333333333337" y="134" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="8.5" fill="#656d76">ML-KEM / ML-DSA / SLH</text>
+<rect x="446.0" y="50" width="129.33333333333334" height="100" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+<circle cx="510.6666666666667" cy="82" r="18" fill="url(#m3)"><animate attributeName="r" values="18;19.5;18" dur="2.6s" begin="0.6000000000000001s" repeatCount="indefinite"/></circle>
+<text x="510.6666666666667" y="87" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" font-weight="700" fill="#0d1117">PX</text>
+<text x="510.6666666666667" y="118" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10.5" font-weight="700" fill="#1f2328">Polyglot deployer</text>
+<text x="510.6666666666667" y="134" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="8.5" fill="#656d76">npm + PyPI + crates</text>
+<rect x="587.3333333333334" y="50" width="129.33333333333334" height="100" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+<circle cx="652.0" cy="82" r="18" fill="url(#m4)"><animate attributeName="r" values="18;19.5;18" dur="2.6s" begin="0.8s" repeatCount="indefinite"/></circle>
+<text x="652.0" y="87" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" font-weight="700" fill="#0d1117">SC</text>
+<text x="652.0" y="118" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10.5" font-weight="700" fill="#1f2328">Supply chain</text>
+<text x="652.0" y="134" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="8.5" fill="#656d76">cosign + SLSA + SBOM</text>
+<rect x="728.6666666666667" y="50" width="129.33333333333334" height="100" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+<circle cx="793.3333333333334" cy="82" r="18" fill="url(#m5)"><animate attributeName="r" values="18;19.5;18" dur="2.6s" begin="1.0s" repeatCount="indefinite"/></circle>
+<text x="793.3333333333334" y="87" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" font-weight="700" fill="#0d1117">OS</text>
+<text x="793.3333333333334" y="118" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10.5" font-weight="700" fill="#1f2328">Open source</text>
+<text x="793.3333333333334" y="134" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="8.5" fill="#656d76">MIT, every active repo</text>
+</svg>
