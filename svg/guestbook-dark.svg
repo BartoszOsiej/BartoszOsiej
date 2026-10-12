@@ -4,6 +4,13 @@
 </defs>
 <rect width="880" height="168" rx="14" fill="#0d1117" stroke="#30363d"/>
 <text x="22" y="36" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#e6edf3">GUESTBOOK</text>
-<text x="858" y="36" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#8b949e">0 signature(s) · live from issues + discussions</text>
-<text x="440.0" y="102" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#8b949e">be the first to sign ✍</text>
+<text x="858" y="36" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#8b949e">1 signature(s) · live from issues + discussions</text>
+<rect x="22" y="62" width="836" height="80" rx="10" fill="#161b22" stroke="#30363d"/>
+<rect x="22" y="62" width="4" height="80" rx="2" fill="#a371f7"/>
+<circle cx="52" cy="90" r="15" fill="#a371f7" opacity="0.20"/>
+<text x="52" y="95" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" font-weight="700" fill="#a371f7">B</text>
+<text x="78" y="86" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3">@BartoszOsiej</text>
+<text x="846" y="86" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#8b949e">2026-10-12</text>
+<text x="78" y="106" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#8b949e">Say hi 👋 — every post here renders into the guestbook wall on my profile README, animated by</text>
+<text x="78" y="123" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#8b949e">a pipeline that GitHub does not offer. Discussions are a real GitHub subpage; my README is</text>
 </svg>
