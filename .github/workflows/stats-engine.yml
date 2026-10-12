@@ -30,6 +30,11 @@ jobs:
           GH_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
         run: python scripts/generate_stats.py
 
+      - name: Render animated widgets (terminal / dashboard / trophy / pipeline)
+        env:
+          GH_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+        run: python scripts/widgets.py
+
       - name: Publish to stats branch
         run: |
           git config user.name "stats-bot"
@@ -50,6 +55,10 @@ jobs:
           mkdir -p svg
           cp out/metrics-dark.svg out/metrics-light.svg out/meta.json out/history.json \
              out/views-dark.svg out/views-light.svg out/views.json svg/
+          cp out/terminal-dark.svg out/terminal-light.svg \
+             out/dashboard-dark.svg out/dashboard-light.svg \
+             out/achievements-dark.svg out/achievements-light.svg \
+             out/pipeline-dark.svg out/pipeline-light.svg svg/
 
           git add svg/
           git commit -m "stats: refresh $(date -u '+%Y-%m-%d %H:%M UTC')" || echo "no changes"

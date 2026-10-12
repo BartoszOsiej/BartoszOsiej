@@ -15,11 +15,16 @@
 
 </div>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/terminal-dark.svg" />
+  <img alt="Live terminal — Externum compiler, Talus eBPF agent, pqguard, supply-chain verification" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/terminal-light.svg" width="100%" />
+</picture>
+
 > [!IMPORTANT]
 > **Founder & CEO of [Hartwell Labs](https://github.com/Hartwell-Labs)** — independent engineering lab: eBPF security systems, programming languages and tools, all open source (MIT).
 > **19 y/o · Poland · open to first paid role** — remote/hybrid, junior systems/backend. My article on eBPF ransomware detection is **accepted on LinuxSecurity** (publication Sep 22–26) — technical writing samples on request. Author of [*The Stitcher Trilogy*](https://bartoszosiej.github.io/thethreadcalls/) (crime horror).
-> **Launch week (Sep 22-29):** [Externum on DevHunt](https://devhunt.org/tool/externum) | new: [Talus Field Guide](https://hartwell-labs.pl/talus-process-monitor/field-guide.html) - deployment & tuning playbook.
-> Everything below is *deployed infrastructure*, not tutorials: 24 public repositories, every active one with CI/CD, releases with binaries, Docker images and published packages. 3 PRs open upstream in aya-rs/book.
+> **Now (Oct 2026):** [TrustNode](https://github.com/BartoszOsiej/trustnode) — a Solana-like validator built from scratch in Rust (PoH clock, Tower BFT, Sealevel parallel execution, Turbine erasure coding, CRDS gossip); [Externum on DevHunt](https://devhunt.org/tool/externum); new: [Talus Field Guide](https://hartwell-labs.pl/talus-process-monitor/field-guide.html) — deployment & tuning playbook.
+> Everything below is *deployed infrastructure*, not tutorials: **25 original repositories** here (+13 under the [Hartwell Labs org](https://github.com/Hartwell-Labs)) — every active one with CI/CD, releases with binaries, Docker images and published packages. 3 PRs open upstream in aya-rs/book.
 
 ---
 
@@ -41,6 +46,14 @@
 ---
 
 ## 🚀 Flagship Projects
+
+### 🧬 [TrustNode](https://github.com/BartoszOsiej/trustnode) — a validator, from scratch
+
+Solana-like validator built in Rust: proof-of-history clock with **real sequential PoH verification**, Tower BFT fork choice, Sealevel-style parallel execution, Turbine erasure coding, CRDS gossip and JSON-RPC. **228-test suite**, MIT.
+
+`Rust` `Consensus` `PoH` `Sealevel` `Turbine`
+
+[![CI](https://img.shields.io/github/actions/workflow/status/BartoszOsiej/trustnode/ci.yml?branch=master&style=flat-square&logo=githubactions&label=ci)](https://github.com/BartoszOsiej/trustnode/actions) [![tests](https://img.shields.io/badge/tests-228-brightgreen?style=flat-square)](https://github.com/BartoszOsiej/trustnode) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/BartoszOsiej/trustnode/blob/master/LICENSE)
 
 <table>
 <tr><td valign="top" width="50%">
@@ -70,7 +83,7 @@ Voxel survival engine with NASA POWER real-climate worlds and an embedded MeMLP 
 
 ### ⚡ [externum](https://github.com/BartoszOsiej/externum)
 
-Programming language built from scratch — compiles to Python, Bash and native binary. Ownership, traits, macros. 307-test suite, on PyPI since v2.
+Programming language built from scratch — compiles to Python, Bash and native binary. Ownership, traits, macros. **382-test suite**, on PyPI since v2.
 
 **▶ [Run it in your browser — and extend the language live](https://hartwell-labs.pl/externum/)**
 
@@ -157,6 +170,11 @@ Publiczne artykuły o tym, jak działają rzeczy na niskim poziomie — z kodem,
 ---
 
 ## 📦 Distribution — everything ships, nothing rots
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/pipeline-dark.svg" />
+  <img alt="Animated supply-chain flow — git tag to signed images and registries" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/pipeline-light.svg" width="100%" />
+</picture>
 
 ```mermaid
 flowchart LR
@@ -296,8 +314,22 @@ GitHub releases and renders these cards from scratch. No badge services, no
 third-party renderers: every pixel comes from my own pipeline.*
 
 <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/dashboard-dark.svg" />
+  <img alt="Live ecosystem dashboard — downloads, views, stars and CI status, refreshed every 6h" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/dashboard-light.svg" width="100%" />
+</picture>
+
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/metrics-dark.svg" />
   <img src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/metrics-light.svg" />
+</picture>
+
+### 🏆 Trophy case
+
+*Hand-forged achievements. GitHub does not issue these and none of them are embeddable — every medal below is an animated SVG minted by my own pipeline, refreshed on a schedule.*
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/achievements-dark.svg" />
+  <img alt="Custom animated trophy case" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/achievements-light.svg" width="100%" />
 </picture>
 
 ---
@@ -319,6 +351,11 @@ third-party renderers: every pixel comes from my own pipeline.*
   <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=BartoszOsiej&hide_border=true&background=0d1117&ring=58a6ff&fire=F0883E&currStreakLabel=58a6ff" />
   <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=BartoszOsiej&hide_border=true&background=f6f8fa&ring=0969da&fire=D4A017&currStreakLabel=0969da" />
   <img width="70%" src="https://streak-stats.demolab.com/?user=BartoszOsiej&hide_border=true" />
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/profile-3d/profile-3d-contrib/profile-night-rainbow.svg" />
+  <img alt="3D contribution graph" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/profile-3d/profile-3d-contrib/profile-season-animate.svg" width="100%" />
 </picture>
 
 ---
