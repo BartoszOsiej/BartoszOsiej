@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="200" viewBox="0 0 880 200">
+<defs>
+<linearGradient id="mg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset="0.5" stop-color="#ffffff" stop-opacity="1"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
+<mask id="mm"><rect width="880" height="200" fill="url(#mg)"/></mask>
+</defs>
+<rect width="880" height="200" rx="14" fill="#0d1117" stroke="#30363d"/>
+<g mask="url(#mm)" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="15">
+<text x="16" y="0" fill="#3fb950">ケ1ウサテ1アノタイコチ10ソオ1アシシアカアタシ1<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="10s" begin="-0s" repeatCount="indefinite"/></text>
+<text x="38" y="0" fill="#3fb950">1カテテチ11チチサ1カ1タハウクシウタイチクタノト<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="7s" begin="-0s" repeatCount="indefinite"/></text>
+<text x="60" y="0" fill="#3fb950">チチテオコイタナアチ1ツオセトタシヌケスチ0スコクカ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="7s" begin="-1s" repeatCount="indefinite"/></text>
+<text x="82" y="0" fill="#3fb950">アチクソセヒケニスクツアイソシエヌケウ0セシ11トア<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="10s" begin="-2s" repeatCount="indefinite"/></text>
+<text x="104" y="0" fill="#3fb950">ケナコツセチネスアノア1キセナトア1ニナクテチトノス<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="8s" begin="-3s" repeatCount="indefinite"/></text>
+<text x="126" y="0" fill="#3fb950">ヒトコ01スコエツイセ1オヌクウニカササ0ハセアエス<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="9s" begin="-2s" repeatCount="indefinite"/></text>
+<text x="148" y="0" fill="#3fb950">ヒウノシハタキナシコトヒサ1カウアエウカトカ0セノチ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="7s" begin="-2s" repeatCount="indefinite"/></text>
+<text x="170" y="0" fill="#3fb950">ク0ウシタコツチケ1ウナハソ1ツテトニ1スヒハヌ1ハ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="10s" begin="-3s" repeatCount="indefinite"/></text>
+<text x="192" y="0" fill="#3fb950">サササイセテサ1オアオスエイケツ1イ0チウタイ1コツ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="6s" begin="-0s" repeatCount="indefinite"/></text>
+<text x="214" y="0" fill="#3fb950">ハオツサウテキ1コツコセイイハセスセセクアウイニケニ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="8s" begin="-3s" repeatCount="indefinite"/></text>
+<text x="236" y="0" fill="#3fb950">ノナエソ0オ11ソコウナタ00ヌソクテハアナハキソコ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="7s" begin="-2s" repeatCount="indefinite"/></text>
+<text x="258" y="0" fill="#3fb950">ヌカタタヌソケテカツネネヌハオネカノサニネカオソセコ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="6s" begin="-0s" repeatCount="indefinite"/></text>
+<text x="280" y="0" fill="#3fb950">ネキセキオナツ1コスネ0ニコ1コアカイカセオケオセツ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="10s" begin="-0s" repeatCount="indefinite"/></text>
+<text x="302" y="0" fill="#3fb950">セ0テコネテアノトイ0サネナヌオセヒエシネテケアネ1<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="9s" begin="-3s" repeatCount="indefinite"/></text>
+<text x="324" y="0" fill="#3fb950">サニ1アニエエウ0ウチヒスネテウツノツセト0コウタタ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="7s" begin="-0s" repeatCount="indefinite"/></text>
+<text x="346" y="0" fill="#3fb950">0ネニテイソニ0ウシハオノハオ0キオクソカヌチケキタ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="9s" begin="-1s" repeatCount="indefinite"/></text>
+<text x="368" y="0" fill="#3fb950">10ニコヒストチノヒソシノ0ヒソウタウソソ0ハスヌエ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="10s" begin="-0s" repeatCount="indefinite"/></text>
+<text x="390" y="0" fill="#3fb950">ヌネウエウセツニイタ1ケトソソタセネヌイヒタ1カオキ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="6s" begin="-0s" repeatCount="indefinite"/></text>
+<text x="412" y="0" fill="#3fb950">ソスタ0ヌヒ0アスケツソツソオナキスソタネセソ1カナ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="10s" begin="-2s" repeatCount="indefinite"/></text>
+<text x="434" y="0" fill="#3fb950">0タヒ1オノスウシイサスケアトカシアオトクネイヒヌウ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="8s" begin="-1s" repeatCount="indefinite"/></text>
+<text x="456" y="0" fill="#3fb950">キヒウ1スカニ1イサヒセエトノカエナシソサケシオコケ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="6s" begin="-2s" repeatCount="indefinite"/></text>
+<text x="478" y="0" fill="#3fb950">0ケタススナ0サケソツクソ1アイ0ネカヒイアキキ1ヒ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="7s" begin="-2s" repeatCount="indefinite"/></text>
+<text x="500" y="0" fill="#3fb950">ヌウノシハ0トノ1キサウタ0ソチセナケアキ1ネナエシ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="6s" begin="-2s" repeatCount="indefinite"/></text>
+<text x="522" y="0" fill="#3fb950">10テアネキアツハカアキハイス0ケタシ00キツウ1ソ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="7s" begin="-0s" repeatCount="indefinite"/></text>
+<text x="544" y="0" fill="#3fb950">エキ1エオ0クテクソヌオクスソトエキコネ0キ100ニ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="10s" begin="-1s" repeatCount="indefinite"/></text>
+<text x="566" y="0" fill="#3fb950">ソセカ0スイトノテシトセタノヒサソクナオカケオノヒナ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="7s" begin="-3s" repeatCount="indefinite"/></text>
+<text x="588" y="0" fill="#3fb950">コ1ノウ0アテニヒキシエ1アトノサハソトクツカナク1<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="9s" begin="-1s" repeatCount="indefinite"/></text>
+<text x="610" y="0" fill="#3fb950">エキス0キコ1ケタケカ11ヒクオコエ0ケサアセキソテ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="7s" begin="-1s" repeatCount="indefinite"/></text>
+<text x="632" y="0" fill="#3fb950">ソヌ0アキノアウサチ1サ0ククテカアチ1ソハヌウトヒ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="10s" begin="-3s" repeatCount="indefinite"/></text>
+<text x="654" y="0" fill="#3fb950">ヌケニセウクニツテウ1ノノナヒソテシニナネソウ0ソヌ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="10s" begin="-0s" repeatCount="indefinite"/></text>
+<text x="676" y="0" fill="#3fb950">ノトチネヒナト1ナテカア01ウテコ1イサノスタ1テ0<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="10s" begin="-1s" repeatCount="indefinite"/></text>
+<text x="698" y="0" fill="#3fb950">セキ0スネアニ0ソヒタアトソアニニセキネアハキカニヌ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="7s" begin="-1s" repeatCount="indefinite"/></text>
+<text x="720" y="0" fill="#3fb950">ニテスセハサアセ0トクヌ1ツテテオアツウケキテニナク<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="10s" begin="-1s" repeatCount="indefinite"/></text>
+<text x="742" y="0" fill="#3fb950">0セ1セキトイナオトセクナソクスススヌイヒタオクア0<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="9s" begin="-0s" repeatCount="indefinite"/></text>
+<text x="764" y="0" fill="#3fb950">クスアノソ1スキサオ010オアチアウニソキ1コウツノ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="10s" begin="-2s" repeatCount="indefinite"/></text>
+<text x="786" y="0" fill="#3fb950">ヒイナコカセヒヒセサ0エ01セトスサクニウシコサケイ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="8s" begin="-0s" repeatCount="indefinite"/></text>
+<text x="808" y="0" fill="#3fb950">ケヌケノサイ10オナ0ヒニクキコアササハチアコ0シヌ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="8s" begin="-0s" repeatCount="indefinite"/></text>
+<text x="830" y="0" fill="#3fb950">キイ1ノトクテ0ウカキシソケオヌコネ1シヒ0ネヌテサ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="10s" begin="-1s" repeatCount="indefinite"/></text>
+<text x="852" y="0" fill="#3fb950">ニア10ニシスツヌウテハクセ100タウエセシケククキ<animateTransform attributeName="transform" type="translate" values="0,-260;0,240" dur="8s" begin="-3s" repeatCount="indefinite"/></text>
+</g>
+<text x="440.0" y="108.0" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="20" font-weight="700" fill="#e6edf3" opacity="0.92">while(true) { ship(); }</text>
+</svg>

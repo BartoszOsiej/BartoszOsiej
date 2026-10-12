@@ -5,7 +5,10 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&repeat=true&width=700&height=50&lines=Kernel-level+tooling+in+Rust+%F0%9F%A6%80;eBPF+%C2%B7+RISC-V+bare-metal+%C2%B7+no_std;Compilers+%C2%B7+post-quantum+crypto;3+PRs+open+in+aya-rs%2Fbook+%F0%9F%9A%80;14+packages+across+4+registries+%F0%9F%93%A6)](https://github.com/BartoszOsiej)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/typing-dark.svg" />
+  <img alt="Self-hosted typewriter headline" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/typing-light.svg" width="86%" />
+</picture>
 
 [![Hartwell Labs](https://img.shields.io/badge/Founder_%26_CEO-Hartwell_Labs-F15A24?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hartwell-Labs)
 [![Portfolio](https://img.shields.io/badge/Portfolio-bartoszosiej.github.io-1a1a2e?style=for-the-badge&logo=firefox&logoColor=white)](https://bartoszosiej.github.io/Portfolio/)
@@ -383,20 +386,22 @@ third-party renderers: every pixel comes from my own pipeline.*
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api?username=BartoszOsiej&show_icons=true&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=1f6feb&text_color=c9d1d9&count_private=true" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-eight-theta.vercel.app/api?username=BartoszOsiej&show_icons=true&hide_border=true&bg_color=f6f8fa&title_color=0969da&icon_color=0969da&text_color=24292f&count_private=true" />
-  <img width="49%" src="https://github-readme-stats-eight-theta.vercel.app/api?username=BartoszOsiej&show_icons=true&hide_border=true&count_private=true" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/stats-dark.svg" />
+  <img alt="Profile stats — self-hosted" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/stats-light.svg" width="49%" />
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=BartoszOsiej&layout=compact&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=8" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=BartoszOsiej&layout=compact&hide_border=true&bg_color=f6f8fa&title_color=0969da&text_color=24292f&langs_count=8" />
-  <img width="41%" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=BartoszOsiej&layout=compact&hide_border=true&langs_count=8" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/langs-dark.svg" />
+  <img alt="Top languages — self-hosted" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/langs-light.svg" width="49%" />
 </picture>
-<br/>
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=BartoszOsiej&hide_border=true&background=0d1117&ring=58a6ff&fire=F0883E&currStreakLabel=58a6ff" />
-  <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=BartoszOsiej&hide_border=true&background=f6f8fa&ring=0969da&fire=D4A017&currStreakLabel=0969da" />
-  <img width="70%" src="https://streak-stats.demolab.com/?user=BartoszOsiej&hide_border=true" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/streak-dark.svg" />
+  <img alt="Streak stats — self-hosted" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/streak-light.svg" width="100%" />
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/heatmap-dark.svg" />
+  <img alt="Contribution heatmap — self-hosted" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/heatmap-light.svg" width="100%" />
 </picture>
 
 <picture>
@@ -460,6 +465,40 @@ third-party renderers: every pixel comes from my own pipeline.*
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/guestbook-dark.svg" />
   <img alt="Guestbook wall — rendered from GitHub issues" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/guestbook-light.svg" width="100%" />
+</picture>
+
+---
+
+## 🕹️ Flex zone
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-dark.svg" />
+  <img alt="" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/rule-light.svg" width="100%" />
+</picture>
+
+<table><tr><td width="248" valign="middle">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/clock-dark.svg" />
+  <img alt="Live clock — pure SMIL" width="220" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/clock-light.svg" />
+</picture>
+
+</td><td valign="middle">
+
+*A live clock, an idle screensaver, digital rain — all ticking in your browser with **zero JavaScript**.*
+
+GitHub strips `<script>`, blocks `<iframe>`, and renders none of this natively. Everything you see here is hand-written **SMIL** animation inside SVG files served from my own repo. The clock's hands actually rotate; the box actually bounces; the matrix actually falls. View source — there isn't a single line of JS.
+
+</td></tr></table>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/bounce-dark.svg" />
+  <img alt="Bouncing logo screensaver" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/bounce-light.svg" width="100%" />
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/matrix-dark.svg" />
+  <img alt="Digital rain" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/stats/svg/matrix-light.svg" width="100%" />
 </picture>
 
 ---

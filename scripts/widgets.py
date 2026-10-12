@@ -482,6 +482,334 @@ def star_history(d, dark):
 
 
 # --------------------------------------------------------------------------- #
+#  contribution data (GraphQL) - powers streak, heatmap, languages, stats
+# --------------------------------------------------------------------------- #
+
+GQL = """
+query($login:String!){
+  user(login:$login){
+    contributionsCollection{
+      totalCommitContributions
+      contributionCalendar{ totalContributions
+        weeks{ contributionDays{ date contributionCount weekday } } }
+    }
+    pullRequests{ totalCount }
+    issues{ totalCount }
+    repositories(first:100, ownerAffiliations:OWNER, isFork:false, privacy:PUBLIC,
+                 orderBy:{field:STARGAZERS,direction:DESC}){
+      nodes{ languages(first:20, orderBy:{field:SIZE,direction:DESC}){
+        edges{ size node{ name color } } } }
+    }
+  }
+}
+"""
+
+
+def gql(query, variables):
+    body = json.dumps({"query": query, "variables": variables}).encode()
+    req = urllib.request.Request(
+        "https://api.github.com/graphql", data=body,
+        headers={"Authorization": f"Bearer {TOK}", "User-Agent": "widgets/1.0",
+                 "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return json.load(r).get("data") or {}
+
+
+def enrich(d):
+    for k in ("commits", "prs", "issues", "contrib_total", "streak_cur", "streak_max"):
+        d.setdefault(k, 0)
+    d.setdefault("heatmap", [])
+    d.setdefault("heatmap_max", 1)
+    d.setdefault("langs", [])
+    try:
+        u = (gql(GQL, {"login": USER}) or {}).get("user") or {}
+        cc = u.get("contributionsCollection") or {}
+        d["commits"] = cc.get("totalCommitContributions", 0)
+        d["prs"] = (u.get("pullRequests") or {}).get("totalCount", 0)
+        d["issues"] = (u.get("issues") or {}).get("totalCount", 0)
+        cal = cc.get("contributionCalendar") or {}
+        d["contrib_total"] = cal.get("totalContributions", 0)
+        weeks = cal.get("weeks", [])
+        days = [x for w in weeks for x in w.get("contributionDays", [])]
+        cur = mx = 0
+        for x in days:
+            cur = cur + 1 if x["contributionCount"] else 0
+            mx = max(mx, cur)
+        back = 0
+        for x in reversed(days):
+            if x["contributionCount"]:
+                back += 1
+            else:
+                break
+        d["streak_max"], d["streak_cur"] = mx, back
+        wk = weeks[-26:]
+        grid = [[0] * len(wk) for _ in range(7)]
+        for xi, w in enumerate(wk):
+            for x in w.get("contributionDays", []):
+                if 0 <= x["weekday"] < 7:
+                    grid[x["weekday"]][xi] = x["contributionCount"]
+        d["heatmap"] = grid
+        d["heatmap_max"] = max((v for r in grid for v in r), default=1) or 1
+        agg = {}
+        for n in (u.get("repositories") or {}).get("nodes", []):
+            for e in (n.get("languages") or {}).get("edges", []):
+                nm = e["node"]["name"]
+                a = agg.setdefault(nm, [0, e["node"].get("color") or "#8b949e"])
+                a[0] += e["size"]
+        tot = sum(v[0] for v in agg.values()) or 1
+        d["langs"] = sorted(([n, v[0] / tot * 100, v[1]] for n, v in agg.items()),
+                            key=lambda x: -x[1])[:7]
+    except Exception:
+        pass
+
+
+# --------------------------------------------------------------------------- #
+#  headline typewriter (replaces readme-typing-svg)
+# --------------------------------------------------------------------------- #
+
+def typing(dark, d):
+    c = P["dark" if dark else "light"]
+    W, H = 780, 56
+    phrases = [
+        "kernel-level tooling in Rust",
+        f"{d.get('contrib_total', 0)} contributions / year - eBPF - RISC-V no_std",
+        "compilers - post-quantum crypto - shipped, not promised",
+        f"{d['repos']} repos - {d.get('prs', 0)} PRs - 14 packages live on 4 registries",
+    ]
+    total = 16.0
+    seg = total / len(phrases)
+    cw = 12.0
+    defs, b = [], []
+    b.append(f'<rect width="{W}" height="{H}" rx="12" fill="{c["panel"]}" stroke="{c["border"]}"/>')
+    b.append(f'<text x="16" y="35" font-family="{MONO}" font-size="20" fill="{c["green"]}">&gt;_</text>')
+    for pi, ph in enumerate(phrases):
+        n = len(ph)
+        wp = n * cw
+        x0 = (pi * seg) / total
+        x1 = (pi * seg + 0.55 * seg) / total
+        x2 = ((pi + 1) * seg - 0.05 * seg) / total
+        x3 = ((pi + 1) * seg) / total
+        defs.append(f'<clipPath id="ty{pi}"><rect x="56" y="16" height="30" width="0">'
+                    f'<animate attributeName="width" values="0;0;{wp};{wp};0;0" '
+                    f'keyTimes="0;{x0:.4f};{x1:.4f};{x2:.4f};{x3:.4f};1" '
+                    f'dur="{total}s" repeatCount="indefinite"/></rect></clipPath>')
+        b.append(f'<g clip-path="url(#ty{pi})">'
+                 f'<text x="56" y="36" font-family="{MONO}" font-size="20" fill="{c["fg"]}">{esc(ph)}</text>'
+                 f'<rect x="{56 + wp - 9}" y="17" width="9" height="23" fill="{c["blue"]}" '
+                 f'opacity="0.9"><animate attributeName="opacity" values="0.9;0.9;0;0;0.9" '
+                 f'dur="1s" repeatCount="indefinite"/></rect></g>')
+    return svg(W, H, defs, b)
+
+
+# --------------------------------------------------------------------------- #
+#  self-hosted replacements for github-readme-stats + streak-stats
+# --------------------------------------------------------------------------- #
+
+def stats_card(d, dark):
+    c = P["dark" if dark else "light"]
+    W, H = 420, 196
+    defs = ['<linearGradient id="sc" x1="0" y1="0" x2="1" y2="0">'
+            f'<stop offset="0" stop-color="{c["blue"]}"/>'
+            f'<stop offset="0.5" stop-color="{c["purple"]}"/>'
+            f'<stop offset="1" stop-color="{c["cyan"]}"/></linearGradient>']
+    b = [f'<rect width="{W}" height="{H}" rx="14" fill="{c["bg"]}" stroke="{c["border"]}"/>',
+         f'<rect x="0" y="0" width="{W}" height="3" rx="1.5" fill="url(#sc)"/>',
+         f'<text x="20" y="32" font-family="{MONO}" font-size="12" letter-spacing="2" '
+         f'font-weight="700" fill="{c["fg"]}">PROFILE STATS</text>',
+         f'<text x="{W-20}" y="32" text-anchor="end" font-family="{MONO}" font-size="9" '
+         f'fill="{c["sub"]}">live - self-hosted</text>']
+    cells = [(d["stars"], "stars", c["amber"]), (d["repos"], "public repos", c["blue"]),
+             (d["followers"], "followers", c["green"]), (d.get("commits", 0), "commits",
+              c["purple"]), (d.get("prs", 0), "pull requests", c["cyan"]),
+             (d.get("contrib_total", 0), "contributions", c["pink"])]
+    for i, (val, label, col) in enumerate(cells):
+        col_i, row_i = i % 3, i // 3
+        x = 20 + col_i * 128
+        y = 78 + row_i * 66
+        b.append(f'<rect x="{x-8}" y="{y-30}" width="120" height="56" rx="10" '
+                 f'fill="{c["panel"]}" stroke="{c["border"]}"/>')
+        b.append(f'<text x="{x}" y="{y-6}" font-family="{MONO}" font-size="26" '
+                 f'font-weight="700" fill="{col}">{esc(fmt(val))}</text>')
+        b.append(f'<text x="{x}" y="{y+14}" font-family="{MONO}" font-size="9.5" '
+                 f'fill="{c["sub"]}">{esc(label)}</text>')
+    return svg(W, H, defs, b)
+
+
+def lang_bar(d, dark):
+    c = P["dark" if dark else "light"]
+    W, H = 420, 196
+    langs = d.get("langs") or [["Rust", 100, "#dea584"]]
+    defs, b = [], []
+    b.append(f'<rect width="{W}" height="{H}" rx="14" fill="{c["bg"]}" stroke="{c["border"]}"/>')
+    b.append(f'<text x="20" y="30" font-family="{MONO}" font-size="12" letter-spacing="2" '
+             f'font-weight="700" fill="{c["fg"]}">MOST USED LANGUAGES</text>')
+    bx, by, bw, bh = 20, 44, W - 40, 16
+    defs.append(f'<clipPath id="lb"><rect x="{bx}" y="{by}" width="{bw}" height="{bh}" rx="8"/></clipPath>')
+    x = bx
+    b.append(f'<g clip-path="url(#lb)">')
+    for name, pct, col in langs:
+        w = bw * pct / 100
+        b.append(f'<rect x="{x:.1f}" y="{by}" width="{w + 1:.1f}" height="{bh}" fill="{col}"/>')
+        x += w
+    b.append(f'<rect x="{bx-40}" y="{by-4}" width="40" height="{bh+8}" fill="#ffffff" opacity="0.16">'
+             f'<animate attributeName="x" values="{bx-40};{bx+bw}" dur="4s" repeatCount="indefinite"/></rect>')
+    b.append('</g>')
+    for i, (name, pct, col) in enumerate(langs[:6]):
+        yy = 84 + i * 18
+        b.append(f'<circle cx="{bx+5}" cy="{yy-4}" r="5" fill="{col}"/>')
+        b.append(f'<text x="{bx+18}" y="{yy}" font-family="{MONO}" font-size="11.5" '
+                 f'fill="{c["fg"]}">{esc(name)}</text>')
+        b.append(f'<text x="{bx+bw}" y="{yy}" text-anchor="end" font-family="{MONO}" '
+                 f'font-size="11.5" fill="{c["sub"]}">{pct:.1f}%</text>')
+    return svg(W, H, defs, b)
+
+
+def streak_card(d, dark):
+    c = P["dark" if dark else "light"]
+    W, H = 880, 132
+    defs = ['<linearGradient id="stg" x1="0" y1="0" x2="1" y2="0">'
+            f'<stop offset="0" stop-color="{c["amber"]}"/>'
+            f'<stop offset="1" stop-color="{c["red"]}"/></linearGradient>']
+    b = [f'<rect width="{W}" height="{H}" rx="14" fill="{c["bg"]}" stroke="{c["border"]}"/>',
+         f'<rect x="0" y="0" width="{W}" height="3" rx="1.5" fill="url(#stg)"/>']
+    cols = [(d.get("streak_cur", 0), "CURRENT STREAK", c["amber"]),
+            (d.get("streak_max", 0), "LONGEST STREAK", c["red"]),
+            (d.get("contrib_total", 0), "CONTRIBUTIONS (1Y)", c["blue"]),
+            (d.get("commits", 0), "COMMITS (1Y)", c["purple"])]
+    for i, (val, label, col) in enumerate(cols):
+        cx = 110 + i * 220
+        b.append(f'<text x="{cx}" y="66" text-anchor="middle" font-family="{MONO}" '
+                 f'font-size="44" font-weight="800" fill="{col}">{esc(fmt(val))}</text>')
+        b.append(f'<text x="{cx}" y="94" text-anchor="middle" font-family="{MONO}" '
+                 f'font-size="11" letter-spacing="1.5" fill="{c["sub"]}">{label}</text>')
+    flame = f'<circle cx="30" cy="66" r="7" fill="url(#stg)"><animate attributeName="r" ' \
+            f'values="7;9;7" dur="1.6s" repeatCount="indefinite"/></circle>'
+    b.append(flame)
+    return svg(W, H, defs, b)
+
+
+def heatmap(d, dark):
+    c = P["dark" if dark else "light"]
+    grid = d.get("heatmap") or [[0] * 26 for _ in range(7)]
+    cols = len(grid[0]) if grid else 26
+    W, H = 880, 200
+    cw, ch, gap = 26, 15, 4
+    x0, y0 = 24, 62
+    defs, b = [], []
+    b.append(f'<rect width="{W}" height="{H}" rx="14" fill="{c["bg"]}" stroke="{c["border"]}"/>')
+    b.append(f'<text x="24" y="34" font-family="{MONO}" font-size="12" letter-spacing="2" '
+             f'font-weight="700" fill="{c["fg"]}">CONTRIBUTION HEATMAP - last 26 weeks</text>')
+    b.append(f'<text x="{W-24}" y="34" text-anchor="end" font-family="{MONO}" font-size="9" '
+             f'fill="{c["sub"]}">{d.get("contrib_total", 0)} in the last year</text>')
+    for xi in range(cols):
+        for yi in range(7):
+            v = grid[yi][xi] if (yi < len(grid) and xi < len(grid[yi])) else 0
+            lvl = 0 if v == 0 else min(4, 1 + (v > 2) + (v > 5) + (v > 9))
+            fill = c["panel"] if lvl == 0 else c["green"]
+            op = 0 if lvl == 0 else 0.22 + lvl * 0.19
+            b.append(f'<rect x="{x0 + xi*(cw+gap)}" y="{y0 + yi*(ch+gap)}" width="{cw}" '
+                     f'height="{ch}" rx="3" fill="{fill}" opacity="{op:.2f}"/>')
+    scan = f'<rect x="{x0}" y="{y0-4}" width="30" height="{7*(ch+gap)+8}" rx="6" ' \
+           f'fill="{c["cyan"]}" opacity="0.14">' \
+           f'<animate attributeName="x" values="{x0};{x0 + cols*(cw+gap) - 30}" ' \
+           f'dur="6s" repeatCount="indefinite"/></rect>'
+    b.append(scan)
+    lx = x0
+    b.append(f'<text x="{lx}" y="{H-16}" font-family="{MONO}" font-size="10" '
+             f'fill="{c["sub"]}">less</text>')
+    for i in range(5):
+        b.append(f'<rect x="{lx+34+i*18}" y="{H-27}" width="14" height="14" rx="3" '
+                 f'fill="{c["green"]}" opacity="{0 if i==0 else 0.22+i*0.19:.2f}"/>')
+    b.append(f'<text x="{lx+34+5*18+6}" y="{H-16}" font-family="{MONO}" font-size="10" '
+             f'fill="{c["sub"]}">more</text>')
+    return svg(W, H, defs, b)
+
+
+# --------------------------------------------------------------------------- #
+#  flex zone - live clock, bouncing logo, matrix rain (pure SMIL, no JS)
+# --------------------------------------------------------------------------- #
+
+def clock(dark):
+    c = P["dark" if dark else "light"]
+    S = 220
+    cx = cy = S / 2
+    defs, b = [], []
+    b.append(f'<circle cx="{cx}" cy="{cy}" r="{S/2-6}" fill="{c["bg"]}" stroke="{c["border"]}" stroke-width="2"/>')
+    b.append(f'<circle cx="{cx}" cy="{cy}" r="{S/2-14}" fill="none" stroke="{c["panel"]}" stroke-width="1"/>')
+    for i in range(12):
+        import math
+        a = math.radians(i * 30)
+        r1, r2 = (S/2-22) if i % 3 else (S/2-30), S/2-16
+        x1, y1 = cx + r1 * math.sin(a), cy - r1 * math.cos(a)
+        x2, y2 = cx + r2 * math.sin(a), cy - r2 * math.cos(a)
+        w = 3 if i % 3 == 0 else 1.5
+        b.append(f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" '
+                 f'stroke="{c["sub"]}" stroke-width="{w}" stroke-linecap="round"/>')
+    for length, col, dur, w in ((58, c["fg"], 43200, 5), (82, c["fg"], 3600, 3.5),
+                                (96, c["red"], 60, 2)):
+        b.append(f'<line x1="{cx}" y1="{cy}" x2="{cx}" y2="{cy-length}" stroke="{col}" '
+                 f'stroke-width="{w}" stroke-linecap="round">'
+                 f'<animateTransform attributeName="transform" type="rotate" '
+                 f'from="0 {cx} {cy}" to="360 {cx} {cy}" dur="{dur}s" repeatCount="indefinite"/></line>')
+    b.append(f'<circle cx="{cx}" cy="{cy}" r="5" fill="{c["red"]}"/>')
+    b.append(f'<circle cx="{cx}" cy="{cy}" r="2" fill="{c["bg"]}"/>')
+    return svg(S, S, defs, b)
+
+
+def bounce(dark):
+    c = P["dark" if dark else "light"]
+    W, H = 880, 180
+    defs, b = [], []
+    b.append(f'<rect width="{W}" height="{H}" rx="14" fill="{c["bg"]}" stroke="{c["border"]}"/>')
+    b.append(f'<text x="20" y="28" font-family="{MONO}" font-size="11" letter-spacing="2" '
+             f'fill="{c["sub"]}">IDLE SCREENSAVER - because a README can be fun</text>')
+    size = 54
+    xs = [60, 760, 200, 700, 120, 640, 60]
+    ys = [70, 70, 100, 100, 70, 70, 70]
+    vals = ";".join(f"{x},{y}" for x, y in zip(xs, ys))
+    kt = ";".join(f"{i/(len(xs)-1):.3f}" for i in range(len(xs)))
+    colors = ["#a371f7", "#39c5cf", "#3fb950", "#d29922", "#f778ba", "#58a6ff", "#a371f7"]
+    b.append(f'<g><rect x="0" y="0" width="{size}" height="{size}" rx="12" fill="#a371f7">'
+             f'<animateTransform attributeName="transform" type="translate" values="{vals}" '
+             f'keyTimes="{kt}" dur="9s" repeatCount="indefinite"/>'
+             f'<animate attributeName="fill" values="{";".join(colors)}" '
+             f'keyTimes="{kt}" dur="9s" repeatCount="indefinite"/>'
+             f'<text x="{size/2}" y="{size/2+9}" text-anchor="middle" font-family="{MONO}" '
+             f'font-size="24" font-weight="800" fill="#0d1117">BO</text></rect></g>')
+    return svg(W, H, defs, b)
+
+
+def matrix(dark):
+    c = P["dark" if dark else "light"]
+    W, H = 880, 200
+    glyphs = "01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒ01"
+    defs = ['<linearGradient id="mg" x1="0" y1="0" x2="0" y2="1">'
+            '<stop offset="0" stop-color="#ffffff" stop-opacity="0"/>'
+            '<stop offset="0.5" stop-color="#ffffff" stop-opacity="1"/>'
+            '<stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient>',
+            f'<mask id="mm"><rect width="{W}" height="{H}" fill="url(#mg)"/></mask>']
+    b = [f'<rect width="{W}" height="{H}" rx="14" fill="{c["bg"]}" stroke="{c["border"]}"/>']
+    import random
+    rnd = random.Random(7)
+    b.append(f'<g mask="url(#mm)" font-family="{MONO}" font-size="15">')
+    x = 16
+    while x < W - 10:
+        col = "".join(rnd.choice(glyphs) for _ in range(26))
+        dur = rnd.choice([6, 7, 8, 9, 10])
+        delay = rnd.choice([0, 1, 2, 3])
+        b.append(f'<text x="{x}" y="0" fill="{c["green"]}">{esc(col)}'
+                 f'<animateTransform attributeName="transform" type="translate" '
+                 f'values="0,-260;0,{H+40}" dur="{dur}s" begin="-{delay}s" '
+                 f'repeatCount="indefinite"/></text>')
+        x += 22
+    b.append('</g>')
+    b.append(f'<text x="{W/2}" y="{H/2+8}" text-anchor="middle" font-family="{MONO}" '
+             f'font-size="20" font-weight="700" fill="{c["fg"]}" opacity="0.92">'
+             f'while(true) {esc("{ ship(); }")}</text>')
+    return svg(W, H, defs, b)
+
+
+# --------------------------------------------------------------------------- #
 #  banner + divider (self-hosted animated hero)
 # --------------------------------------------------------------------------- #
 
@@ -583,11 +911,20 @@ def svg(W, H, defs, body):
 def main():
     os.makedirs(OUT, exist_ok=True)
     d = live_data()
+    enrich(d)
     for dark, suffix in ((True, "dark"), (False, "light")):
         outs = {
             f"banner-{suffix}.svg": banner(dark),
             f"divider-{suffix}.svg": divider(dark),
             f"rule-{suffix}.svg": rule(dark),
+            f"typing-{suffix}.svg": typing(dark, d),
+            f"stats-{suffix}.svg": stats_card(d, dark),
+            f"langs-{suffix}.svg": lang_bar(d, dark),
+            f"streak-{suffix}.svg": streak_card(d, dark),
+            f"heatmap-{suffix}.svg": heatmap(d, dark),
+            f"clock-{suffix}.svg": clock(dark),
+            f"bounce-{suffix}.svg": bounce(dark),
+            f"matrix-{suffix}.svg": matrix(dark),
             f"stars-{suffix}.svg": star_history(d, dark),
             f"guestbook-{suffix}.svg": guestbook(dark, d),
             f"terminal-{suffix}.svg": terminal(dark),
