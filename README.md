@@ -354,8 +354,8 @@ third-party renderers: every pixel comes from my own pipeline.*
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/profile-3d/profile-3d-contrib/profile-night-rainbow.svg" />
-  <img alt="3D contribution graph" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/profile-3d/profile-3d-contrib/profile-season-animate.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/profile-3d/profile-night-rainbow.svg" />
+  <img alt="3D contribution graph" src="https://raw.githubusercontent.com/BartoszOsiej/BartoszOsiej/profile-3d/profile-season-animate.svg" width="100%" />
 </picture>
 
 ---
