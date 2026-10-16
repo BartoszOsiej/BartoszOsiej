@@ -4,7 +4,7 @@
 </defs>
 <rect width="880" height="200" rx="14" fill="#0d1117" stroke="#30363d"/>
 <text x="24" y="34" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" letter-spacing="2" font-weight="700" fill="#e6edf3">CONTRIBUTION HEATMAP - last 26 weeks</text>
-<text x="856" y="34" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#8b949e">2469 in the last year</text>
+<text x="856" y="34" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#8b949e">2476 in the last year</text>
 <rect x="24" y="62" width="26" height="15" rx="3" fill="#161b22" opacity="0.00"/>
 <rect x="24" y="81" width="26" height="15" rx="3" fill="#161b22" opacity="0.00"/>
 <rect x="24" y="100" width="26" height="15" rx="3" fill="#161b22" opacity="0.00"/>
@@ -185,7 +185,7 @@
 <rect x="774" y="100" width="26" height="15" rx="3" fill="#3fb950" opacity="0.60"/>
 <rect x="774" y="119" width="26" height="15" rx="3" fill="#3fb950" opacity="0.60"/>
 <rect x="774" y="138" width="26" height="15" rx="3" fill="#3fb950" opacity="0.98"/>
-<rect x="774" y="157" width="26" height="15" rx="3" fill="#3fb950" opacity="0.41"/>
+<rect x="774" y="157" width="26" height="15" rx="3" fill="#3fb950" opacity="0.79"/>
 <rect x="774" y="176" width="26" height="15" rx="3" fill="#161b22" opacity="0.00"/>
 <rect x="24" y="58" width="30" height="141" rx="6" fill="#39c5cf" opacity="0.14"><animate attributeName="x" values="24;774" dur="6s" repeatCount="indefinite"/></rect>
 <text x="24" y="184" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#8b949e">less</text>
