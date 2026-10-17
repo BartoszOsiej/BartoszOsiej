@@ -7,13 +7,13 @@
 <text x="20" y="32" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" letter-spacing="2" font-weight="700" fill="#1f2328">PROFILE STATS</text>
 <text x="400" y="32" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#656d76">live - self-hosted</text>
 <rect x="12" y="48" width="120" height="56" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
-<text x="20" y="72" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#9a6700">23</text>
+<text x="20" y="72" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#9a6700">24</text>
 <text x="20" y="92" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" fill="#656d76">stars</text>
 <rect x="140" y="48" width="120" height="56" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
 <text x="148" y="72" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#0969da">39</text>
 <text x="148" y="92" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" fill="#656d76">public repos</text>
 <rect x="268" y="48" width="120" height="56" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
-<text x="276" y="72" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#1a7f37">4</text>
+<text x="276" y="72" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#1a7f37">5</text>
 <text x="276" y="92" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" fill="#656d76">followers</text>
 <rect x="12" y="114" width="120" height="56" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
 <text x="20" y="138" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#8250df">2.3k</text>
