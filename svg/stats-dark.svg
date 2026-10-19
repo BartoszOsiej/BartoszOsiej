@@ -16,7 +16,7 @@
 <text x="276" y="72" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#3fb950">5</text>
 <text x="276" y="92" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" fill="#8b949e">followers</text>
 <rect x="12" y="114" width="120" height="56" rx="10" fill="#161b22" stroke="#30363d"/>
-<text x="20" y="138" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#a371f7">2.6k</text>
+<text x="20" y="138" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#a371f7">2.7k</text>
 <text x="20" y="158" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" fill="#8b949e">commits</text>
 <rect x="140" y="114" width="120" height="56" rx="10" fill="#161b22" stroke="#30363d"/>
 <text x="148" y="138" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#39c5cf">42</text>
