@@ -4,7 +4,7 @@
 </defs>
 <rect width="880" height="200" rx="14" fill="#0d1117" stroke="#30363d"/>
 <text x="24" y="34" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" letter-spacing="2" font-weight="700" fill="#e6edf3">CONTRIBUTION HEATMAP - last 26 weeks</text>
-<text x="856" y="34" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#8b949e">2817 in the last year</text>
+<text x="856" y="34" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#8b949e">2821 in the last year</text>
 <rect x="24" y="62" width="26" height="15" rx="3" fill="#161b22" opacity="0.00"/>
 <rect x="24" y="81" width="26" height="15" rx="3" fill="#161b22" opacity="0.00"/>
 <rect x="24" y="100" width="26" height="15" rx="3" fill="#161b22" opacity="0.00"/>
