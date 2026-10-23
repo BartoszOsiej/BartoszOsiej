@@ -13,7 +13,7 @@
 <text x="148" y="72" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#58a6ff">30</text>
 <text x="148" y="92" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" fill="#8b949e">public repos</text>
 <rect x="268" y="48" width="120" height="56" rx="10" fill="#161b22" stroke="#30363d"/>
-<text x="276" y="72" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#3fb950">5</text>
+<text x="276" y="72" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#3fb950">6</text>
 <text x="276" y="92" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" fill="#8b949e">followers</text>
 <rect x="12" y="114" width="120" height="56" rx="10" fill="#161b22" stroke="#30363d"/>
 <text x="20" y="138" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#a371f7">2.7k</text>
