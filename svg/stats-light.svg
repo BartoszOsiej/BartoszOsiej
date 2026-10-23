@@ -10,7 +10,7 @@
 <text x="20" y="72" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#9a6700">3</text>
 <text x="20" y="92" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" fill="#656d76">stars</text>
 <rect x="140" y="48" width="120" height="56" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
-<text x="148" y="72" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#0969da">30</text>
+<text x="148" y="72" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#0969da">31</text>
 <text x="148" y="92" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" fill="#656d76">public repos</text>
 <rect x="268" y="48" width="120" height="56" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
 <text x="276" y="72" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="26" font-weight="700" fill="#1a7f37">6</text>
