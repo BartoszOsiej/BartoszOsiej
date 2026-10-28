@@ -3725,8 +3725,30 @@
     "count": 0,
     "uniques": 0
    }
+  },
+  "2026-10-27": {
+   "halcyon-process-monitor": {
+    "count": 5,
+    "uniques": 4
+   },
+   "externum": {
+    "count": 0,
+    "uniques": 0
+   },
+   "AURORA-OS": {
+    "count": 2,
+    "uniques": 1
+   },
+   "n2-mesh": {
+    "count": 0,
+    "uniques": 0
+   },
+   "BartoszOsiej": {
+    "count": 0,
+    "uniques": 0
+   }
   }
  },
- "total": 2065,
- "uniques": 1098
+ "total": 2072,
+ "uniques": 1103
 }
