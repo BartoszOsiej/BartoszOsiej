@@ -3771,8 +3771,22 @@
     "count": 0,
     "uniques": 0
    }
+  },
+  "2026-10-28": {
+   "cybersec-tools": {
+    "count": 0,
+    "uniques": 0
+   },
+   "prompt-inbox": {
+    "count": 2,
+    "uniques": 2
+   },
+   "BartoszOsiej": {
+    "count": 0,
+    "uniques": 0
+   }
   }
  },
- "total": 2072,
- "uniques": 1103
+ "total": 2074,
+ "uniques": 1105
 }
