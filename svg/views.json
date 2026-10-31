@@ -3863,8 +3863,18 @@
     "count": 0,
     "uniques": 0
    }
+  },
+  "2026-10-30": {
+   "halcyon-process-monitor": {
+    "count": 2,
+    "uniques": 2
+   },
+   "NV2_ENGINE": {
+    "count": 0,
+    "uniques": 0
+   }
   }
  },
- "total": 2104,
- "uniques": 1117
+ "total": 2106,
+ "uniques": 1119
 }
