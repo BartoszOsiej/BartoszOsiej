@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-22 19:46 UTC",
+ "updated": "2026-11-23 07:48 UTC",
  "totals": {
-  "npm": 126,
+  "npm": 137,
   "pypi": 335,
-  "crates": 71,
+  "crates": 52,
   "gh": 0
  },
  "crates_all_time": 166,
